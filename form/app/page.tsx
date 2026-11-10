@@ -143,6 +143,7 @@ import {HealthImportReview} from "./health-import-review";
 import { UtilityHub } from "./utility-hub";
 import {toolPages,destinationLabels} from "@/lib/app-navigation";
 import "./workspace-polish.css";
+import "./topcoat-ui.css";
 import { QuickNavigation } from "./quick-navigation";
 import { AppUpdate } from "./app-update";
 import { DiaryTools } from "./diary-tools";

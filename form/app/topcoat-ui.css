@@ -1,0 +1,157 @@
+/* Topcoat UI card/button adaptations; all colour roles map to Form's saved theme.
+   Upstream source and licence: docs/TOPCOAT_UI.md, components/topcoat/LICENSE. */
+:root {
+  --form-radius: 16px;
+  --form-control-radius: 11px;
+  --form-ease: cubic-bezier(.2,.8,.2,1);
+}
+.app { font-variant-numeric: tabular-nums; }
+.app :where(button,input,select,textarea) { font-family: inherit; }
+.app :where(button,a,input,select,textarea,summary):focus-visible {
+  outline: 2px solid var(--focus); outline-offset: 3px;
+}
+.app .btn {
+  min-height: 44px; border-radius: var(--form-control-radius);
+  font-size: 13px; font-weight: 650; line-height: 1.4;
+  box-shadow: none;
+}
+.app [data-slot=topcoat-button][data-variant=outline] { background: transparent; border: 1px solid var(--line); color: var(--text); }
+.app [data-slot=topcoat-button][data-variant=ghost] { background: transparent; border-color: transparent; color: var(--text); }
+.app [data-slot=topcoat-button][data-variant=primary] { background: var(--green); border-color: transparent; color: var(--ink); }
+.app [data-slot=topcoat-button][data-variant=secondary] { background: var(--panel2); color: var(--text); }
+.app .btn:disabled { transform: none; }
+.app .panel,.app [data-slot=topcoat-card] { border-color: var(--line); box-shadow: none; }
+.app .field :is(input:not([type=checkbox]):not([type=color]),select,textarea) {
+  background: var(--bg); color: var(--text); border-color: var(--control-line);
+}
+.app .field > span { color: var(--muted); line-height: 1.45; }
+.app .modal { border: 1px solid var(--line); border-radius: 20px; }
+.app .topbar { background: var(--bg); border-color: var(--line); }
+.app .topbar .crumb { font-size: 13px; }
+.app .sidebar .workspace { border-bottom: 1px solid var(--line); border-radius: 0; padding-bottom: 18px; }
+.app .workspace-nav button.active { color: var(--accent-text); background: var(--accent-soft); }
+.app .nav-folder-toggle { font-size: 12px; letter-spacing: .025em; }
+.app .app-footer { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 32px; gap: 10px; line-height: 1.5; }
+/* Overview: date selection forms one bounded control, not three floating rows. */
+.home-page .home-page-header { margin-bottom: 20px; align-items: center; }
+.home-page .home-page-header h1 { font-size: clamp(25px,3vw,32px); letter-spacing: -.04em; }
+.home-page-subtitle { color: var(--muted); font-size: 13px; line-height: 1.6; margin-top: 6px; }
+.home-page .home-customize { flex-shrink: 0; }
+.home-date-section { border: 1px solid var(--line); border-radius: var(--form-radius); padding: 16px 16px 0; margin-bottom: 16px; }
+.home-date-section .home-date-heading { margin: 0 0 8px; }
+.home-date-heading h2 { font-size: 14px; font-weight: 600; }
+.home-date-section .home-week-nav { margin: 0; gap: 4px; }
+.home-date-section .home-week button { min-height: 60px; padding: 6px 2px; }
+.home-date-section .home-week button small { font-size: 11px; }
+.home-date-section .home-week button b { font-size: 18px; }
+.home-date-section .home-week button.selected { background: var(--accent-soft); color: var(--accent-text); border-radius: 10px; }
+.home-date-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px; border-top: 1px solid var(--line); }
+.home-date-footer .home-target-link { margin: 0; min-height: 42px; font-size: 12px; color: var(--accent-text); }
+.home-date-footer > span { font-size: 11px; color: var(--muted); }
+.home-page .home-coach-entry { background: transparent; padding: 12px 14px; margin-bottom: 18px; }
+.home-page .home-coach-icon { width: 36px; height: 36px; background: var(--accent-soft); color: var(--accent-text); border-radius: 11px; }
+.home-page [data-slot=topcoat-card] { background: var(--panel); padding: 20px; border-radius: var(--form-radius); }
+.home-page .home-card-heading { margin-bottom: 14px; }
+.home-page .home-card-heading h2 { font-size: 16px; font-weight: 650; letter-spacing: -.025em; }
+.home-page .home-status { background: var(--accent-soft); color: var(--accent-text); font-size: 10px; line-height: 1.4; }
+.home-page .home-training-summary { margin-block: 14px; }
+.home-page .home-training-summary h3 { font-size: 22px; letter-spacing: -.03em; }
+.home-page .home-training-actions { display: flex; gap: 8px; margin-top: 18px; }
+.home-page .home-training-actions .btn { flex: 1; min-width: 0; justify-content: center; }
+.home-page .home-training-actions .btn:not(.primary) { background: transparent; }
+.home-page .home-training-actions .btn.primary { flex: 1; }
+.home-page .home-number { font-size: 36px; letter-spacing: -.04em; }
+.home-page .home-ring { width: 112px; height: 112px; margin: 10px auto 14px; }
+.home-page .home-ring b { font-size: 25px; }
+.home-page .home-macros { gap: 15px; }
+.home-page .home-macro-label { flex-wrap: wrap; gap: 4px; }
+.home-page .home-macro-label b { font-size: 13px; }
+.home-page .home-macro-label small { color: var(--muted); font-size: 11px; }
+.home-page .home-detail-row { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.home-page .home-detail-row small { font-size: 10px; line-height: 1.5; letter-spacing: .04em; }
+.home-page .home-detail-row b { font-size: 15px; line-height: 1.4; }
+/* Food: four compact target rows. Keep all values and remaining amounts visible. */
+.app .nutrition-dashboard { padding: 10px 18px 4px; }
+.nutrition-dashboard .nutrition-carousel-head { padding-bottom: 4px; }
+.nutrition-dashboard .nutrition-carousel-head b { font-size: 14px; }
+.nutrition-dashboard .carousel-targets { gap: 0; padding: 4px 0; }
+.nutrition-dashboard .carousel-target { display: grid; grid-template-columns: 1fr auto; gap: 5px 12px; padding: 8px 0; }
+.nutrition-dashboard .carousel-target > div:first-child { grid-column: 1/-1; font-size: 13px; margin-bottom: 0; }
+.nutrition-dashboard .carousel-target b { font-size: 14px; }
+.nutrition-dashboard .carousel-target b small { font-size: 11px; color: var(--muted); }
+.nutrition-dashboard .carousel-target > .macro-track { grid-column: 1; align-self: center; height: 5px; }
+.nutrition-dashboard .carousel-target > small { grid-column: 2; font-size: 11px; line-height: 1.2; margin: 0; color: var(--muted); }
+.nutrition-dashboard .nutrition-dashboard-footer { margin-top: 4px; }
+.app .diary-date-nav { background: transparent; }
+.app .diary-primary-actions > .btn { min-height: 48px; }
+.app .diary-primary-actions > .btn:not(.primary) { background: transparent; }
+.app .meal-section { border-radius: 14px; border-color: var(--line); }
+.app .meal-section-header { min-height: 60px; }
+.app .meal-section-title > b { font-size: 14px; }
+.app .meal-section-title > small { font-size: 11px; }
+.app .water-tracker { padding: 16px 18px; }
+.app .water-tracker-heading h3 { font-size: 16px; }
+.app .water-glass-controls { margin: 16px 0 12px; }
+.app .water-custom-form { margin-top: 14px; }
+.app .food-tools-disclosure { margin-bottom: 20px; }
+/* Library and coach share the same quiet surface and border hierarchy. */
+.app .workout-reference-card { border-color: var(--line); border-radius: 16px; background: var(--panel); }
+.app .workout-card-head h3 { font-size: 20px; letter-spacing: -.025em; }
+.app .workout-start-button { min-height: 48px; border-radius: 11px; }
+.app .workout-library-actions > button { border-color: var(--line); background: var(--panel); color: var(--text); }
+.app .henry-page .henry-suggestions button { border-color: var(--line); background: var(--panel); }
+.app .henry-page .henry-compose textarea { background: var(--panel); }
+.app .henry-page .henry-chips button { border-color: var(--line); background: transparent; }
+.app .henry-page .henry-welcome h2 { letter-spacing: -.035em; }
+@media (hover:hover) {
+ .app .btn:not(:disabled):hover { border-color: var(--control-line); }
+ .app [data-slot=topcoat-button]:not(:disabled):hover { background: var(--surface-hover); }
+ .app [data-slot=topcoat-button][data-variant=primary]:not(:disabled):hover { background: color-mix(in srgb,var(--green) 90%,var(--text)); }
+ .home-page .home-coach-entry:hover { background: var(--accent-soft); border-color: var(--control-line); }
+}
+@media (min-width:1001px) {
+ .app .topbar { padding-inline: 32px; }
+ .app main { padding: 28px 32px 48px; }
+ .home-page .home-date-section { max-width: 100%; }
+ .home-page .home-week { gap: 8px; }
+ .home-page .home-week button { min-height: 64px; }
+}
+@media (max-width:640px) {
+ .app main { padding-top: 20px; }
+ .home-page .home-page-header { align-items: flex-start; gap: 12px; }
+ .home-page-subtitle { font-size: 12px; max-width: 27ch; }
+ .home-page .home-customize { width: 44px; padding: 10px; }
+ .home-customize > span { display: none; }
+ .home-page .client-bar { margin-bottom: 16px; }
+ .home-date-section { padding: 12px 8px 0; }
+ .home-date-section .home-date-heading { padding-inline: 5px; }
+ .home-date-section .home-date-heading h2 { font-size: 13px; }
+ .home-date-section .home-week-nav > .icon { width: 26px; min-width: 26px; }
+ .home-date-section .home-week button { min-height: 54px; }
+ .home-date-section .home-week button span { font-size: 8px; }
+ .home-date-footer { margin-inline: 5px; gap: 6px; }
+ .home-date-footer > span { font-size: 10px; }
+ .home-page .home-widget-grid { gap: 12px; }
+ .home-page [data-slot=topcoat-card] { padding: 18px; }
+ .home-page [data-slot=topcoat-card].size-s { padding: 16px!important; }
+ .home-page .home-training-actions { flex-wrap: wrap; }
+ .home-page .home-training-actions .btn { font-size: 12px; padding-inline: 10px; }
+ .home-page .home-macro-label { font-size: 12px; }
+ .home-page .home-macro-label b { font-size: 12px; }
+ .app .phone-bottom-nav { box-shadow: 0 4px 16px color-mix(in srgb,var(--bg) 50%,transparent); border-radius: 20px; }
+ .app .phone-bottom-nav button.active { background: var(--accent-soft); color: var(--accent-text); }
+ .app .phone-bottom-nav button.active:before { display: none; }
+ .app .phone-bottom-nav .phone-nav-label { font-size: 11px; }
+ .app .nutrition-dashboard { padding-inline: 14px; }
+ .app .water-tracker { padding: 16px 14px; }
+}
+@media (max-width:360px) { .home-page .home-training-actions { flex-direction: column; } }
+@media (prefers-reduced-motion:no-preference) {
+ .app [data-slot=topcoat-button],.app .home-coach-entry { transition: background-color 140ms ease,border-color 140ms ease,transform 140ms ease; }
+ .app .btn:active:not(:disabled),.app .home-coach-entry:active { transform: translateY(1px); }
+ .app .phone-bottom-nav button,.app .workspace-nav button { transition: background-color 140ms ease,color 140ms ease; }
+}
+body[data-reduced-motion=true] .app :is(button,.home-coach-entry) { transition: none!important; transform: none!important; }
+body[data-large-text=true] .home-page-subtitle,body[data-large-text=true] .home-date-footer > span { font-size: 14px; }
+body[data-large-text=true] .home-date-footer { flex-wrap: wrap; padding-bottom: 8px; }
+@media (prefers-reduced-motion:reduce) { .app *,.app *:before,.app *:after { animation: none!important; transition: none!important; } }
