@@ -3044,9 +3044,9 @@ export default function App() {
               >
                 <Menu size={20} />
               </button>
-              <span>Form</span>
-              <ChevronRight size={13} />
-              <b>{tab === "Calories" ? "Food diary" : tab === "Training" ? "Workouts" : tab}</b>
+              <button className="app-wordmark" aria-label="Go to Home" onClick={()=>setTab("Home")}>form<span>.</span></button>
+              <ChevronRight className="crumb-separator" size={13} />
+              <b className="crumb-title">{tab === "Calories" ? "Food diary" : tab === "Training" ? "Workouts" : tab}</b>
             </div>
             <div className="top-actions">
               <span className="connection">
@@ -4002,63 +4002,8 @@ export default function App() {
                     preview={isPreview}
                   />
                 )}
-                {tab === "Training" && (
-                  <details className="panel schedule-mode-panel compact-settings">
-                    <summary>
-                      <span>
-                        <b>Workout schedule</b>
-                        <small>
-                          {scheduleMode === "fixed"
-                            ? "Fixed weekly routine"
-                            : scheduleMode === "rolling"
-                              ? "Rolling workout rotation"
-                              : "Flexible · choose when ready"}
-                        </small>
-                      </span>
-                      <ChevronDown size={18} />
-                    </summary>
-                    <div className="compact-settings-body">
-                      <p className="muted tiny">
-                        Flexible lets you choose any saved workout when you’re
-                        ready. Fixed assigns workouts to weekdays.
-                      </p>
-                      <label className="field">
-                        <span>Schedule style</span>
-                        <select
-                          value={scheduleMode}
-                          onChange={(e) =>
-                            mutate(
-                              "scheduleMode",
-                              { mode: e.target.value, version: c.version },
-                              true,
-                            )
-                          }
-                        >
-                          <option value="flexible">
-                            Flexible · choose when ready
-                          </option>
-                          <option value="fixed">Fixed weekly routine</option>
-                          <option value="rolling">
-                            Rolling workout rotation
-                          </option>
-                        </select>
-                      </label>
-                    </div>
-                  </details>
-                )}
                 {tab === "Training" && scheduleMode !== "fixed" ? (
                   <>
-                    <details className="panel">
-                      <summary>Existing weekly program templates</summary>
-                      <p>
-                        Old program templates are preserved. Applying one fills
-                        the program’s saved workouts; it does not require you to
-                        train on those weekdays in flexible mode.
-                      </p>
-                      <Button onClick={() => setModal("applyTemplate")}>
-                        Browse program templates
-                      </Button>
-                    </details>
                     <SavedWorkouts
                       rotation={scheduleMode === "rolling"}
                       onRotationChange={(enabled) =>
@@ -7017,6 +6962,64 @@ export default function App() {
                 )}
               </>
             )}
+                {c && tab === "Training" && (
+                  <details className="panel schedule-mode-panel compact-settings">
+                    <summary>
+                      <span>
+                        <b>Workout schedule</b>
+                        <small>
+                          {scheduleMode === "fixed"
+                            ? "Fixed weekly routine"
+                            : scheduleMode === "rolling"
+                              ? "Rolling workout rotation"
+                              : "Flexible · choose when ready"}
+                        </small>
+                      </span>
+                      <ChevronDown size={18} />
+                    </summary>
+                    <div className="compact-settings-body">
+                      <p className="muted tiny">
+                        Flexible lets you choose any saved workout when you’re
+                        ready. Fixed assigns workouts to weekdays.
+                      </p>
+                      <label className="field">
+                        <span>Schedule style</span>
+                        <select
+                          aria-label="Schedule style"
+                          value={scheduleMode}
+                          onChange={(e) =>
+                            mutate(
+                              "scheduleMode",
+                              { mode: e.target.value, version: c.version },
+                              true,
+                            )
+                          }
+                        >
+                          <option value="flexible">
+                            Flexible · choose when ready
+                          </option>
+                          <option value="fixed">Fixed weekly routine</option>
+                          <option value="rolling">
+                            Rolling workout rotation
+                          </option>
+                        </select>
+                      </label>
+                    </div>
+                  </details>
+                )}
+            {c && tab === "Training" && scheduleMode !== "fixed" && (
+                    <details className="panel">
+                      <summary>Existing weekly program templates</summary>
+                      <p>
+                        Old program templates are preserved. Applying one fills
+                        the program’s saved workouts; it does not require you to
+                        train on those weekdays in flexible mode.
+                      </p>
+                      <Button onClick={() => setModal("applyTemplate")}>
+                        Browse program templates
+                      </Button>
+                    </details>
+            )}
             {c && tab === "Training" && <PastWorkoutTemplates workouts={workouts} onCopy={workout=>{setDraft({workout:structuredClone(workout),finished:false});setModal("workoutTemplateReview");}}/>}
             {c && tab === "Connections" && (
               <React.Suspense
@@ -7374,11 +7377,7 @@ export default function App() {
               <span>
                 form. <span className="muted">Built around your people.</span>
               </span>
-              <span>
-                {isPreview
-                  ? "Example data · no live health connection"
-                  : "Secure workspace · health integrations not connected"}
-              </span>
+              <button className="footer-account-link" onClick={()=>setTab("Connections")}>Privacy &amp; connections <ArrowUpRight size={13}/></button>
             </footer>
           </main>
         </div>
