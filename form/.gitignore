@@ -79,3 +79,7 @@ tmp/
 
 # Expo CNG: generated native project is shipped in the iOS source download.
 /mobile/ios/
+
+# Project reference skills and their generated evidence
+/repositories/
+/.taste-skill/
