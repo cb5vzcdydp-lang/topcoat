@@ -1,0 +1,12 @@
+'use client';
+import {Trash2} from 'lucide-react';
+import React,{useState,useEffect} from 'react';
+import {usePreferences} from './appearance';
+import {repRangeSchema} from '@/lib/preferences';
+import {z} from 'zod';
+export function RepRangeSettings(){
+ const {preferences,savePreferences,reload,status}=usePreferences();
+ const [draft,setDraft]=useState(()=>preferences.repRecordRanges.map(r=>({min:String(r.min),max:String(r.max)}))),[busy,setBusy]=useState(false),[error,setError]=useState('');
+ useEffect(()=>setDraft(preferences.repRecordRanges.map(r=>({min:String(r.min),max:String(r.max)}))),[preferences.repRecordRanges]);
+ return <details className="rep-range-settings"><summary>Configure rep ranges</summary><p className="tiny muted">Ranges apply to your exercise records. Save to sync with your account; device-only changes remain available when signed out.</p>{draft.map((r,i)=><div className="rep-range-row" key={i}><label className="field"><span>Range {i+1} min reps</span><input type="number" inputMode="numeric" min={1} max={1000} value={r.min} onChange={e=>setDraft(xs=>xs.map((v,j)=>j===i?{...v,min:e.target.value}:v))}/></label><label className="field"><span>Range {i+1} max reps</span><input type="number" inputMode="numeric" min={1} max={1000} value={r.max} onChange={e=>setDraft(xs=>xs.map((v,j)=>j===i?{...v,max:e.target.value}:v))}/></label><button className="btn" type="button" aria-label={'Remove rep range '+(i+1)} disabled={busy||draft.length<=1} onClick={()=>setDraft(xs=>xs.filter((_,j)=>i!==j))}><Trash2 size={18}/></button></div>)}<div className="row wrap"><button type="button" className="btn" disabled={busy||draft.length>=8} onClick={()=>setDraft(xs=>[...xs,{min:'1',max:'12'}])}>Add rep range</button><button type="button" className="btn" disabled={busy} onClick={()=>void reload()}>Reload saved ranges</button><button type="button" className="btn primary" disabled={busy} onClick={async()=>{const parsed=z.array(repRangeSchema).min(1).max(8).safeParse(draft.map(r=>({min:Number(r.min),max:Number(r.max)})));if(!parsed.success){setError('Use whole reps from 1 to 1000, with max at least min.');return}setError('');setBusy(true);try{await savePreferences({...preferences,repRecordRanges:parsed.data})}finally{setBusy(false)}}}>{busy?'Saving…':'Save rep ranges'}</button></div>{error&&<p role="alert" className="notice">{error}</p>}<p className="tiny muted" role="status">{status}</p></details>;
+}

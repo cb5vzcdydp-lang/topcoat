@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';import{createRequire}from'node:module';import React from'react';import{renderToStaticMarkup}from'react-dom/server';
+const r=createRequire(createRequire(import.meta.url).resolve('wrangler/package.json'));
+await r('esbuild').build({entryPoints:['app/touch-grass-balance.tsx'],outfile:'.test-output/leg-badge.mjs',bundle:true,format:'esm',platform:'node',packages:'external',loader:{'.css':'empty'}});
+const{TouchGrassBalance}=await import('../.test-output/leg-badge.mjs');
+const date='2026-10-24',records=[1,2,3].map(id=>({id:String(id),kind:'outdoor-task',version:1,data:{name:'Outdoor activity '+id,cadence:'daily',category:'outdoors',createdDate:'2026-10-01',completionDates:[date],lastCompleted:date,completed:false}}));
+const upper={exerciseId:'bench-press',name:'Bench press',muscle:'Chest',equipment:'free-weight',weight:40,reps:8,completed:true,warmup:false};
+const props={records,gymDates:[],date,onOpen(){},onOpenGym(){},workouts:[{id:'old',client:'test',date:'2026-10-18',name:'Upper',sets:[upper]}]};
+let markup=renderToStaticMarkup(React.createElement(TouchGrassBalance,props));assert.match(markup,/Ultimate gym cell/);assert.ok(!markup.includes('Ultimate grass cell'));assert.match(markup,/100% gym and 0% grass/);assert.match(markup,/touch-balance-visual is-gym/);assert.match(markup,/--grass-blend:0/);
+markup=renderToStaticMarkup(React.createElement(TouchGrassBalance,{...props,workouts:[]}));assert.ok(!markup.includes('Ultimate gym cell'),'no badge from missing history');
+markup=renderToStaticMarkup(React.createElement(TouchGrassBalance,{...props,workouts:[...props.workouts,{id:'leg',client:'test',date,name:'Legs',sets:[{...upper,name:'Squat',exerciseId:'squat',muscle:'Quads'}]}]}));assert.ok(!markup.includes('Ultimate gym cell'),'completed direct leg set clears badge');assert.match(markup,/touch-balance-visual is-grass/);
+console.log('PASS Ultimate gym cell label and gym character/balance, existing seven-day trigger, no missing-history badge, clearing after real leg training');

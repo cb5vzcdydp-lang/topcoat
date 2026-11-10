@@ -1,0 +1,8 @@
+'use client';
+import React,{useMemo,useState} from 'react';
+import type {Workout} from '@/lib/domain';
+export function PastWorkoutTemplates({workouts,onCopy}:{workouts:Workout[];onCopy:(workout:Workout)=>void}){
+ const [query,setQuery]=useState(''),[limit,setLimit]=useState(10);
+ const rows=useMemo(()=>[...workouts].sort((a,b)=>b.date.localeCompare(a.date)||(b.created||'').localeCompare(a.created||'')).filter(workout=>(workout.name+' '+workout.date).toLowerCase().includes(query.toLowerCase().trim())),[workouts,query]);
+ return <details className="panel"><summary><h3>Past workouts → templates</h3></summary><p className="tiny muted">Make an independent template from a completed workout. Its logged sets and history stay unchanged.</p><label className="field"><span>Find a past workout</span><input aria-label="Find a past workout" placeholder="Workout name or date" value={query} onChange={event=>{setQuery(event.target.value);setLimit(10)}}/></label>{rows.slice(0,limit).map(workout=><div className="tool-record" key={workout.id}><div><b>{workout.name||'Workout'}</b><small>{workout.date} · {workout.sets.filter(set=>set.completed&&!set.warmup).length} completed working sets</small></div><button className="btn" aria-label={'Save '+(workout.name||'workout')+' '+workout.date+' as template'} onClick={()=>onCopy(workout)}>Save as template</button></div>)}{!rows.length&&<p>{workouts.length?'No matching workouts.':'Your completed workouts will appear here.'}</p>}{rows.length>limit&&<button className="btn" onClick={()=>setLimit(value=>value+10)}>Show more past workouts</button>}</details>;
+}

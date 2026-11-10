@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const r=createRequire(createRequire(import.meta.url).resolve('wrangler/package.json'));const {build}=r('esbuild');
+await build({entryPoints:['lib/social-share.ts'],outfile:'.test-output/social-share.mjs',bundle:true,platform:'node',format:'esm'});
+const {socialShareSchema}=await import('../.test-output/social-share.mjs');
+assert.equal(socialShareSchema.parse({type:'song',title:'Runaway',artist:'Artist',url:'https://music.example/song'}).type,'song');
+assert.equal(socialShareSchema.parse({type:'recipe',title:'Bowl',servings:2,calories:500,protein:40,carbs:55,fat:12,ingredients:[{name:'Rice',grams:200}]}).ingredients.length,1);
+assert.throws(()=>socialShareSchema.parse({type:'song',title:'Bad',artist:'Link',url:'javascript:alert(1)'}));
+assert.throws(()=>socialShareSchema.parse({type:'workout_template',title:'Empty',exercises:[]}));
+console.log('social sharing tests passed');

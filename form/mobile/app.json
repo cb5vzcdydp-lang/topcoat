@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Form",
+    "slug": "form-coaching",
+    "scheme": "formhealth",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.formcoaching.health",
+      "supportsTablet": false,
+      "entitlements": {
+        "com.apple.developer.healthkit": true
+      },
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "Form reads health and activity summaries you choose to share with your coach.",
+        "NSHealthUpdateUsageDescription": "Form does not write health data.",
+        "NSCameraUsageDescription": "Form uses your camera when you scan a food barcode or choose to take a photo.",
+        "NSMicrophoneUsageDescription": "Form uses your microphone only when you choose a recording feature.",
+        "NSPhotoLibraryUsageDescription": "Form lets you choose food, sleep and progress photos to attach or import.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.formcoaching.health",
+      "permissions": [
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.READ_WEIGHT",
+        "android.permission.health.READ_VO2_MAX",
+        "android.permission.health.READ_RESTING_HEART_RATE",
+        "android.permission.health.READ_HEART_RATE",
+        "android.permission.health.READ_SLEEP",
+        "android.permission.health.READ_ACTIVE_CALORIES_BURNED",
+        "android.permission.health.READ_TOTAL_CALORIES_BURNED"
+      ]
+    },
+    "plugins": [
+      "@kingstinct/react-native-healthkit",
+      "react-native-health-connect",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26
+          }
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a1320"
+    }
+  }
+}

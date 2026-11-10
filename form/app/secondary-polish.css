@@ -1,0 +1,238 @@
+/* Shared hierarchy for social, outdoor tasks and recovery. */
+.social-page,
+.touch-grass-page,
+.sleep-page,
+.health-screenshot-panel { min-width: 0; }
+
+.social-page :is(.panel,.social-profile-bar,.person-card,.league-friend-card,.challenge-card),
+.touch-grass-page :is(.panel,.grass-task),
+.sleep-page .panel,
+.health-screenshot-panel {
+  border-radius: 16px;
+  border-color: color-mix(in srgb,var(--line) 80%,transparent);
+  box-shadow: 0 1px 0 #ffffff04;
+}
+
+.social-page :is(h2,h3),
+.touch-grass-page :is(h2,h3),
+.sleep-page :is(h2,h3),
+.health-screenshot-panel :is(h2,h3) { letter-spacing: -.025em; }
+
+.social-page :is(.btn,.icon,.text-btn,summary),
+.touch-grass-page :is(.btn,.icon,.grass-check,.grass-suggestions button),
+.sleep-page :is(button,summary),
+.health-screenshot-panel :is(.btn,summary) { min-height: 44px; }
+
+.social-page :is(button,summary):focus-visible,
+.touch-grass-page :is(button,summary):focus-visible,
+.sleep-page :is(button,summary):focus-visible,
+.health-screenshot-panel :is(button,summary):focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+.social-page .social-profile-bar { padding: 14px 16px; background: var(--panel); gap: 12px; }
+.social-page .social-profile-bar small { font-size: 12px; line-height: 1.4; }
+.social-page .social-tabs {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 5px;
+  margin: 16px 0;
+  background: var(--panel);
+  overflow: visible;
+}
+.social-page .social-tabs button {
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.3;
+  white-space: normal;
+}
+.social-page .social-tabs button.selected { background: color-mix(in srgb,var(--green) 14%,var(--panel2)); color: var(--green); }
+.social-page .social-composer h2 { font-size: 20px; margin-bottom: 6px; }
+.social-page .social-composer > p { max-width: 52ch; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.social-page .social-composer form { gap: 12px; }
+.social-page .social-composer .segmented { padding: 4px; gap: 4px; border-radius: 12px; background: var(--panel2); }
+.social-page .social-composer .segmented button { min-height: 42px; min-width: 0; flex: 1; padding: 8px 10px; line-height: 1.3; }
+.social-page .social-textarea { min-height: 104px; font-size: 16px; line-height: 1.5; padding: 13px; }
+.social-page .social-post-head { align-items: flex-start; }
+.social-page .social-post-head > div:nth-child(2) { min-width: 0; flex: 1; gap: 5px; }
+.social-page .social-post-head b { font-size: 14px; overflow-wrap: anywhere; }
+.social-page .social-post-head small { font-size: 11px; line-height: 1.45; overflow-wrap: anywhere; }
+.social-page .social-post-head .tag { margin-left: 0; font-size: 10px; flex: none; }
+.social-page .social-post-body { font-size: 15px; line-height: 1.6; overflow-wrap: anywhere; }
+.social-page .social-post-options { margin: 6px 0 10px; border-bottom: 1px solid var(--line); }
+.social-page .social-post-options > summary { display: flex; align-items: center; justify-content: space-between; gap: 8px; cursor: pointer; color: var(--muted); font-size: 12px; list-style: none; }
+.social-page .social-post-options > summary::after { content: '＋'; font-size: 16px; }
+.social-page .social-post-options[open] > summary::after { content: '−'; }
+.social-page .social-post-options > summary::-webkit-details-marker { display: none; }
+.social-page .social-post-options > .row { gap: 4px 12px; padding: 6px 0 12px; }
+.social-page .social-post-options .text-btn { padding: 8px 0; font-size: 12px; }
+.social-page .social-actions { border-top: 1px solid var(--line); padding-top: 10px; }
+.social-page .social-actions button { min-height: 44px; padding: 8px 12px; border-radius: 10px; }
+.social-page .social-comments form { gap: 8px; }
+.social-page .social-comments form input { min-height: 44px; min-width: 0; font-size: 16px; }
+.social-page .social-comments form button { min-width: 44px; min-height: 44px; border-radius: 10px; }
+.social-page .social-feed-empty .btn { margin-top: 14px; }
+.social-page .friend-league-head { border-color: var(--line); background: var(--panel); padding: 18px; }
+.social-page .friend-league-head p { font-size: 12px; line-height: 1.5; }
+.social-page .league-friend-card { background: var(--panel); }
+.social-page .league-friend-name > p { font-size: 11px; line-height: 1.45; }
+.social-page .friend-rank-badge small { font-size: 10px; }
+.social-page .slack-strip { min-height: 44px; }
+.social-page .slack-strip button { min-height: 44px; }
+.social-page .challenge-hero { border-color: var(--line); border-radius: 16px; background: var(--panel); box-shadow: none; padding: 22px; }
+.social-page .challenge-filters { gap: 5px; scrollbar-width: none; }
+.social-page .challenge-filters button { min-height: 44px; padding: 8px 13px; }
+.social-page .challenge-create > summary { min-height: 54px; font-size: 15px; }
+.social-page .challenge-card h2 { font-size: 18px; line-height: 1.35; }
+.social-page .challenge-card > header { gap: 10px; }
+.social-page .challenge-status { font-size: 11px; }
+.social-page .avatar-studio > form:first-child { padding-bottom: 22px; margin-bottom: 22px; border-bottom: 1px solid var(--line); }
+
+.touch-grass-page .touch-grass-hero { border-color: var(--line); background: var(--panel); border-radius: 16px; }
+.touch-grass-page .grass-hero-copy p { font-size: 14px; line-height: 1.55; }
+.touch-grass-page .grass-add-shortcut { margin-top: 16px; }
+.touch-grass-page .grass-add { scroll-margin-top: 85px; }
+.touch-grass-page .grass-add h2 { font-size: 19px; }
+.touch-grass-page .grass-section { margin-top: 22px; }
+.touch-grass-page .grass-section-title { margin-bottom: 12px; }
+.touch-grass-page .grass-section-title h2 { font-size: 18px; }
+.touch-grass-page .grass-check { width: 44px; border-radius: 13px; }
+.touch-grass-page .grass-task { gap: 12px; padding: 13px; }
+.touch-grass-page .grass-task b { font-size: 14px; line-height: 1.45; overflow-wrap: anywhere; }
+.touch-grass-page .grass-task small { font-size: 11px; }
+.touch-grass-page .grass-task .icon { color: var(--muted); min-width: 44px; }
+.touch-grass-page .grass-task.complete { opacity: .78; }
+.touch-grass-page .grass-suggestions { gap: 6px; }
+.touch-grass-page .grass-suggestions button { border-radius: 10px; padding: 8px 11px; font-size: 12px; }
+
+.sleep-page .sleep-heading h1 { font-size: clamp(26px,4vw,32px); }
+.sleep-page .sleep-date { gap: 8px; }
+.sleep-page .sleep-date > button { min-width: 44px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.sleep-page .sleep-date input { min-height: 46px; font-size: 16px; }
+.sleep-page .sleep-tabs { padding: 5px; gap: 4px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.sleep-page .sleep-tabs button { min-height: 44px; padding: 10px; border: 0; border-radius: 10px; font-size: 14px; }
+.sleep-page .sleep-tabs button[aria-selected=true] { background: color-mix(in srgb,var(--green) 14%,var(--panel2)); color: var(--green); }
+.sleep-page .sleep-hero { background: var(--panel); padding: 26px; gap: 28px; }
+.sleep-page .sleep-hero-copy h2 { font-size: clamp(28px,5vw,40px); }
+.sleep-page .sleep-card-title h3 { font-size: 16px; }
+.sleep-page .sleep-caption { max-width: 42ch; font-size: 12px; line-height: 1.5; }
+.sleep-page .sleep-monitor > div { padding: 16px; background: var(--panel2); border-radius: 12px; }
+.sleep-page .sleep-guide > summary { display: flex; align-items: center; justify-content: space-between; cursor: pointer; min-height: 48px; font-size: 14px; }
+
+.health-screenshot-panel > .panel-head p { font-size: 13px; line-height: 1.5; color: var(--muted); }
+.health-screenshot-panel .health-capture-date { max-width: 240px; margin: 16px 0; }
+.health-screenshot-panel .health-capture-date input { font-size: 16px; }
+.health-screenshot-panel .manual-step-card { border-radius: 13px; background: var(--panel2); padding: 14px; }
+.health-screenshot-panel .manual-step-card input { font-size: 18px; min-height: 44px; }
+.health-screenshot-panel .screenshot-import-head { margin-top: 22px; gap: 12px; }
+.health-screenshot-panel .screenshot-import-head p { font-size: 12px; line-height: 1.5; }
+.health-screenshot-panel .screenshot-upload { min-height: 132px; border-radius: 14px; }
+.health-screenshot-panel .screenshot-read { min-height: 44px; }
+.health-screenshot-panel .health-review-details { margin-top: 16px; padding-top: 4px; border-top: 1px solid var(--line); }
+.health-screenshot-panel .health-review-details > summary { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; font-size: 14px; cursor: pointer; list-style: none; }
+.health-screenshot-panel .health-review-details > summary::-webkit-details-marker { display: none; }
+.health-screenshot-panel .health-review-details > summary small { color: var(--muted); font-size: 11px; font-weight: 400; }
+.health-screenshot-panel .health-review-grid { margin: 12px 0 16px; }
+.health-screenshot-panel .health-review-grid input { font-size: 16px; min-height: 46px; }
+.health-screenshot-panel .health-review-details > .btn { margin-bottom: 8px; }
+
+@media(max-width:700px) {
+  .social-page .social-tabs { top: 58px; padding: 4px; }
+  .social-page .social-tabs button { font-size: 12px; padding: 8px 4px; }
+  .social-page .social-profile-bar { padding: 12px; }
+  .social-page .social-profile-bar > .tag { display: none; }
+  .social-page .social-composer .segmented { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .social-page .social-composer .segmented button { font-size: 12px; padding: 8px 3px; }
+  .social-page .social-composer form > .row:last-child { gap: 12px; flex-wrap: wrap; }
+  .social-page .social-composer form > .row:last-child .btn { flex: 1; }
+  .social-page .challenge-hero { padding: 18px; }
+  .social-page .challenge-hero-copy h2 { font-size: 26px; }
+  .social-page .challenge-card > header { flex-wrap: wrap; }
+  .social-page .challenge-card > header .challenge-status { margin-left: auto; }
+  .sleep-page .sleep-heading { flex-wrap: wrap; gap: 12px; }
+  .sleep-page .sleep-hero { gap: 22px; padding: 22px 18px; }
+  .touch-grass-page .grass-hero-visual { width: 104px; min-height: 155px; }
+  .touch-grass-page .grass-hero-copy p { font-size: 12px; }
+  .health-screenshot-panel .screenshot-import-head { align-items: flex-start; flex-wrap: wrap; }
+  .health-screenshot-panel .health-review-details > summary { align-items: flex-start; flex-direction: column; gap: 4px; }
+}
+
+@media(max-width:380px) {
+  .social-page .social-profile-bar > .avatar { width: 36px; height: 36px; flex: none; }
+  .social-page .social-profile-bar > div:nth-child(2) { min-width: 0; flex: 1; }
+  .social-page .social-profile-bar > button { width: 100%; }
+  .social-page .social-profile-bar > .push { display: none; }
+  .social-page .social-post-head .tag { max-width: 76px; white-space: normal; text-align: center; }
+  .touch-grass-page .touch-grass-hero { gap: 12px; padding: 14px; }
+  .touch-grass-page .grass-hero-visual { width: 88px; min-height: 155px; }
+  .touch-grass-page .grass-options { grid-template-columns: 1fr; }
+  .sleep-page .sleep-hero { flex-direction: column; align-items: center; text-align: center; }
+  .sleep-page .sleep-monitor { grid-template-columns: 1fr; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .social-page *, .sleep-page *, .touch-grass-page *, .health-screenshot-panel * { transition: none!important; animation: none!important; scroll-behavior: auto!important; }
+}
+
+/* Legacy accents must remain readable when the palette or text size changes. */
+.social-page .toggle-label { color: var(--text); line-height: 1.5; min-height: 44px; }
+.social-page .league-friend-name > small,
+.social-page .friend-rank-badge small,
+.social-page .social-auto-share small { color: var(--muted); }
+.social-page .league-friend-name > b { color: var(--text); }
+.social-page .friend-rank-badge { background: var(--panel2); border-color: var(--line); color: var(--text); }
+.touch-grass-page .grass-suggestions { flex-wrap: wrap; overflow: visible; min-width: 0; }
+.touch-grass-page .grass-suggestions button { max-width: 100%; white-space: normal; overflow-wrap: anywhere; text-align: left; }
+.touch-grass-page .grass-progress { color: #a4e5b5; }
+.sleep-page .sleep-gauge { background: conic-gradient(from 215deg,#9295ee var(--score),var(--line) 0deg); }
+.sleep-page .sleep-gauge > div { background: var(--panel2); color: var(--text); }
+.sleep-page .sleep-gauge small { color: var(--muted); }
+.health-screenshot-panel .screenshot-upload,
+.health-screenshot-panel .screenshot-read { background: var(--panel2); color: var(--text); border-color: var(--line); }
+.health-screenshot-panel .screenshot-upload small,
+.health-screenshot-panel .input-unit > span,
+.health-screenshot-panel .manual-step-card label > span,
+.health-screenshot-panel .field > span,
+.touch-grass-page .field > span { color: var(--muted); }
+
+/* Health capture: a complete, visible upload → review → save journey. */
+.health-capture-studio { background: linear-gradient(145deg,color-mix(in srgb,var(--green) 7%,var(--panel)),var(--panel) 55%); padding: clamp(18px,3vw,28px); }
+.health-capture-studio .capture-eyebrow { display: block; font-size: 10px; letter-spacing: .16em; font-weight: 750; color: var(--green); margin-bottom: 10px; }
+.health-capture-studio .panel-head h2 { font-size: clamp(23px,3vw,29px); letter-spacing: -.8px; max-width: 24ch; }
+.capture-workflow { display: flex; align-items: center; gap: 12px; color: var(--muted); margin: 24px 0; }
+.capture-workflow > span { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 650; }
+.capture-workflow i { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 50%; background: var(--panel2); font-style: normal; border: 1px solid var(--line); }
+.capture-workflow .active { color: var(--text); }
+.capture-workflow .active i { background: var(--green); border-color: transparent; color: var(--ink); }
+.health-capture-studio .screenshot-upload { min-height: 176px; padding: 22px 16px; border: 1px dashed color-mix(in srgb,var(--green) 55%,var(--line)); background: color-mix(in srgb,var(--green) 4%,var(--bg)); transition: border-color .2s,background .2s; }
+.health-capture-studio .screenshot-upload:hover { border-color: var(--green); background: color-mix(in srgb,var(--green) 8%,var(--bg)); }
+.health-capture-studio .screenshot-upload > svg { color: var(--green); }
+.health-capture-studio .screenshot-upload b { overflow-wrap: anywhere; font-size: 15px; }
+.health-capture-studio .screenshot-upload small { line-height: 1.8; font-size: 12px; }
+.capture-progress { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 16px 0; font-size: 12px; color: var(--green); }
+.capture-progress progress { width: 100%; height: 5px; accent-color: var(--green); }
+.capture-image { margin-block: 14px; }
+.capture-image summary,.capture-extracted summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-size: 12px; color: var(--muted); }
+.capture-image img { display: block; max-width: 100%; max-height: 300px; margin: auto; border-radius: 12px; object-fit: contain; }
+.capture-extracted pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; line-height: 1.6; max-height: 220px; overflow: auto; padding: 12px; border-radius: 10px; background: var(--bg); }
+.capture-hint { color: var(--muted); font-size: 12px; line-height: 1.6; margin: 0 0 16px; }
+.capture-save { width: 100%; min-height: 50px; }
+.capture-status { min-height: 40px; padding: 12px 0; font-size: 12px; line-height: 1.6; color: var(--muted); }
+.capture-status.success { color: var(--green); }
+.health-capture-studio .manual-step-card { margin-top: 20px; border-top: 1px solid var(--line); }
+@media(max-width:360px) { .capture-workflow { gap: 8px; } .capture-workflow > span { gap: 4px; font-size: 11px; } }
+.health-capture-studio .panel-head { display: grid; grid-template-columns: minmax(0,1fr) 22px; gap: 12px; margin-bottom: 16px; }
+.health-capture-studio .capture-workflow { margin-block: 16px; }
+.health-capture-studio .health-review-details { scroll-margin-top: 80px; }
+.health-capture-studio .input-unit input { flex: 1; width: 0; }
+.health-capture-studio .input-unit > span { flex: none; white-space: nowrap; }

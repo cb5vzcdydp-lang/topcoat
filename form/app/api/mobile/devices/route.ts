@@ -1,0 +1,5 @@
+import {z} from 'zod';
+import {database,identity,originCheck,readJsonLimited,json,fail,HttpError} from '@/lib/server';
+export const dynamic='force-dynamic';
+export async function GET(req:Request){try{const {uid}=await identity(req),rows=await database().prepare("SELECT d.id,d.device_name,d.platform,d.created_at,d.expires_at,d.last_synced,d.revoked_at,CASE WHEN g.id IS NOT NULL THEN 'app' ELSE 'health' END AS scope FROM mobile_devices d LEFT JOIN workspace_records g ON g.id='native-access:'||d.id AND g.owner=d.uid AND g.kind='native-device-access' AND g.deleted=0 WHERE d.uid=? ORDER BY d.created_at DESC LIMIT 100").bind(uid).all();return json({devices:rows.results});}catch(e){return fail(e)}}
+export async function POST(req:Request){try{originCheck(req);const {uid}=await identity(req),{id}=z.object({id:z.string().uuid()}).parse(await readJsonLimited(req,4096)),result=await database().prepare('UPDATE mobile_devices SET revoked_at=? WHERE id=? AND uid=? AND revoked_at IS NULL').bind(new Date().toISOString(),id,uid).run();if(!result.meta.changes)throw new HttpError(404,'Active phone connection not found.');return json({ok:true});}catch(e){return fail(e)}}

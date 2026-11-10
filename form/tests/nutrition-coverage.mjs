@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),{build}=createRequire(require.resolve('wrangler/package.json'))('esbuild');
+await build({entryPoints:['lib/nutrition-coverage.ts'],outfile:'.test-output/nutrition-coverage.mjs',bundle:true,format:'esm',platform:'node',packages:'external'});
+const {nutritionCoverage}=await import('../.test-output/nutrition-coverage.mjs');
+assert.ok(nutritionCoverage({}).every(group=>group.percent===null&&group.known===0));
+const calcium=nutritionCoverage({calcium:650});assert.equal(calcium.find(g=>g.label==='Bone health').percent,50);assert.equal(calcium.find(g=>g.label==='Bone health').known,1);assert.equal(calcium.find(g=>g.label==='Vitamins').percent,null);
+assert.equal(nutritionCoverage({calcium:0}).find(g=>g.label==='Bone health').percent,0);
+assert.equal(nutritionCoverage({calcium:2600}).find(g=>g.label==='Bone health').percent,100);
+assert.equal(nutritionCoverage({sodium:2300,saturatedFat:20}).find(g=>g.label==='All targets').percent,null);
+assert.equal(nutritionCoverage({vitaminD:10,calcium:650}).find(g=>g.label==='Bone health').percent,50);
+assert.ok(nutritionCoverage({calcium:NaN,vitaminD:Infinity,iron:-1}).every(group=>group.percent===null));
+console.log('PASS nutrient coverage distinguishes unknown from zero, caps values, excludes upper limits and reports source coverage');

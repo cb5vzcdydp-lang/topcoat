@@ -1,0 +1,1285 @@
+{
+  "retrievedAt": "2026-10-25",
+  "newCompleteProducts": 50,
+  "retailerCounts": {
+    "Coles": 46,
+    "Spudshed": 4
+  },
+  "officialSources": [
+    {
+      "id": "coles-7489339",
+      "sourceUrl": "https://www.coles.com.au/product/coles-simply-mixed-vegetables-snap-frozen-1kg-7489339",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-simply-mixed-vegetables-snap-frozen-1kg-7489339",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Simply Mixed Vegetables Snap Frozen \\| 1Kg",
+      "mainPriceEvidence": "$2.80",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 128 kJ<br>(1% DI) | 171 kJ |",
+        "| Energy (Cal) | 30.7 Cal | 41 Cal |",
+        "| Protein | 1.73 g<br>(3% DI) | 2.3 g |",
+        "| Fat - Total | 0.375 g<br>(1% DI) | 0.5 g |",
+        "| Fat - Saturated | 0 g<br>(0% DI) | 0 g |",
+        "| Carbohydrate | 3.47 g<br>(1% DI) | 4.63 g |",
+        "| Sugars - Total | 1.45 g<br>(2% DI) | 1.93 g |",
+        "| Dietary Fibre | 3.27 g<br>(11% DI) | 4.36 g |",
+        "| Sodium | 17.6 mg<br>(1% DI) | 23.4 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/7489339.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-9012814",
+      "sourceUrl": "https://www.coles.com.au/product/coles-no-added-hormone-beef-regular-mince-500g-9012814",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-no-added-hormone-beef-regular-mince-500g-9012814",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles No Added Hormone Beef Regular Mince \\| 500g",
+      "mainPriceEvidence": "$7.70",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 997 kJ<br>(11% DI) | 997 kJ |",
+        "| Energy (Cal) | 238 Cal | 238 Cal |",
+        "| Protein | 18.3 g<br>(37% DI) | 18.3 g |",
+        "| Fat - Total | 18 g<br>(26% DI) | 18 g |",
+        "| Fat - Saturated | 8.96 g<br>(38% DI) | 8.96 g |",
+        "| Carbohydrate | 0.892 g<br>(0% DI) | 0.892 g |",
+        "| Sugars - Total | 0.09 g<br>(0% DI) | 0.09 g |",
+        "| Dietary Fibre | 0.572 g<br>(2% DI) | 0.572 g |",
+        "| Sodium | 62.6 mg<br>(3% DI) | 62.6 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/9012814.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-1993267",
+      "sourceUrl": "https://www.coles.com.au/product/coles-skim-milk-bottle-1l-1993267",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-skim-milk-bottle-1l-1993267",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Skim Milk Bottle \\| 1L",
+      "mainPriceEvidence": "$1.75",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 366 kJ<br>(4% DI) | 147 kJ |",
+        "| Energy (Cal) | 87.7 Cal | 35.1 Cal |",
+        "| Protein | 9 g<br>(18% DI) | 3.6 g |",
+        "| Fat - Total | 0.25 g<br>(0% DI) | 0.1 g |",
+        "| Fat - Saturated | 0.25 g<br>(1% DI) | 0.1 g |",
+        "| Carbohydrate | 12 g<br>(4% DI) | 4.8 g |",
+        "| Sugars - Total | 12 g<br>(13% DI) | 4.8 g |",
+        "| Dietary Fibre | 0.025 g<br>(0% DI) | 0.01 g |",
+        "| Sodium | 95 mg<br>(4% DI) | 38 mg |",
+        "| Calcium | 330 mg | 132 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/1993267.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-4525844",
+      "sourceUrl": "https://www.coles.com.au/product/birds-eye-frozen-mixed-vegetables-carrot-cauliflower-and-broccoli-1kg-4525844",
+      "priceSourceUrl": "https://www.coles.com.au/product/birds-eye-frozen-mixed-vegetables-carrot-cauliflower-and-broccoli-1kg-4525844",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Birds Eye Frozen Mixed Vegetables Carrot Cauliflower & Broccoli \\| 1Kg",
+      "mainPriceEvidence": "$6.90",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 83 kJ | 111 kJ |",
+        "| Protein | 1.4 g | 1.9 g |",
+        "| Fat - Total | 0.2 g | 0.3 g |",
+        "| Fat - Saturated | LESS THAN 0.1 g | LESS THAN 0.1 g |",
+        "| Carbohydrate | 2.2 g | 2.9 g |",
+        "| Sugars - Total | 2 g | 2.6 g |",
+        "| Dietary Fibre | 1.8 g | 2.4 g |",
+        "| Sodium | 24 mg | 32 mg |",
+        "| Vitamin C | 10 mg | 13 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/4525844.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-2743254",
+      "sourceUrl": "https://www.coles.com.au/product/birds-eye-frozen-mixed-winter-vegetables-green-beans-cauliflower-and-broccoli-1kg-2743254",
+      "priceSourceUrl": "https://www.coles.com.au/product/birds-eye-frozen-mixed-winter-vegetables-green-beans-cauliflower-and-broccoli-1kg-2743254",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Birds Eye Frozen Mixed Winter Vegetables Green Beans Cauliflower & Broccoli \\| 1Kg",
+      "mainPriceEvidence": "$6.90",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 86 kJ | 115 kJ |",
+        "| Protein | 1.3 g | 1.8 g |",
+        "| Fat - Total | 0.2 g | 0.3 g |",
+        "| Fat - Saturated | LESS THAN 0.1 g | LESS THAN 0.1 g |",
+        "| Carbohydrate | 2.3 g | 3.1 g |",
+        "| Sugars - Total | 1.7 g | 2.2 g |",
+        "| Dietary Fibre | 2 g | 2.7 g |",
+        "| Sodium | 15 mg | 20 mg |",
+        "| Vitamin C | 5 mg | 7 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/2743254.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-4352145",
+      "sourceUrl": "https://www.coles.com.au/product/coles-rspca-approved-chicken-mince-500g-4352145",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-rspca-approved-chicken-mince-500g-4352145",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles RSPCA Approved Chicken Mince \\| 500g",
+      "mainPriceEvidence": "$6.50",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 489 kJ<br>(6% DI) | 489 kJ |",
+        "| Energy (Cal) | 117 Cal | 117 Cal |",
+        "| Protein | 18.3 g<br>(37% DI) | 18.3 g |",
+        "| Fat - Total | 4.7 g<br>(7% DI) | 4.7 g |",
+        "| Fat - Saturated | 1.3 g<br>(5% DI) | 1.3 g |",
+        "| Fat - Transfat | 0.1 g | 0.1 g |",
+        "| Carbohydrate | 0.2 g<br>(0% DI) | 0.2 g |",
+        "| Sugars - Total | 0.2 g<br>(0% DI) | 0.2 g |",
+        "| Dietary Fibre | 0.1 g<br>(0% DI) | 0.1 g |",
+        "| Sodium | 69 mg<br>(3% DI) | 69 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/4352145.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-2014119",
+      "sourceUrl": "https://www.coles.com.au/product/coles-rspca-approved-lemon-and-herb-chicken-breast-steaks-500g-2014119",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-rspca-approved-lemon-and-herb-chicken-breast-steaks-500g-2014119",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles RSPCA Approved Lemon & Herb Chicken Breast Steaks \\| 500g",
+      "mainPriceEvidence": "$10.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 550 kJ<br>(6% DI) | 440 kJ |",
+        "| Energy (Cal) | 131 Cal | 105 Cal |",
+        "| Protein | 27.3 g<br>(55% DI) | 21.8 g |",
+        "| Fat - Total | 1.44 g<br>(2% DI) | 1.15 g |",
+        "| Fat - Saturated | 0.375 g<br>(2% DI) | 0.3 g |",
+        "| Fat - Transfat | 0.0688 g | 0.055 g |",
+        "| Carbohydrate | 1.13 g<br>(0% DI) | 0.9 g |",
+        "| Sugars - Total | 1.06 g<br>(1% DI) | 0.85 g |",
+        "| Dietary Fibre | 1.75 g<br>(6% DI) | 1.4 g |",
+        "| Sodium | 488 mg<br>(21% DI) | 390 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/2014119.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-8977644",
+      "sourceUrl": "https://www.coles.com.au/product/coles-frozen-green-mixed-vegetables-1kg-8977644",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-frozen-green-mixed-vegetables-1kg-8977644",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Frozen Green Mixed Vegetables \\| 1kg",
+      "mainPriceEvidence": "$6.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 161 kJ<br>(2% DI) | 215 kJ |",
+        "| Energy (Cal) | 38.5 Cal | 51.4 Cal |",
+        "| Protein | 3.23 g<br>(6% DI) | 4.3 g |",
+        "| Fat - Total | 0.675 g<br>(1% DI) | 0.9 g |",
+        "| Fat - Saturated | 0.675 g<br>(3% DI) | 0.9 g |",
+        "| Carbohydrate | 3.3 g<br>(1% DI) | 4.4 g |",
+        "| Sugars - Total | 1.88 g<br>(2% DI) | 2.5 g |",
+        "| Dietary Fibre | 3.15 g<br>(11% DI) | 4.2 g |",
+        "| Sodium | 12 mg<br>(1% DI) | 16 mg |",
+        "| Vitamin C | 34.5 mg | 46 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/8977644.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-9321138",
+      "sourceUrl": "https://www.coles.com.au/product/great-ocean-road-fresh-low-fat-milk-2l-9321138",
+      "priceSourceUrl": "https://www.coles.com.au/product/great-ocean-road-fresh-low-fat-milk-2l-9321138",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Great Ocean Road Fresh Low Fat Milk \\| 2L",
+      "mainPriceEvidence": "$5.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 525 kJ | 210 kJ |",
+        "| Protein | 8.8 g | 3.5 g |",
+        "| Fat - Total | 3.8 g | 1.5 g |",
+        "| Fat - Saturated | 2.5 g | 1 g |",
+        "| Carbohydrate | 14.3 g | 5.7 g |",
+        "| Sugars - Total | 11.3 g | 4.5 g |",
+        "| Sodium | 95 mg | 38 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/9321138.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-3185296",
+      "sourceUrl": "https://www.coles.com.au/product/red-tractor-organic-rolled-oats-1kg-3185296",
+      "priceSourceUrl": "https://www.coles.com.au/product/red-tractor-organic-rolled-oats-1kg-3185296",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Red Tractor Organic Rolled Oats \\| 1kg",
+      "mainPriceEvidence": "$7.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 628 kJ | 1570 kJ |",
+        "| Protein | 5.8 g | 14.5 g |",
+        "| Fat - Total | 3.3 g | 8.2 g |",
+        "| Fat - Saturated | 0.6 g | 1.4 g |",
+        "| Carbohydrate | 21.9 g | 54.7 g |",
+        "| Sugars - Total | 0.4 g | 1.1 g |",
+        "| Dietary Fibre | 5.4 g | 13.5 g |",
+        "| Sodium | 1 mg | 3 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/3185296.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-1692985",
+      "sourceUrl": "https://www.coles.com.au/product/vetta-smart-protein-spirals-pasta-375g-1692985",
+      "priceSourceUrl": "https://www.coles.com.au/product/vetta-smart-protein-spirals-pasta-375g-1692985",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Vetta Smart Protein Spirals Pasta \\| 375g",
+      "mainPriceEvidence": "$3.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 1440 kJ<br>(17.0% DI) | 1440 kJ |",
+        "| Energy (Cal) | 343 Cal | 343 Cal |",
+        "| Protein | 24.9 g<br>(49.0% DI) | 24.9 g |",
+        "| Fat - Total | 2.2 g<br>(3.0% DI) | 2.2 g |",
+        "| Fat - Saturated | 0.3 g<br>(1.0% DI) | 0.3 g |",
+        "| Carbohydrate | 50.5 g<br>(16.0% DI) | 50.5 g |",
+        "| Sugars - Total | 2.4 g<br>(3.0% DI) | 2.4 g |",
+        "| Dietary Fibre | 10.0 g<br>(33.0% DI) | 10.0 g |",
+        "| Sodium | 35 mg<br>(1.5% DI) | 35 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/1692985.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-439693",
+      "sourceUrl": "https://www.coles.com.au/product/coles-full-cream-milk-2l-439693",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-full-cream-milk-2l-439693",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Full Cream Milk \\| 2L",
+      "mainPriceEvidence": "$3.40",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 650 kJ<br>(7% DI) | 260 kJ |",
+        "| Energy (Cal) | 155 Cal | 62.2 Cal |",
+        "| Protein | 8.75 g<br>(18% DI) | 3.5 g |",
+        "| Fat - Total | 8.25 g<br>(12% DI) | 3.3 g |",
+        "| Fat - Saturated | 5.75 g<br>(24% DI) | 2.3 g |",
+        "| Carbohydrate | 11.5 g<br>(4% DI) | 4.6 g |",
+        "| Sugars - Total | 11 g<br>(12% DI) | 4.4 g |",
+        "| Dietary Fibre | 0.025 g<br>(0% DI) | 0.01 g |",
+        "| Sodium | 90 mg<br>(4% DI) | 36 mg |",
+        "| Calcium | 308 mg | 123 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/439693.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-3185310",
+      "sourceUrl": "https://www.coles.com.au/product/red-tractor-australian-rolled-oats-1kg-3185310",
+      "priceSourceUrl": "https://www.coles.com.au/product/red-tractor-australian-rolled-oats-1kg-3185310",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Red Tractor Australian Rolled Oats \\| 1kg",
+      "mainPriceEvidence": "$6.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 632 kJ | 1580 kJ |",
+        "| Protein | 5.1 g | 12.7 g |",
+        "| Fat - Total | 3.4 g | 8.5 g |",
+        "| Fat - Saturated | 0.6 g | 1.5 g |",
+        "| Carbohydrate | 22.3 g | 55.8 g |",
+        "| Sugars - Total | 0.5 g | 1.3 g |",
+        "| Dietary Fibre | 5.1 g | 12.7 g |",
+        "| Sodium | 1 mg | 2 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/3185310.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-1079800",
+      "sourceUrl": "https://www.coles.com.au/product/coles-skim-milk-2l-1079800",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-skim-milk-2l-1079800",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Skim Milk \\| 2L",
+      "mainPriceEvidence": "$3.40",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 356 kJ<br>(4% DI) | 142 kJ |",
+        "| Energy (Cal) | 85.1 Cal | 34 Cal |",
+        "| Protein | 8.75 g<br>(18% DI) | 3.5 g |",
+        "| Fat - Total | 0.3 g<br>(0% DI) | 0.12 g |",
+        "| Fat - Saturated | 0.15 g<br>(1% DI) | 0.06 g |",
+        "| Carbohydrate | 11.5 g<br>(4% DI) | 4.6 g |",
+        "| Sugars - Total | 11.5 g<br>(13% DI) | 4.6 g |",
+        "| Dietary Fibre | 0.025 g<br>(0% DI) | 0.01 g |",
+        "| Sodium | 110 mg<br>(5% DI) | 44 mg |",
+        "| Calcium | 330 mg | 132 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/1079800.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-254971",
+      "sourceUrl": "https://www.coles.com.au/product/uncle-tobys-porridge-oats-original-1kg-254971",
+      "priceSourceUrl": "https://www.coles.com.au/product/uncle-tobys-porridge-oats-original-1kg-254971",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Uncle Tobys Porridge Oats Original \\| 1kg",
+      "mainPriceEvidence": "$5.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 640 kJ<br>(7% DI) | 1600 kJ |",
+        "| Protein | 5.1 g<br>(10% DI) | 12.8 g |",
+        "| Fat - Total | 3.7 g<br>(5% DI) | 9.2 g |",
+        "| Fat - Saturated | 0.7 g<br>(3% DI) | 1.7 g |",
+        "| Carbohydrate | 22.7 g<br>(7% DI) | 56.7 g |",
+        "| Sugars - Total | 0.4 g<br>(1% DI) | 1 g |",
+        "| Dietary Fibre | 3.7 g<br>(12% DI) | 9.2 g |",
+        "| Sodium | 2 mg<br>(1% DI) | 6 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/254971.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-393989",
+      "sourceUrl": "https://www.coles.com.au/product/bulla-dairy-low-fat-cottage-cheese-original-200g-393989",
+      "priceSourceUrl": "https://www.coles.com.au/product/bulla-dairy-low-fat-cottage-cheese-original-200g-393989",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Bulla Dairy Low Fat Cottage Cheese Original \\| 200g",
+      "mainPriceEvidence": "$4.80",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 344 kJ<br>(4% DI) | 344 kJ |",
+        "| Protein | 12 g<br>(24% DI) | 12 g |",
+        "| Fat - Total | 1.8 g<br>(3% DI) | 1.8 g |",
+        "| Fat - Saturated | 1.2 g<br>(5% DI) | 1.2 g |",
+        "| Carbohydrate | 4.3 g<br>(1% DI) | 4.3 g |",
+        "| Sugars - Total | 4.2 g<br>(5% DI) | 4.2 g |",
+        "| Sodium | 312 mg<br>(14% DI) | 312 mg |",
+        "| Calcium | 106 mg | 106 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/393989.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-9488552",
+      "sourceUrl": "https://www.coles.com.au/product/coles-low-fat-creamed-cottage-cheese-500g-9488552",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-low-fat-creamed-cottage-cheese-500g-9488552",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Low Fat Creamed Cottage Cheese \\| 500g",
+      "mainPriceEvidence": "$6.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 362 kJ<br>(4% DI) | 362 kJ |",
+        "| Energy (Cal) | 86.6 Cal | 86.6 Cal |",
+        "| Protein | 11.9 g<br>(24% DI) | 11.9 g |",
+        "| Fat - Total | 1.7 g<br>(2% DI) | 1.7 g |",
+        "| Fat - Saturated | 1.2 g<br>(5% DI) | 1.2 g |",
+        "| Carbohydrate | 5.7 g<br>(2% DI) | 5.7 g |",
+        "| Sugars - Total | 5 g<br>(6% DI) | 5 g |",
+        "| Dietary Fibre | 0.01 g<br>(0% DI) | 0.01 g |",
+        "| Sodium | 273 mg<br>(12% DI) | 273 mg |",
+        "| Calcium | 143 mg | 143 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/9488552.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-7667368",
+      "sourceUrl": "https://www.coles.com.au/product/coles-australian-full-cream-long-life-milk-1l-7667368",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-australian-full-cream-long-life-milk-1l-7667368",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Australian Full Cream Long Life Milk \\| 1L",
+      "mainPriceEvidence": "$1.75",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 660 kJ<br>(8% DI) | 264 kJ |",
+        "| Energy (Cal) | 158 Cal | 63.1 Cal |",
+        "| Protein | 8.3 g<br>(17% DI) | 3.32 g |",
+        "| Fat - Total | 8.5 g<br>(12% DI) | 3.4 g |",
+        "| Fat - Saturated | 6.4 g<br>(27% DI) | 2.56 g |",
+        "| Carbohydrate | 12 g<br>(4% DI) | 4.8 g |",
+        "| Sugars - Total | 12 g<br>(13% DI) | 4.8 g |",
+        "| Dietary Fibre | 0 g<br>(0% DI) | 0 g |",
+        "| Sodium | 100 mg<br>(4% DI) | 40 mg |",
+        "| Potassium | 373 mg | 149 mg |",
+        "| Calcium | 300 mg | 120 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/7667368.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "spudshed-harvey-fresh-milk-hilo-2l",
+      "sourceUrl": "https://waterford.spudshed.com.au/lines/harvey-fresh-milk-hilo-2l",
+      "priceSourceUrl": "https://waterford.spudshed.com.au/lines/harvey-fresh-milk-hilo-2l",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Harvey Fresh Milk Hilo 2L",
+      "mainPriceEvidence": "$4.19each",
+      "nutritionTableEvidence": [
+        "|  | Per Serving\\* | Per 100g or 100mL\\* |",
+        "| --- | --- | --- |",
+        "| Energy | 500kJ | 200kJ |",
+        "| Protein | 8.3g | 3.3g |",
+        "| Fat, Total | 3.5g | 1.4g |",
+        "| \\- Saturated | 2.3g | 0.9g |",
+        "| Carbohydrate | 13.3g | 5.3g |",
+        "| \\- Sugars | 12.0g | 4.8g |",
+        "| Dietary Fibre | Value not available | Value not available |",
+        "| Sodium | 100mg | 40mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/spud-harvey-fresh-milk-hilo-2l.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-4972412",
+      "sourceUrl": "https://www.coles.com.au/product/coles-simply-quick-oats-1.8kg-4972412",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-simply-quick-oats-1.8kg-4972412",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Simply Quick Oats \\| 1.8Kg",
+      "mainPriceEvidence": "$3.50",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 635 kJ<br>(7% DI) | 1590 kJ |",
+        "| Energy (Cal) | 152 Cal | 380 Cal |",
+        "| Protein | 5.2 g<br>(10% DI) | 13 g |",
+        "| Fat - Total | 3.53 g<br>(5% DI) | 8.82 g |",
+        "| Fat - Saturated | 0.608 g<br>(3% DI) | 1.52 g |",
+        "| Fat - Transfat | 0.036 g | 0.09 g |",
+        "| Carbohydrate | 22.4 g<br>(7% DI) | 56 g |",
+        "| Sugars - Total | 0.348 g<br>(0% DI) | 0.87 g |",
+        "| Dietary Fibre | 4.48 g<br>(15% DI) | 11.2 g |",
+        "| Sodium | 1.24 mg<br>(0% DI) | 3.09 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/4972412.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-3329126",
+      "sourceUrl": "https://www.coles.com.au/product/coles-simply-pasta-spirals-500g-3329126",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-simply-pasta-spirals-500g-3329126",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Simply Pasta Spirals \\| 500g",
+      "mainPriceEvidence": "$0.90",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 1440 kJ<br>(17% DI) | 1440 kJ |",
+        "| Energy (Cal) | 345 Cal | 345 Cal |",
+        "| Protein | 12 g<br>(24% DI) | 12 g |",
+        "| Fat - Total | 1.8 g<br>(3% DI) | 1.8 g |",
+        "| Fat - Saturated | 0.5 g<br>(2% DI) | 0.5 g |",
+        "| Carbohydrate | 67.2 g<br>(22% DI) | 67.2 g |",
+        "| Sugars - Total | 3.2 g<br>(4% DI) | 3.2 g |",
+        "| Dietary Fibre | 3.5 g<br>(12% DI) | 3.5 g |",
+        "| Sodium | 35 mg<br>(2% DI) | 35 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/3329126.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-3016299",
+      "sourceUrl": "https://www.coles.com.au/product/coles-kitchen-pasta-salad-250g-3016299",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-kitchen-pasta-salad-250g-3016299",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Kitchen Pasta Salad \\| 250g",
+      "mainPriceEvidence": "$4.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 1090 kJ<br>(13% DI) | 872 kJ |",
+        "| Energy (Cal) | 261 Cal | 209 Cal |",
+        "| Protein | 4.5 g<br>(9% DI) | 3.6 g |",
+        "| Fat - Total | 14.9 g<br>(21% DI) | 11.9 g |",
+        "| Fat - Saturated | 1.63 g<br>(7% DI) | 1.3 g |",
+        "| Fat - Transfat | 0.0125 g | 0.01 g |",
+        "| Carbohydrate | 26.3 g<br>(8% DI) | 21 g |",
+        "| Sugars - Total | 8.63 g<br>(10% DI) | 6.9 g |",
+        "| Dietary Fibre | 2.13 g<br>(7% DI) | 1.7 g |",
+        "| Sodium | 410 mg<br>(18% DI) | 328 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/3016299.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-3538818",
+      "sourceUrl": "https://www.coles.com.au/product/yopro-high-protein-yoghurt-no-added-sugar-strawberry-700g-3538818",
+      "priceSourceUrl": "https://www.coles.com.au/product/yopro-high-protein-yoghurt-no-added-sugar-strawberry-700g-3538818",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "YoPro High Protein Yoghurt No Added Sugar Strawberry \\| 700g",
+      "mainPriceEvidence": "$8.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 392 kJ | 245 kJ |",
+        "| Energy (Cal) | 94 Cal | 58 Cal |",
+        "| Protein | 15.4 g | 9.6 g |",
+        "| Fat - Total | 0.5 g | 0.3 g |",
+        "| Fat - Saturated | 0.3 g | 0.2 g |",
+        "| Carbohydrate | 6.6 g | 4.1 g |",
+        "| Sugars - Total | 5.4 g | 3.4 g |",
+        "| Sodium | 66 mg | 41 g |",
+        "| Calcium | 187 mg | 117 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/3538818.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-4935052",
+      "sourceUrl": "https://www.coles.com.au/product/yopro-high-protein-yoghurt-no-added-sugar-salted-caramel-700g-4935052",
+      "priceSourceUrl": "https://www.coles.com.au/product/yopro-high-protein-yoghurt-no-added-sugar-salted-caramel-700g-4935052",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "YoPro High Protein Yoghurt No Added Sugar Salted Caramel \\| 700g",
+      "mainPriceEvidence": "$8.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 392 kJ | 245 kJ |",
+        "| Energy (Cal) | 94 Cal | 58 Cal |",
+        "| Protein | 15.2 g | 9.5 g |",
+        "| Fat - Total | 0.8 g | 0.5 g |",
+        "| Fat - Saturated | 0.5 g | 0.3 g |",
+        "| Carbohydrate | 6.1 g | 3.8 g |",
+        "| Sugars - Total | 5.1 g | 3.2 g |",
+        "| Dietary Fibre | 0.5 g | 0.3 g |",
+        "| Sodium | 136 mg | 85 mg |",
+        "| Calcium | 187 mg | 117 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/4935052.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-1155487",
+      "sourceUrl": "https://www.coles.com.au/product/farmers-union-greek-style-high-protein-yogurt-900g-1155487",
+      "priceSourceUrl": "https://www.coles.com.au/product/farmers-union-greek-style-high-protein-yogurt-900g-1155487",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Farmers Union Greek Style High Protein Yogurt \\| 900g",
+      "mainPriceEvidence": "$7.95",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 464 kJ<br>(5% DI) | 232 kJ |",
+        "| Energy (Cal) | 110 Cal | 55 Cal |",
+        "| Protein | 16.6 g<br>(33% DI) | 8.3 g |",
+        "| Fat - Total | 0.4 g<br>(1% DI) | 0.2 g |",
+        "| Fat - Saturated | 0.2 g<br>(1% DI) | 0.1 g |",
+        "| Carbohydrate | 9.8 g<br>(3% DI) | 4.9 g |",
+        "| Sugars - Total | 9.8 g<br>(11% DI) | 4.9 g |",
+        "| Dietary Fibre | 0.0 g | 0.0 g |",
+        "| Sodium | 118 mg<br>(5% DI) | 59 mg |",
+        "| Calcium | 538 mg | 269 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/1155487.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "spudshed-mias-low-carb-loaf-700g",
+      "sourceUrl": "https://waterford.spudshed.com.au/lines/mias-low-carb-loaf-700g",
+      "priceSourceUrl": "https://waterford.spudshed.com.au/lines/mias-low-carb-loaf-700g",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Mias Low Carb Loaf 700g",
+      "mainPriceEvidence": "$4.39each",
+      "nutritionTableEvidence": [
+        "|  | Per Serving\\* | Per 100g or 100mL\\* |",
+        "| --- | --- | --- |",
+        "| Energy | 623kJ | 890kJ |",
+        "| Protein | 9.6g | 13.7g |",
+        "| Fat, Total | 1.6g | 2.3g |",
+        "| \\- Saturated | 0.4g | 0.6g |",
+        "| Carbohydrate | 19.3g | 27.5g |",
+        "| \\- Sugars | 0.8g | 1.2g |",
+        "| Dietary Fibre | 8.7g | 12.4g |",
+        "| Sodium | 301mg | 430mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/spud-mias-low-carb-loaf-700g.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-2990140",
+      "sourceUrl": "https://www.coles.com.au/product/farmers-union-greek-style-high-protein-yoghurt-natural-500g-2990140",
+      "priceSourceUrl": "https://www.coles.com.au/product/farmers-union-greek-style-high-protein-yoghurt-natural-500g-2990140",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Farmers Union Greek Style High Protein Yoghurt Natural \\| 500g",
+      "mainPriceEvidence": "$5.70",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 464 kJ<br>(5% DI) | 232 kJ |",
+        "| Energy (Cal) | 110 Cal<br>(33% DI) | 55 Cal |",
+        "| Protein | 16.6 g<br>(33% DI) | 8.3 g |",
+        "| Fat - Total | 0.4 g<br>(1% DI) | 0.2 g |",
+        "| Fat - Saturated | 0.2 g<br>(1% DI) | 0.1 g |",
+        "| Carbohydrate | 9.8 g<br>(3% DI) | 4.9 g |",
+        "| Sugars - Total | 9.8 g<br>(11% DI) | 4.9 g |",
+        "| Dietary Fibre | 0.0 g<br>(0% DI) | 0.0 g |",
+        "| Sodium | 118 mg<br>(5% DI) | 59 mg |",
+        "| Calcium | 538 mg | 269 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/2990140.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-8428646",
+      "sourceUrl": "https://www.coles.com.au/product/coles-rspca-chicken-extra-lean-breast-mince-500g-8428646",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-rspca-chicken-extra-lean-breast-mince-500g-8428646",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles RSPCA Chicken Extra Lean Breast Mince \\| 500g",
+      "mainPriceEvidence": "$8.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 446 kJ<br>(5% DI) | 446 kJ |",
+        "| Energy (Cal) | 107 Cal | 107 Cal |",
+        "| Protein | 22.5 g<br>(45% DI) | 22.5 g |",
+        "| Fat - Total | 1.6 g<br>(2% DI) | 1.6 g |",
+        "| Fat - Saturated | 0.4 g<br>(2% DI) | 0.4 g |",
+        "| Carbohydrate | 0.2 g<br>(0% DI) | 0.2 g |",
+        "| Sugars - Total | 0.2 g<br>(0% DI) | 0.2 g |",
+        "| Dietary Fibre | 0.1 g<br>(0% DI) | 0.1 g |",
+        "| Sodium | 40.2 mg<br>(2% DI) | 40.2 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/8428646.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-7585263",
+      "sourceUrl": "https://www.coles.com.au/product/lilydale-free-range-chicken-mince-500g-7585263",
+      "priceSourceUrl": "https://www.coles.com.au/product/lilydale-free-range-chicken-mince-500g-7585263",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Lilydale Free Range Chicken Mince \\| 500g",
+      "mainPriceEvidence": "$9.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 438 kJ<br>(5% DI) | 438 kJ |",
+        "| Protein | 22.3 g<br>(45% DI) | 22.3 g |",
+        "| Fat - Total | 1.6 g<br>(2% DI) | 1.6 g |",
+        "| Fat - Saturated | 0.5 g<br>(2% DI) | 0.5 g |",
+        "| Carbohydrate | 0 g<br>(0% DI) | 0 g |",
+        "| Sugars - Total | 0 g<br>(0% DI) | 0 g |",
+        "| Sodium | 41 mg<br>(2% DI) | 41 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/7585263.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-4972693",
+      "sourceUrl": "https://www.coles.com.au/product/coles-simply-rolled-oats-1.8kg-4972693",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-simply-rolled-oats-1.8kg-4972693",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Simply Rolled Oats \\| 1.8Kg",
+      "mainPriceEvidence": "$3.50",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 635 kJ<br>(7% DI) | 1590 kJ |",
+        "| Energy (Cal) | 152 Cal | 380 Cal |",
+        "| Protein | 5.2 g<br>(10% DI) | 13 g |",
+        "| Fat - Total | 3.53 g<br>(5% DI) | 8.82 g |",
+        "| Fat - Saturated | 0.608 g<br>(3% DI) | 1.52 g |",
+        "| Fat - Transfat | 0.036 g | 0.09 g |",
+        "| Carbohydrate | 22.4 g<br>(7% DI) | 56 g |",
+        "| Sugars - Total | 0.348 g<br>(0% DI) | 0.87 g |",
+        "| Dietary Fibre | 4.48 g<br>(15% DI) | 11.2 g |",
+        "| Sodium | 1.24 mg<br>(0% DI) | 3.09 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/4972693.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-2071305",
+      "sourceUrl": "https://www.coles.com.au/product/coles-simply-cheddar-cheese-block-1kg-2071305",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-simply-cheddar-cheese-block-1kg-2071305",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Simply Cheddar Cheese Block \\| 1Kg",
+      "mainPriceEvidence": "$9.30",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 430 kJ<br>(5% DI) | 1720 kJ |",
+        "| Energy (Cal) | 103 Cal | 411 Cal |",
+        "| Protein | 6.1 g<br>(12% DI) | 24.4 g |",
+        "| Fat - Total | 8.78 g<br>(13% DI) | 35.1 g |",
+        "| Fat - Saturated | 6.17 g<br>(26% DI) | 24.7 g |",
+        "| Carbohydrate | 0.025 g<br>(0% DI) | 0.1 g |",
+        "| Sugars - Total | 0.025 g<br>(0% DI) | 0.1 g |",
+        "| Dietary Fibre | 0.1 g<br>(0% DI) | 0.4 g |",
+        "| Sodium | 177 mg<br>(8% DI) | 708 mg |",
+        "| Calcium | 178 mg | 710 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/2071305.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-3731705",
+      "sourceUrl": "https://www.coles.com.au/product/coles-simply-soft-white-wraps-8-pack-360g-3731705",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-simply-soft-white-wraps-8-pack-360g-3731705",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Simply Soft White Wraps 8 Pack \\| 360g",
+      "mainPriceEvidence": "$2.20",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 560 kJ<br>(6% DI) | 1240 kJ |",
+        "| Energy (Cal) | 134 Cal | 298 Cal |",
+        "| Protein | 3.65 g<br>(7% DI) | 8.1 g |",
+        "| Fat - Total | 3.1 g<br>(4% DI) | 6.9 g |",
+        "| Fat - Saturated | 1.75 g<br>(8% DI) | 3.9 g |",
+        "| Fat - Transfat | 0.045 g | 0.1 g |",
+        "| Carbohydrate | 21.2 g<br>(7% DI) | 47.2 g |",
+        "| Sugars - Total | 0.63 g<br>(1% DI) | 1.4 g |",
+        "| Dietary Fibre | 2.75 g<br>(9% DI) | 6.1 g |",
+        "| Sodium | 158 mg<br>(7% DI) | 350 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/3731705.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-8112449",
+      "sourceUrl": "https://www.coles.com.au/product/coles-australian-no-added-hormones-beef-mince-lean-500g-8112449",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-australian-no-added-hormones-beef-mince-lean-500g-8112449",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Australian No Added Hormones Beef Mince Lean \\| 500g",
+      "mainPriceEvidence": "$9.80",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 736 kJ<br>(8% DI) | 736 kJ |",
+        "| Energy (Cal) | 176 Cal | 176 Cal |",
+        "| Protein | 21.4 g<br>(43% DI) | 21.4 g |",
+        "| Fat - Total | 10 g<br>(14% DI) | 10 g |",
+        "| Fat - Saturated | 3.8 g<br>(16% DI) | 3.8 g |",
+        "| Carbohydrate | 0.1 g<br>(0% DI) | 0.1 g |",
+        "| Sugars - Total | 0.1 g<br>(0% DI) | 0.1 g |",
+        "| Dietary Fibre | 0 g<br>(0% DI) | 0 g |",
+        "| Sodium | 40 mg<br>(2% DI) | 40 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/8112449.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-1784711",
+      "sourceUrl": "https://www.coles.com.au/product/coles-light-lactose-free-milk-2l-1784711",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-light-lactose-free-milk-2l-1784711",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Light Lactose Free Milk \\| 2L",
+      "mainPriceEvidence": "$5.20",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 472 kJ<br>(5% DI) | 189 kJ |",
+        "| Energy (Cal) | 113 Cal | 45.2 Cal |",
+        "| Protein | 8.5 g<br>(17% DI) | 3.4 g |",
+        "| Fat - Total | 3 g<br>(4% DI) | 1.2 g |",
+        "| Fat - Saturated | 2 g<br>(8% DI) | 0.8 g |",
+        "| Carbohydrate | 12.8 g<br>(4% DI) | 5.1 g |",
+        "| Sugars - Total | 12.8 g<br>(14% DI) | 5.1 g |",
+        "| Lactose | 0 g | 0 g |",
+        "| Dietary Fibre | 0 g<br>(0% DI) | 0 g |",
+        "| Sodium | 100 mg<br>(4% DI) | 40 mg |",
+        "| Calcium | 325 mg | 130 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/1784711.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-9730385",
+      "sourceUrl": "https://www.coles.com.au/product/birds-eye-stir-fry-shanghai-carrot-broccoli-water-chestnuts-capsicum-sugar-snap-peas-frozen-mixed-veg-500g-9730385",
+      "priceSourceUrl": "https://www.coles.com.au/product/birds-eye-stir-fry-shanghai-carrot-broccoli-water-chestnuts-capsicum-sugar-snap-peas-frozen-mixed-veg-500g-9730385",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Birds Eye Stir Fry Shanghai Carrot Broccoli Water Chestnuts Capsicum Sugar Snap Peas Frozen Mixed Veg \\| 500g",
+      "mainPriceEvidence": "$5.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 149 kJ | 199 kJ |",
+        "| Protein | 1.5 g | 2 g |",
+        "| Fat - Total | 0.2 g | 0.3 g |",
+        "| Fat - Saturated | LESS THAN 0.1 g | LESS THAN 0.1 g |",
+        "| Carbohydrate | 5.8 g | 7.7 g |",
+        "| Sugars - Total | 2.7 g | 3.6 g |",
+        "| Dietary Fibre | 2 g | 2.7 g |",
+        "| Sodium | 15 mg | 20 mg |",
+        "| Vitamin C | 12 mg | 16 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/9730385.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-8163847",
+      "sourceUrl": "https://www.coles.com.au/product/mccain-garden-greens-500g-8163847",
+      "priceSourceUrl": "https://www.coles.com.au/product/mccain-garden-greens-500g-8163847",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Mccain Garden Greens \\| 500g",
+      "mainPriceEvidence": "$5.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 277 kJ | 277 kJ |",
+        "| Energy (Cal) | 66 Cal | 66 Cal |",
+        "| Protein | 4.3 g | 4.3 g |",
+        "| Fat - Total | 0.6 g | 0.6 g |",
+        "| Fat - Saturated | 0.1 g | 0.1 g |",
+        "| Carbohydrate | 8.8 g | 8.8 g |",
+        "| Sugars - Total | 4 g | 4 g |",
+        "| Dietary Fibre | 4 g | 4 g |",
+        "| Sodium | 8 mg | 8 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/8163847.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-8112799",
+      "sourceUrl": "https://www.coles.com.au/product/coles-no-added-hormone-beef-extra-lean-mince-500g-8112799",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-no-added-hormone-beef-extra-lean-mince-500g-8112799",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles No Added Hormone Beef Extra Lean Mince \\| 500g",
+      "mainPriceEvidence": "$9.80",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 556 kJ<br>(6% DI) | 556 kJ |",
+        "| Energy (Cal) | 133 Cal | 133 Cal |",
+        "| Protein | 21.3 g<br>(43% DI) | 21.3 g |",
+        "| Fat - Total | 5 g<br>(7% DI) | 5 g |",
+        "| Fat - Saturated | 2 g<br>(8% DI) | 2 g |",
+        "| Carbohydrate | 0.5 g<br>(0% DI) | 0.5 g |",
+        "| Sugars - Total | 0.5 g<br>(1% DI) | 0.5 g |",
+        "| Dietary Fibre | 0 g<br>(0% DI) | 0 g |",
+        "| Sodium | 66 mg<br>(3% DI) | 66 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/8112799.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-3866894",
+      "sourceUrl": "https://www.coles.com.au/product/coles-perform-high-protein-greek-yoghurt-900g-3866894",
+      "priceSourceUrl": "https://www.coles.com.au/product/coles-perform-high-protein-greek-yoghurt-900g-3866894",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Coles Perform High Protein Greek Yoghurt \\| 900g",
+      "mainPriceEvidence": "$7.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 400 kJ<br>(5% DI) | 235 kJ |",
+        "| Energy (Cal) | 95.7 Cal | 56.3 Cal |",
+        "| Protein | 15.9 g<br>(32% DI) | 9.35 g |",
+        "| Fat - Total | 0.34 g<br>(0% DI) | 0.2 g |",
+        "| Fat - Saturated | 0.17 g<br>(1% DI) | 0.1 g |",
+        "| Carbohydrate | 6.8 g<br>(2% DI) | 4 g |",
+        "| Sugars - Total | 6.12 g<br>(7% DI) | 3.6 g |",
+        "| Dietary Fibre | 0.17 g<br>(1% DI) | 0.1 g |",
+        "| Sodium | 69.7 mg<br>(3% DI) | 41 mg |",
+        "| Calcium | 204 mg | 120 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/3866894.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-3271922",
+      "sourceUrl": "https://www.coles.com.au/product/brancourts-classic-cottage-cheese-250g-3271922",
+      "priceSourceUrl": "https://www.coles.com.au/product/brancourts-classic-cottage-cheese-250g-3271922",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Brancourts Classic Cottage Cheese \\| 250g",
+      "mainPriceEvidence": "$5.25",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 436 kJ | 436 kJ |",
+        "| Protein | 10.5 g | 10.5 g |",
+        "| Gluten | 0 mg | 0 mg |",
+        "| Fat - Total | 4.9 g | 4.9 g |",
+        "| Fat - Saturated | 3.3 g | 3.3 g |",
+        "| Carbohydrate | 4.5 g | 4.5 g |",
+        "| Sugars - Total | 4.1 g | 4.1 g |",
+        "| Sodium | 351 mg | 351 mg |",
+        "| Calcium | 125 mg | 125 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/3271922.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-212790",
+      "sourceUrl": "https://www.coles.com.au/product/buttercup-country-split-white-bread-450g-212790",
+      "priceSourceUrl": "https://www.coles.com.au/product/buttercup-country-split-white-bread-450g-212790",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Buttercup Country Split White Bread \\| 450g",
+      "mainPriceEvidence": "$4.30",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 510 kJ<br>(6% DI) | 1080 kJ |",
+        "| Protein | 5.0 g<br>(10% DI) | 10.7 g |",
+        "| Fat - Total | 1.5 g<br>(2% DI) | 3.1 g |",
+        "| Fat - Saturated | LESS THAN 1.0 g<br>(4% DI) | LESS THAN 1.0 g |",
+        "| Carbohydrate | 20.9 g<br>(7% DI) | 44.6 g |",
+        "| Sugars - Total | 1.3 g<br>(1% DI) | 2.8 g |",
+        "| Dietary Fibre | 1.4 g<br>(5% DI) | 3.0 g |",
+        "| Sodium | 185 mg<br>(8% DI) | 400 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/212790.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-6255671",
+      "sourceUrl": "https://www.coles.com.au/product/brancourts-protein-plus-cottage-cheese-225g-6255671",
+      "priceSourceUrl": "https://www.coles.com.au/product/brancourts-protein-plus-cottage-cheese-225g-6255671",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Brancourts Protein Plus Cottage Cheese \\| 225g",
+      "mainPriceEvidence": "$5.25",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 454 kJ<br>(5% DI) | 454 kJ |",
+        "| Protein | 13.5 g<br>(27% DI) | 13.5 g |",
+        "| Fat - Total | 2.9 g<br>(4% DI) | 2.9 g |",
+        "| Fat - Saturated | 2 g<br>(8% DI) | 2 g |",
+        "| Carbohydrate | 6.9 g<br>(2% DI) | 6.9 g |",
+        "| Sugars - Total | 6.1 g<br>(7% DI) | 6.1 g |",
+        "| Sodium | 264 mg<br>(11% DI) | 264 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/6255671.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-3185300",
+      "sourceUrl": "https://www.coles.com.au/product/red-tractor-organic-instant-oats-1kg-3185300",
+      "priceSourceUrl": "https://www.coles.com.au/product/red-tractor-organic-instant-oats-1kg-3185300",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Red Tractor Organic Instant Oats \\| 1kg",
+      "mainPriceEvidence": "$7.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 627 kJ | 1570 kJ |",
+        "| Protein | 5 g | 12.4 g |",
+        "| Fat - Total | 3.4 g | 8.5 g |",
+        "| Fat - Saturated | 0.6 g | 1.5 g |",
+        "| Carbohydrate | 22.6 g | 56.8 g |",
+        "| Sugars - Total | 0.4 g | 1 g |",
+        "| Dietary Fibre | 4.1 g | 10.3 g |",
+        "| Sodium | 1 mg | 2 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/3185300.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-8409186",
+      "sourceUrl": "https://www.coles.com.au/product/lilydale-free-range-chicken-breast-fillet-600g-8409186",
+      "priceSourceUrl": "https://www.coles.com.au/product/lilydale-free-range-chicken-breast-fillet-600g-8409186",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Lilydale Free Range Chicken Breast Fillet \\| 600g",
+      "mainPriceEvidence": "$13.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 438 kJ<br>(5% DI) | 438 kJ |",
+        "| Protein | 22.3 g<br>(45% DI) | 22.3 g |",
+        "| Fat - Total | 1.6 g<br>(2% DI) | 1.6 g |",
+        "| Fat - Saturated | 0.5 g<br>(2% DI) | 0.5 g |",
+        "| Carbohydrate | 0 g<br>(0% DI) | 0 g |",
+        "| Sugars - Total | 0 g<br>(0% DI) | 0 g |",
+        "| Sodium | 41 mg<br>(2% DI) | 41 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/8409186.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-394008",
+      "sourceUrl": "https://www.coles.com.au/product/bulla-dairy-low-fat-cottage-cheese-original-500g-394008",
+      "priceSourceUrl": "https://www.coles.com.au/product/bulla-dairy-low-fat-cottage-cheese-original-500g-394008",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Bulla Dairy Low Fat Cottage Cheese Original \\| 500g",
+      "mainPriceEvidence": "$8.00",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 344 kJ<br>(4% DI) | 344 kJ |",
+        "| Protein | 12 g<br>(24% DI) | 12 g |",
+        "| Fat - Total | 1.8 g<br>(3% DI) | 1.8 g |",
+        "| Fat - Saturated | 1.2 g<br>(5% DI) | 1.2 g |",
+        "| Carbohydrate | 4.3 g<br>(1% DI) | 4.3 g |",
+        "| Sugars - Total | 4.2 g<br>(5% DI) | 4.2 g |",
+        "| Sodium | 312 mg<br>(14% DI) | 312 mg |",
+        "| Calcium | 106 mg | 106 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/394008.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-5969435",
+      "sourceUrl": "https://www.coles.com.au/product/helga's-traditional-wholemeal-bread-750g-5969435",
+      "priceSourceUrl": "https://www.coles.com.au/product/helga's-traditional-wholemeal-bread-750g-5969435",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Helga's Traditional Wholemeal Bread \\| 750g",
+      "mainPriceEvidence": "$5.20",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 810 kJ<br>(9% DI) | 980 kJ |",
+        "| Protein | 6.7 g<br>(13% DI) | 8.1 g |",
+        "| Fat - Total | 2.2 g<br>(3% DI) | 2.6 g |",
+        "| Fat - Saturated | LESS THAN 1.0 g<br>(4% DI) | LESS THAN 1.0 g |",
+        "| Carbohydrate | 33.7 g<br>(11% DI) | 40.6 g |",
+        "| Sugars - Total | 1.9 g<br>(2% DI) | 2.3 g |",
+        "| Dietary Fibre | 4.5 g<br>(15% DI) | 5.4 g |",
+        "| Sodium | 290 mg<br>(13% DI) | 350 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/5969435.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-2741011",
+      "sourceUrl": "https://www.coles.com.au/product/birds-eye-steam-fresh-carrot-broccoli-and-corn-frozen-mixed-veg-value-pack-750g-2741011",
+      "priceSourceUrl": "https://www.coles.com.au/product/birds-eye-steam-fresh-carrot-broccoli-and-corn-frozen-mixed-veg-value-pack-750g-2741011",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Birds Eye Steam Fresh Carrot Broccoli & Corn Frozen Mixed Veg Value Pack \\| 750g",
+      "mainPriceEvidence": "$6.20",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 344 kJ | 229 kJ |",
+        "| Protein | 3.6 g | 2.4 g |",
+        "| Fat - Total | 0.9 g | 0.6 g |",
+        "| Fat - Saturated | LESS THAN 0.1 g | LESS THAN 0.1 g |",
+        "| Carbohydrate | 12.5 g | 8.3 g |",
+        "| Sugars - Total | 3.9 g | 2.6 g |",
+        "| Dietary Fibre | 4.5 g | 3 g |",
+        "| Sodium | 29 mg | 20 mg |",
+        "| Vitamin C | 7 mg | 4 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/2741011.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "spudshed-tip-top-the-one-wholemeal-700g",
+      "sourceUrl": "https://waterford.spudshed.com.au/lines/tip-top-the-one-wholemeal-700g",
+      "priceSourceUrl": "https://waterford.spudshed.com.au/lines/tip-top-the-one-wholemeal-700g",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Tip Top The One Wholemeal 700g",
+      "mainPriceEvidence": "$4.69each",
+      "nutritionTableEvidence": [
+        "|  | Per Serving\\* | Per 100g or 100mL\\* |",
+        "| --- | --- | --- |",
+        "| Energy | 729kJ | 985kJ |",
+        "| Protein | 8.4g | 11.4g |",
+        "| Fat, Total | 2.8g | 3.8g |",
+        "| \\- Saturated | 0.5g | 0.7g |",
+        "| Carbohydrate | 26.2g | 35.4g |",
+        "| \\- Sugars | 1.6g | 2.1g |",
+        "| Dietary Fibre | 6.1g | 8.2g |",
+        "| Sodium | 264mg | 357mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/spud-tip-top-the-one-wholemeal-700g.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-1777261",
+      "sourceUrl": "https://www.coles.com.au/product/birds-eye-steam-fresh-peas-beans-corn-and-broccoli-frozen-mixed-vegetables-450g-1777261",
+      "priceSourceUrl": "https://www.coles.com.au/product/birds-eye-steam-fresh-peas-beans-corn-and-broccoli-frozen-mixed-vegetables-450g-1777261",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Birds Eye Steam Fresh Peas Beans Corn & Broccoli Frozen Mixed Vegetables \\| 450g",
+      "mainPriceEvidence": "$3.60",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy (kJ) | 363 kJ | 242 kJ |",
+        "| Protein | 5.2 g | 3.5 g |",
+        "| Fat - Total | 1 g | 0.7 g |",
+        "| Fat - Saturated | 0.1 g | 0.1 g |",
+        "| Carbohydrate | 11.1 g | 7.4 g |",
+        "| Sugars - Total | 4.9 g | 3.2 g |",
+        "| Dietary Fibre | 6.1 g | 4 g |",
+        "| Sodium | 7 mg | 5 mg |",
+        "| Vitamin C | 9 mg | 6 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/1777261.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "coles-1047",
+      "sourceUrl": "https://www.coles.com.au/product/buttercup-country-split-bread-wholemeal-450g-1047",
+      "priceSourceUrl": "https://www.coles.com.au/product/buttercup-country-split-bread-wholemeal-450g-1047",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Buttercup Country Split Bread Wholemeal \\| 450g",
+      "mainPriceEvidence": "$4.30",
+      "nutritionTableEvidence": [
+        "|  | Per Serving | Per 100g/ml |",
+        "| --- | --- | --- |",
+        "| Energy | 460 kJ<br>(5% DI) | 980 kJ |",
+        "| Protein | 4.0 g<br>(8% DI) | 8.5 g |",
+        "| Fat - Total | 1.7 g<br>(2% DI) | 3.6 g |",
+        "| Fat - Saturated | LESS THAN 1.0 g<br>(4% DI) | LESS THAN 1.0 g |",
+        "| Carbohydrate | 18.0 g<br>(6% DI) | 38.4 g |",
+        "| Sugars - Total | 1.0 g<br>(1% DI) | 2.2 g |",
+        "| Sodium | 220 mg<br>(10% DI) | 465 mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/1047.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    },
+    {
+      "id": "spudshed-helgas-traditional-wholemeal-loaf-bread-750g",
+      "sourceUrl": "https://waterford.spudshed.com.au/lines/helgas-traditional-wholemeal-loaf-bread-750g",
+      "priceSourceUrl": "https://waterford.spudshed.com.au/lines/helgas-traditional-wholemeal-loaf-bread-750g",
+      "retrievedAt": "2026-10-25",
+      "titleEvidence": "Helgas Traditional Wholemeal Loaf Bread 750g",
+      "mainPriceEvidence": "$5.19each",
+      "nutritionTableEvidence": [
+        "|  | Per Serving\\* | Per 100g or 100mL\\* |",
+        "| --- | --- | --- |",
+        "| Energy | 810kJ | 980kJ |",
+        "| Protein | 6.7g | 8.1g |",
+        "| Fat, Total | 2.2g | 2.6g |",
+        "| \\- Saturated | <1.0g | <1.0g |",
+        "| Carbohydrate | 33.7g | 40.6g |",
+        "| \\- Sugars | 1.9g | 2.3g |",
+        "| Dietary Fibre | 4.5g | 5.4g |",
+        "| Sodium | 290mg | 350mg |"
+      ],
+      "localSourceMarkdown": "/workspace/supermarket-more-pages/spud-helgas-traditional-wholemeal-loaf-bread-750g.md",
+      "method": "Read the current main-product price and per-100g/ml table from the same official page. Net amount comes from exact product title, not rounded serving counts. Values with less-than signs or absent macros are rejected. kcal is published Cal where present; otherwise exactly kJ / 4.184."
+    }
+  ],
+  "excluded": [
+    [
+      "spud-farmers-union-greek-yoghurt-natural-500g",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-de-campo-wholemeal-bread-650g",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-yoplait-yoghurt-tub-mango-1kg",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "5290305",
+      "main price absent"
+    ],
+    [
+      "4979058",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "8379551",
+      "main price absent"
+    ],
+    [
+      "spud-hunt-brew-milk-protein-1l",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-brownes-skim-milk-2l",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-abbott-s-farmhouse-wholemeal-850g",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-farmers-union-greek-yoghurt-protein-900g",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-farmers-union-yoghurt-greek-natural-1kg",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-yoplait-yoghurt-tub-vanilla-1kg",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "2736805",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "1845747",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "8203067",
+      "main price absent"
+    ],
+    [
+      "spud-brownes-hi-lo-milk-2l",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "7193274",
+      "main price absent"
+    ],
+    [
+      "9901648",
+      "main price absent"
+    ],
+    [
+      "spud-spudshed-hilo-milk-2l",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-brownes-yoghurt-greek-natural-1kg",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "1089349",
+      "unsupported/ambiguous pack or drained basis"
+    ],
+    [
+      "spud-gippsland-dairy-tub-lemon-curd-700g",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-yoplait-yoghurt-tub-strawberry-1kg",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-burgen-rye-bread-700g",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-helgas-soft-white-700g",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-chobani-greek-yoghurt-907g",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-farmers-union-yoghurt-lite-greek-style-natural-1kg",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-abbott-s-bakery-harvest-seeds-and-grains-bread-750g",
+      "incomplete/less-than nutrition"
+    ],
+    [
+      "spud-spudshed-full-cream-milk-2l",
+      "incomplete/less-than nutrition"
+    ]
+  ],
+  "limitations": [
+    "This is a verified expansion, not complete supermarket catalogues or live prices.",
+    "Coles prices are public online snapshots without a selected store; availability/prices vary.",
+    "Spudshed prices apply to the Waterford online store only. Many own-brand and yoghurt pages lack numeric nutrition panels.",
+    "Direct Coles HTTP returned an interstitial, and direct Spudshed HTTP returned403; official pages were read using Firecrawl instead.",
+    "Woolworths and ALDI new labels were not added during this bounded expansion; their existing verified seed entries remain.",
+    "Missing values, less-than values, recommendations, unavailable-product prices and unpriced labels were not fabricated.",
+    "Firecrawl retrieval was paced to its shared request limit."
+  ]
+}

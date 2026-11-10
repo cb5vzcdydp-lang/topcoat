@@ -1,0 +1,5 @@
+import {env} from 'cloudflare:workers';
+function decode(s:string){const raw=Uint8Array.from(atob(s),c=>c.charCodeAt(0));if(raw.length!==32)throw new Error('Oura encryption key must be a 32-byte base64 key.');return raw;}
+function fromB64url(s:string){return Uint8Array.from(atob(s.replaceAll('-','+').replaceAll('_','/')+'='.repeat((4-s.length%4)%4)),c=>c.charCodeAt(0));}
+export async function openOuraTokens(blob:string){if(!env.OURA_TOKEN_ENCRYPTION_KEY)throw new Error('Oura token encryption is not configured.');const [iv,data]=blob.split('.');const key=await crypto.subtle.importKey('raw',decode(env.OURA_TOKEN_ENCRYPTION_KEY),{name:'AES-GCM'},false,['decrypt']);const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:fromB64url(iv)},key,fromB64url(data));return JSON.parse(new TextDecoder().decode(plain)) as any;}
+export async function revokeOuraToken(blob:string){try{const tokens=await openOuraTokens(blob);if(!tokens.access_token)return false;const r=await fetch('https://api.ouraring.com/oauth/revoke?access_token='+encodeURIComponent(tokens.access_token),{method:'POST'});return r.ok;}catch{return false;}}

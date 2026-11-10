@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const r=createRequire(createRequire(import.meta.url).resolve('wrangler/package.json'));const {build}=r('esbuild');
+await build({entryPoints:['lib/social.ts'],outfile:'.test-output/social.mjs',bundle:true,format:'esm',platform:'node'});
+const {relativeChallengePlace,relativeChallengeRules,averageChallengeRank,relativeChallengeScore,sharedWorkoutStatus,challengeRank,challengeState,socialChallengeMetrics}=await import('../.test-output/social.mjs');
+assert.equal(relativeChallengeScore('bodyfat_relative_drop',40,10),75);
+assert.equal(relativeChallengeScore('bodyfat_relative_drop',10,8),20);
+assert.equal(relativeChallengeScore('bench_relative_gain',60,75),25);
+assert.equal(relativeChallengeScore('bench_relative_gain',0,75),null);
+assert.equal(relativeChallengeScore('bench_relative_gain',NaN,80),null);
+assert.equal(relativeChallengeScore('pushup_relative_gain',10,15),50);
+assert.equal(relativeChallengeScore('steps_relative_gain',8000,10000),25);
+assert.equal(relativeChallengeScore('weight_relative_drop',100,95),5);
+assert.equal(challengeRank(16).label,'Diamond');
+assert.equal(averageChallengeRank([4,12,null]).label,'Gold');
+assert.equal(averageChallengeRank([]).label,'Unranked');
+assert.equal(sharedWorkoutStatus('2026-10-11T12:00:00.000Z',Date.parse('2026-10-20T12:00:00.000Z')).slacking,true);
+assert.equal(sharedWorkoutStatus('2026-10-19T12:00:00.000Z',Date.parse('2026-10-20T12:00:00.000Z')).slacking,false);
+assert.equal(Object.keys(socialChallengeMetrics).length,9);
+assert.equal(challengeState({status:'joined',starts:'2026-10-21',ends:'2026-10-28'},'2026-10-21'),'active');
+assert.equal(challengeState({status:'joined',starts:'2026-10-22',ends:'2026-10-28'},'2026-10-21'),'scheduled');
+assert.equal(challengeState({status:'invited',starts:'2026-10-21',ends:'2026-10-28'},'2026-10-21'),'invited');
+assert.equal(challengeState({status:'invited',starts:'2026-10-01',ends:'2026-10-20'},'2026-10-21'),'complete');
+assert.equal(challengeState({status:'left',starts:'2026-10-21',ends:'2026-10-28'},'2026-10-21'),'left');
+console.log('Challenge scoring, average rank, shared activity and lifecycle state assertions passed');
+
+const tied=[{score:50},{score:50},{score:25},{score:null}];assert.equal(relativeChallengePlace(tied,50),1);assert.equal(relativeChallengePlace(tied,25),3);assert.equal(relativeChallengePlace(tied,null),null);assert.match(relativeChallengeRules('bench_relative_gain','2026-10-26','2026-11-01'),/current − baseline/);assert.match(relativeChallengeRules('weight_relative_drop','2026-10-26','2026-11-01'),/baseline − current/);console.log('PASS relative-challenge ties, unranked missing updates and accurate before-join formula/date/eligibility previews');

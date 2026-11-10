@@ -1,0 +1,496 @@
+[
+  {
+    "pattern": "peter extensions|prime plate loaded banded extension",
+    "direct": [
+      "Quads"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Leg_Extensions"
+  },
+  {
+    "pattern": "couch stretch",
+    "direct": [
+      "Quads",
+      "Hip flexors"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Intermediate_Hip_Flexor_and_Quad_Stretch"
+  },
+  {
+    "pattern": "shoulder.*(internal|external) rotation",
+    "direct": [
+      "Rotator cuff"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Cable_Internal_Rotation"
+  },
+  {
+    "pattern": "protraction|serratus|serratas",
+    "direct": [
+      "Serratus"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "https://exrx.net/WeightExercises/SerratusAnterior/BBInclineShoulderRaise"
+  },
+  {
+    "pattern": "lu raise",
+    "direct": [
+      "Upper back"
+    ],
+    "indirect": [
+      "Side delts"
+    ],
+    "basis": "movement-family",
+    "reference": "Side_Lateral_Raise"
+  },
+  {
+    "pattern": "scaption|cable lat raise",
+    "direct": [
+      "Side delts"
+    ],
+    "indirect": [
+      "Front delts"
+    ],
+    "basis": "movement-family",
+    "reference": "Side_Lateral_Raise"
+  },
+  {
+    "pattern": "hip adduction/abduction",
+    "direct": [
+      "Adductors",
+      "Abductors"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Hip_Abduction"
+  },
+  {
+    "pattern": "tibialis|tibia raise|dorsiflexion",
+    "direct": [
+      "Tibialis"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Anterior_Tibialis-SMR"
+  },
+  {
+    "pattern": "calf|calves|gastrocnemius|soleus|toe press",
+    "direct": [
+      "Calves"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Standing_Calf_Raises"
+  },
+  {
+    "pattern": "adductor|adduction",
+    "direct": [
+      "Adductors"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Thigh_Adductor"
+  },
+  {
+    "pattern": "abduct|glute med|piriformis",
+    "direct": [
+      "Abductors"
+    ],
+    "indirect": [
+      "Glutes"
+    ],
+    "basis": "movement-family",
+    "reference": "Thigh_Abductor"
+  },
+  {
+    "pattern": "^(sartorius|lying psoas|psoas cable)|^unilateral hip flexion",
+    "direct": [
+      "Hip flexors"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Hip_Flexion_with_Band"
+  },
+  {
+    "pattern": "lower back|lumbar extension|spinal extension|superman|reverse hyper",
+    "direct": [
+      "Lower back"
+    ],
+    "indirect": [
+      "Glutes",
+      "Hamstrings"
+    ],
+    "basis": "movement-family",
+    "reference": "Hyperextensions_Back_Extensions"
+  },
+  {
+    "pattern": "glute.*(deadlift|romanian|hyperextension)|hip dominant|glute dominant|glute max.*lunge",
+    "direct": [
+      "Glutes"
+    ],
+    "indirect": [
+      "Hamstrings",
+      "Quads"
+    ],
+    "basis": "movement-family",
+    "reference": "Barbell_Glute_Bridge"
+  },
+  {
+    "pattern": "romanian|rdl|sldl|stiff.?leg|straight leg deadlift|good morning",
+    "direct": [
+      "Hamstrings"
+    ],
+    "indirect": [
+      "Glutes",
+      "Lower back"
+    ],
+    "basis": "movement-family",
+    "reference": "Romanian_Deadlift"
+  },
+  {
+    "pattern": "nordic|hamstring|leg curl|leg.*curls",
+    "direct": [
+      "Hamstrings"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Seated_Leg_Curl"
+  },
+  {
+    "pattern": "hip extension|hyperextension|back extension|booty builder.*45 extension",
+    "direct": [
+      "Glutes",
+      "Hamstrings"
+    ],
+    "indirect": [
+      "Lower back"
+    ],
+    "basis": "movement-family",
+    "reference": "Hyperextensions_Back_Extensions"
+  },
+  {
+    "pattern": "deadlift|rack pull",
+    "direct": [
+      "Glutes"
+    ],
+    "indirect": [
+      "Quads",
+      "Hamstrings",
+      "Lower back",
+      "Upper back"
+    ],
+    "basis": "movement-family",
+    "reference": "Barbell_Deadlift"
+  },
+  {
+    "pattern": "hip thrust|glute|hip bridge",
+    "direct": [
+      "Glutes"
+    ],
+    "indirect": [
+      "Hamstrings"
+    ],
+    "basis": "movement-family",
+    "reference": "Barbell_Glute_Bridge"
+  },
+  {
+    "pattern": "leg extension|leg extensions|sissy squat",
+    "direct": [
+      "Quads"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Leg_Extensions"
+  },
+  {
+    "pattern": "squat|leg press|lunge|step.?up|hip press|squat press",
+    "direct": [
+      "Quads"
+    ],
+    "indirect": [
+      "Glutes",
+      "Adductors",
+      "Calves"
+    ],
+    "basis": "movement-family",
+    "reference": "Barbell_Full_Squat"
+  },
+  {
+    "pattern": "box jump|depth jump|frog jump|jumping|jump squat",
+    "direct": [
+      "Quads",
+      "Glutes"
+    ],
+    "indirect": [
+      "Calves",
+      "Hamstrings"
+    ],
+    "basis": "movement-family",
+    "reference": "Box_Jump_Multiple_Response"
+  },
+  {
+    "pattern": "neck (flexion|extension|rotation|lateral flexion)|neck harness",
+    "direct": [
+      "Neck"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Lying_Face_Down_Plate_Neck_Resistance"
+  },
+  {
+    "pattern": "oblique|wood.?chop|twist|side bend|side plank|bicycle",
+    "direct": [
+      "Obliques"
+    ],
+    "indirect": [
+      "Abs"
+    ],
+    "basis": "movement-family",
+    "reference": "Standing_Cable_Wood_Chop"
+  },
+  {
+    "pattern": "rectus abdominis|plank|crunch|sit.?up|sit up|leg raise|knee raise|knee.*raise|ab wheel|ab scissors|jack.?knife|v.?up|dead bug|heel tap|dragon flag|l.sit|toes to bar|garhammer|mountain climber",
+    "direct": [
+      "Abs"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Crunches"
+  },
+  {
+    "pattern": "upper back.*(pulldown|pull up)|suspension upper back pull up",
+    "direct": [
+      "Upper back"
+    ],
+    "indirect": [
+      "Lats",
+      "Rear delts",
+      "Biceps"
+    ],
+    "basis": "movement-family",
+    "reference": "Bent_Over_Barbell_Row"
+  },
+  {
+    "pattern": "upper back.*pull.?apart|retraction|kelso",
+    "direct": [
+      "Upper back"
+    ],
+    "indirect": [
+      "Rear delts"
+    ],
+    "basis": "movement-family",
+    "reference": "Bent_Over_Barbell_Row"
+  },
+  {
+    "pattern": "rear delt|reverse.*(fly|pec deck)|face pull",
+    "direct": [
+      "Rear delts"
+    ],
+    "indirect": [
+      "Upper back"
+    ],
+    "basis": "movement-family",
+    "reference": "Seated_Bent-Over_Rear_Delt_Raise"
+  },
+  {
+    "pattern": "front raise|anterior delt.*(raise|fly)",
+    "direct": [
+      "Front delts"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Front_Dumbbell_Raise"
+  },
+  {
+    "pattern": "arnold press|anterior delt|shoulder press|overhead press|overhead dumbbell press|behind neck press|handstand|pike push|jammer press|70[\u00b0 ]|70 deg|65[\u00b0 ]|65 deg",
+    "direct": [
+      "Front delts"
+    ],
+    "indirect": [
+      "Side delts",
+      "Triceps"
+    ],
+    "basis": "movement-family",
+    "reference": "Dumbbell_Shoulder_Press"
+  },
+  {
+    "pattern": "upright row",
+    "direct": [
+      "Side delts"
+    ],
+    "indirect": [
+      "Upper back",
+      "Front delts",
+      "Biceps"
+    ],
+    "basis": "movement-family",
+    "reference": "Upright_Barbell_Row"
+  },
+  {
+    "pattern": "medial delt|middle delt|lateral raise|cuffed.*lateral|crucifix raise|standing lateral|keegan flap",
+    "direct": [
+      "Side delts"
+    ],
+    "indirect": [
+      "Upper back"
+    ],
+    "basis": "movement-family",
+    "reference": "Side_Lateral_Raise"
+  },
+  {
+    "pattern": "y.?raise|y raise",
+    "direct": [
+      "Upper back"
+    ],
+    "indirect": [
+      "Side delts"
+    ],
+    "basis": "movement-family",
+    "reference": "Seated_Bent-Over_Rear_Delt_Raise"
+  },
+  {
+    "pattern": "shrug",
+    "direct": [
+      "Upper back"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Barbell_Shrug"
+  },
+  {
+    "pattern": "finger (flexion|extension)|wrist|forearm|4arm|radial deviation|ulnar deviation|brachioradialis|reverse.*curl|pronation|supination",
+    "direct": [
+      "Forearms"
+    ],
+    "indirect": [
+      "Biceps"
+    ],
+    "basis": "movement-family",
+    "reference": "Palms-Down_Wrist_Curl_Over_A_Bench"
+  },
+  {
+    "pattern": "hamstring",
+    "direct": [
+      "Hamstrings"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Seated_Leg_Curl"
+  },
+  {
+    "pattern": "bicep cirl|curl|elbow flexor",
+    "direct": [
+      "Biceps"
+    ],
+    "indirect": [
+      "Forearms"
+    ],
+    "basis": "movement-family",
+    "reference": "Barbell_Curl"
+  },
+  {
+    "pattern": "newton extension|carter extension|jm smith|arm extension|close grip.*(bench|press|smith)|diamond push|push up.?close|jm press|french press|tricep|pushdown|pressdown|skull|overhead.*extension|cross.*extension|rope.*extension|dumbbell extension|cable extension|arm supported extension|chair dip|floor.*dip|dip machine|seated dip",
+    "direct": [
+      "Triceps"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Triceps_Pushdown"
+  },
+  {
+    "pattern": "kickback",
+    "direct": [
+      "Glutes"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "Glute_Kickback"
+  },
+  {
+    "pattern": "lat.*(row|pull)|pullover|rowdown|pull.?around|pullaround|latissimus",
+    "direct": [
+      "Lats"
+    ],
+    "indirect": [
+      "Upper back",
+      "Biceps"
+    ],
+    "basis": "movement-family",
+    "reference": "Wide-Grip_Lat_Pulldown"
+  },
+  {
+    "pattern": "pull.?up|pull up|pulldown|pull.down|chin.?up|chin up|rack chin|lever",
+    "direct": [
+      "Lats"
+    ],
+    "indirect": [
+      "Upper back",
+      "Biceps",
+      "Forearms"
+    ],
+    "basis": "movement-family",
+    "reference": "Pullups"
+  },
+  {
+    "pattern": "dead hang",
+    "direct": [
+      "Forearms"
+    ],
+    "indirect": [],
+    "basis": "movement-family",
+    "reference": "One_Handed_Hang"
+  },
+  {
+    "pattern": "row",
+    "direct": [
+      "Upper back"
+    ],
+    "indirect": [
+      "Lats",
+      "Rear delts",
+      "Biceps"
+    ],
+    "basis": "movement-family",
+    "reference": "Bent_Over_Barbell_Row"
+  },
+  {
+    "pattern": "larson press|floor press|wide grip smith machine|chess press|dip|push.?up|push up|bench|chest press|pec.*press|flat.*press|incline.*press|decline.*press|cable press|dumbbell press|barbell press|narrow incline smith|close grip smith",
+    "direct": [
+      "Chest"
+    ],
+    "indirect": [
+      "Front delts",
+      "Triceps"
+    ],
+    "basis": "movement-family",
+    "reference": "Barbell_Bench_Press_-_Medium_Grip"
+  },
+  {
+    "pattern": "fly|flys|pec deck|pec.*pull|pec.*around",
+    "direct": [
+      "Chest"
+    ],
+    "indirect": [
+      "Front delts"
+    ],
+    "basis": "movement-family",
+    "reference": "Dumbbell_Flyes"
+  },
+  {
+    "pattern": "walking pad|running|treadmill|spinning|cycling|bike",
+    "direct": [
+      "Quads",
+      "Glutes",
+      "Calves"
+    ],
+    "indirect": [
+      "Hamstrings"
+    ],
+    "basis": "movement-family",
+    "reference": "Running_Treadmill"
+  }
+]

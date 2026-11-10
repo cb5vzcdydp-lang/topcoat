@@ -1,0 +1,2 @@
+import {database,hash,json,fail,HttpError} from '@/lib/server';
+export async function POST(req:Request){try{const bearer=req.headers.get('authorization')?.match(/^Bearer\s+(.+)$/i)?.[1];if(!bearer)throw new HttpError(401,'Phone is not paired.');const db=database();await db.prepare('UPDATE mobile_devices SET revoked_at=? WHERE token_hash=? AND revoked_at IS NULL').bind(new Date().toISOString(),await hash(bearer)).run();return json({ok:true});}catch(e){return fail(e);}}

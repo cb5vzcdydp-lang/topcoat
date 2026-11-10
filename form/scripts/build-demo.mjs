@@ -1,0 +1,12 @@
+import {createRequire} from 'node:module';
+import {readFile,writeFile} from 'node:fs/promises';
+const require=createRequire(import.meta.url),r=createRequire(require.resolve('wrangler/package.json'));const {build}=r('esbuild');
+await build({entryPoints:['.demo-build/render.tsx'],outfile:'.demo-build/render.mjs',bundle:true,format:'esm',platform:'node',packages:'external'});
+const render=(await import('../.demo-build/render.mjs?'+Date.now())).default;
+const markup=render();
+const b=await build({entryPoints:['.demo-build/entry.tsx'],bundle:true,write:false,format:'iife',platform:'browser',minify:true,define:{'process.env.NODE_ENV':'"production"'}});
+const css=(await readFile('app/globals.css','utf8')).replace(/^@import[^;]+;/,'');
+const js=b.outputFiles[0].text.replaceAll('</script','<\\/script');
+const fallback='<div id="preview-fallback" style="position:relative;z-index:50;padding:12px 20px;background:#163348;color:#d8eef8;font:13px/1.6 system-ui;text-align:center">Form app preview. If the controls do not respond, this file viewer is blocking JavaScript. Open the downloaded HTML in a full web browser to use the demo.</div>';
+await writeFile('Form-demo.html','<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0a1320"><title>Form — Interactive Demo</title><style>'+css+'</style></head><body style="background:#0a1320;color:#e5eff7">'+fallback+'<div id="root">'+markup+'</div><script>window.addEventListener("error",function(){document.getElementById("preview-fallback").style.display="block";});</script><script>'+js+'</script></body></html>');
+console.log('Demo generated with '+markup.length+' characters of pre-rendered UI');

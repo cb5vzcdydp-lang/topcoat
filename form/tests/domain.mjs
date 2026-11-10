@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const r=createRequire(createRequire(import.meta.url).resolve('wrangler/package.json'));const {build}=r('esbuild');
+await build({entryPoints:['lib/domain.ts'],outfile:'.test-output/domain.mjs',bundle:true,format:'esm',platform:'node'});
+const {averageWeight,volume,progression,samplePlan,shiftDate,workoutSchema,planSchema,calculateFFMI,projectBodyComposition,estimateMaintenance}=await import('../.test-output/domain.mjs');
+const logs=[{date:'2026-10-12',data:{weight:99}},{date:'2026-10-13',data:{weight:74}},{date:'2026-10-19',data:{weight:72}},{date:'2026-10-18',data:{weight:null}}];
+assert.equal(averageWeight(logs,'2026-10-19'),73);assert.equal(averageWeight([],'2026-10-19'),null);
+const calibration=Array.from({length:28},(_,i)=>({date:shiftDate('2026-10-28',i-27),data:{weight:80-i*.05,calories:2200}}));const maintenance=estimateMaintenance(calibration,[],'2026-10-28',28);assert.equal(maintenance.maintenance,2600);assert.equal(maintenance.calorieDays,28);assert.equal(maintenance.weighIns,28);assert.equal(maintenance.confidence,'steady');assert.equal(estimateMaintenance(calibration.slice(-7),[],'2026-10-28',28).maintenance,null);const mealDriven=estimateMaintenance(calibration,calibration.map(x=>({date:x.date,data:{calories:1000}})),'2026-10-28',28);assert.equal(mealDriven.averageIntake,1000);assert.equal(mealDriven.maintenance,1400);
+assert.equal(shiftDate('2026-11-01',-1),'2026-10-31');
+const v=volume(samplePlan,[],'planned','','');assert.equal(v.Quads,12);assert.equal(v.Hamstrings,12);assert.equal(v['Side delts'],9);assert.equal(v.Glutes,9);
+const work=[1,2,3].map(d=>({date:'2026-10-0'+d,sets:[1,2].map(()=>({exerciseId:'x',weight:30,reps:12,completed:true,warmup:false,muscle:'Chest'}))}));
+assert.equal(progression(work,'x').ready,true);assert.equal(progression(work.slice(0,2),'x').count,2);work[2].sets[1].reps=11;assert.equal(progression(work,'x').count,0);
+work[2].sets[1].reps=12;work[2].sets[0].weight=35;assert.equal(progression(work,'x').ready,false);
+const counts=volume([],work,'completed','2026-10-02','2026-10-03');assert.equal(counts.Chest,4);
+const logged=workoutSchema.parse({id:'band-test',date:'2026-10-16',name:'Pull',sets:[{exerciseId:'band-pulldown',name:'Band pulldown',muscle:'Lats',equipment:'banded',weight:0,reps:10,completed:true,bandColors:['Green','Purple'],gymPinAdded:true,gymPinWeight:7.5}]});assert.deepEqual(logged.sets[0].bandColors,['Green','Purple']);assert.equal(logged.sets[0].gymPinWeight,7.5);assert.equal(workoutSchema.safeParse({...logged,sets:[{...logged.sets[0],bandColors:['Chartreuse']}]}).success,true);const plan=planSchema.parse(samplePlan);assert.equal(plan[0].exercises[0].equipment,'free-weight');assert.ok(Math.abs(calculateFFMI(74,182,20)-(74*.8/(1.82**2)))<1e-10);const sixHundred=projectBodyComposition(74,182,20,600,7);assert.ok(Math.abs(sixHundred.weight-73.4545)<.001);assert.ok(sixHundred.bodyFat<20);assert.equal(calculateFFMI(0,182,20),null);console.log('27 domain assertions passed');

@@ -1,0 +1,174 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1792081700184,
+      "tag": "0000_legal_rafael_vega",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1792083150248,
+      "tag": "0001_great_champions",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1792123547867,
+      "tag": "0002_health_and_wearable_metrics",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1792123569474,
+      "tag": "0003_wearable_indexes",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1792124855501,
+      "tag": "0004_mobile_health_pairing",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1792155000000,
+      "tag": "0005_personal_profiles",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1792156000000,
+      "tag": "0006_saved_meals",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1792157400000,
+      "tag": "0007_form_ai_bodycomp",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1792158000000,
+      "tag": "0008_saved_foods",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1792158500000,
+      "tag": "0009_social",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1792159000000,
+      "tag": "0010_recipes_push",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1792160000000,
+      "tag": "0011_cardio_sessions",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "6",
+      "when": 1792170000000,
+      "tag": "0012_audit_fixes",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "6",
+      "when": 1792171300000,
+      "tag": "0013_social_avatars",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "6",
+      "when": 1792171400000,
+      "tag": "0014_flexible_workout_templates",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "6",
+      "when": 1792404556472,
+      "tag": "0015_gray_hardball",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "6",
+      "when": 1792405849959,
+      "tag": "0016_nostalgic_wendell_vaughn",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "6",
+      "when": 1792406058643,
+      "tag": "0017_messy_marvel_zombies",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "6",
+      "when": 1792406300106,
+      "tag": "0018_young_gabe_jones",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "6",
+      "when": 1792406625758,
+      "tag": "0019_regular_imperial_guard",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "6",
+      "when": 1792407045243,
+      "tag": "0020_exotic_forge",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "6",
+      "when": 1792460000000,
+      "tag": "0021_social_shares",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "6",
+      "when": 1792498800000,
+      "tag": "0022_competitive_challenges",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "6",
+      "when": 1792588800000,
+      "tag": "0023_challenge_exit",
+      "breakpoints": true
+    }
+  ]
+}
