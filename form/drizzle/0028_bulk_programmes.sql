@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS bulk_programme_batches(id TEXT PRIMARY KEY,owner TEXT NOT NULL,payload TEXT NOT NULL,attempt TEXT NOT NULL,created TEXT NOT NULL);

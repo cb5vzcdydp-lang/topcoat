@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {readFile,readdir} from 'node:fs/promises';
+const r=createRequire(createRequire(import.meta.url).resolve('wrangler/package.json')),{build}=r('esbuild'),{Miniflare}=r('miniflare');
+const mf=new Miniflare({modules:true,script:'export default {fetch(){return new Response("test")}}',d1Databases:['DB'],r2Buckets:['BUCKET'],compatibilityDate:'2026-01-01'});
+try{
+ const DB=await mf.getD1Database('DB');globalThis.__foodEnv={DB,AUTH_MODE:'sites',GEMINI_API_KEY:'test-key',BUCKET:await mf.getR2Bucket('BUCKET')};
+ for(const file of (await readdir('drizzle')).filter(f=>f.endsWith('.sql')).sort())for(const s of (await readFile('drizzle/'+file,'utf8')).split('--> statement-breakpoint').filter(v=>v.trim()))await DB.prepare(s.trim()).run();
+ const plugin={name:'env',setup(b){b.onResolve({filter:/^cloudflare:workers$/},()=>({path:'env',namespace:'test'}));b.onLoad({filter:/.*/,namespace:'test'},()=>({contents:'export const env=globalThis.__foodEnv',loader:'js'}))}};
+ for(const [name,path] of [['endpoint','app/api/food-estimate/route.ts'],['data','app/api/data/route.ts'],['model','lib/food-estimate.ts']])await build({entryPoints:[path],outfile:'.test-output/food-estimate-'+name+'.mjs',bundle:true,format:'esm',platform:'node',plugins:[plugin]});
+ const api=await import('../.test-output/food-estimate-endpoint.mjs'),data=await import('../.test-output/food-estimate-data.mjs'),{estimatedDiaryMeal}=await import('../.test-output/food-estimate-model.mjs');
+ const req=(uid,body,origin='https://form.test')=>new Request('https://form.test/api/test',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json',...(uid?{'oai-authenticated-user-id':uid}:{})},body:JSON.stringify(body)});
+ const client=(await (await data.POST(req('a',{action:'personal',name:'A'}))).json()).id;
+ const timeout=AbortSignal.timeout;let requestedTimeout;AbortSignal.timeout=ms=>{requestedTimeout=ms;return timeout(ms)};
+ let calls=0,payload,answer={name:'Eggs on toast',portion:'2 eggs and 2 slices',estimated:{calories:420,protein:22.5,carbs:38,fat:20},assumptions:['1 tsp butter'],notes:'Bread and egg sizes vary.'};
+ globalThis.fetch=async(url,init)=>{calls++;payload=JSON.parse(init.body);return Response.json({choices:[{message:{content:typeof answer==='string'?answer:JSON.stringify(answer)},finish_reason:'stop'}]})};
+ const body={client,description:'2 scrambled eggs and 2 slices of toast'};
+ assert.equal((await api.POST(req(null,body))).status,401);assert.equal((await api.POST(req('b',body))).status,404);assert.equal((await api.POST(req('a',body,'https://evil.test'))).status,403);assert.equal(calls,0);
+ assert.equal((await api.POST(req('a',{...body,description:'x'.repeat(2001)}))).status,400);assert.equal((await api.POST(req('a',{...body,description:'x'.repeat(14000)}))).status,413);
+ const result=await api.POST(req('a',body));assert.equal(result.status,200);const estimate=(await result.json()).estimate;assert.equal(estimate.estimated.calories,420);assert.equal(requestedTimeout,90000,'slow AI estimates may complete beyond the old 45-second cutoff');assert.equal(payload.max_tokens,2400);assert.equal(payload.model,'gemini-3.1-flash-lite');AbortSignal.timeout=timeout;assert.match(payload.messages[0].content,/ENTIRE described meal/);assert.equal(payload.messages[1].content,body.description);
+ assert.equal((await DB.prepare('SELECT COUNT(*) AS n FROM meals').first()).n,0,'estimation must never log without review');
+ const value=estimatedDiaryMeal(estimate,{id:crypto.randomUUID(),date:'2026-10-22',time:'12:30',category:'Lunch',servings:.5});assert.equal(value.calories,210);assert.equal(value.protein,11.25);assert.deepEqual(value.nutrition.reference.nutrients,{});
+ const save={action:'meal',client,value};assert.equal((await data.POST(req('a',save))).status,200);assert.equal((await data.POST(req('a',save))).status,200);assert.equal((await data.POST(req('b',save))).status,404);
+ const rows=await DB.prepare('SELECT data FROM meals WHERE client=?').bind(client).all();assert.equal(rows.results.length,1);const saved=JSON.parse(rows.results[0].data);assert.equal(saved.calories,210);assert.equal(saved.category,'Lunch');assert.equal(saved.date,'2026-10-22');assert.equal(saved.time,'12:30');assert.match(saved.nutrition.reference.source,/AI estimate/);
+ answer={...estimate,name:'A'.repeat(140),portion:'P'.repeat(90),notes:'N'.repeat(600),assumptions:undefined};const verbose=await api.POST(req('a',body));assert.equal(verbose.status,200);const normalized=(await verbose.json()).estimate;assert.equal(normalized.name.length,120);assert.equal(normalized.portion.length,60);assert.equal(normalized.notes.length,400);assert.deepEqual(normalized.assumptions,[]);assert.equal(normalized.estimated.calories,420);
+ answer={...estimate,estimated:{...estimate.estimated,protein:undefined}};assert.equal((await api.POST(req('a',body))).status,502,'missing macros are never fabricated');
+ answer='not json';assert.equal((await api.POST(req('a',body))).status,502);answer={error:'not food'};assert.equal((await api.POST(req('a',body))).status,422);answer={...estimate,estimated:{...estimate.estimated,calories:-5}};assert.equal((await api.POST(req('a',body))).status,502);
+ delete globalThis.__foodEnv.GEMINI_API_KEY;assert.equal((await api.POST(req('a',body))).status,503);
+ console.log('PASS written AI estimate, auth/account isolation, size bounds, invalid AI output, missing provider, review-only response, portion scaling, diary persistence and duplicate retry safety');
+}finally{await mf.dispose()}

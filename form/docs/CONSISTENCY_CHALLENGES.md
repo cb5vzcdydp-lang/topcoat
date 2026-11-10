@@ -1,0 +1,27 @@
+# Consistency and team challenges
+
+Social → Challenges → Consistency & team goals implements roadmap items 145, 147, 148, 150, 151, 155 and 156. The existing relative-progress challenges remain available and now show their actual formula, date/eligibility rules and shared places for equal scores before creation and joining.
+
+## Activity, scoring and dates
+
+A challenge lasts one to four seven-day periods starting on the chosen UTC date, within the next 90 days. Join by the end of the first date. Start-date activity counts for everyone, including activity recorded before joining that day. Only the signed-in user's own personal profile is used, never a coaching client profile. A personal weekly target and activity are fixed when joining. Choices are training days, recorded cardio minutes or Touch Grass completion days; completion-based groups can use different choices and equipment. Raw-measure teams require compatible activity types.
+
+Each person's week earns `min(actual / personalTarget, 1)`. Completion rank compares the mean of started weeks; exact equal scores share places (1, 1, 3), and unavailable or not-started scores are unranked. Extra volume provides no extra points. A completion-based team adds the fractional personal goals, capped at one per person per week. Raw-measure teams add actual contributions capped at each person's target. A team never mixes incompatible units. This is plan completion, not a universal fitness, ability or medical ranking. The recap shows weekly totals, missed goals and goals met from current records, including after the period ends.
+
+A training day needs at least one completed, recorded working set (a recorded completed side is enough); warm-ups and unfinished/unrecorded sets do not qualify. Dates count once even if sessions are imported repeatedly. Touch Grass counts distinct completed dates across tasks, including accessible life/recovery tasks. Cardio uses real stored durations and deduplicates by date, case-normalised activity/equipment, duration and distance. Indistinguishable same-day sessions can therefore be undercounted; this rule is disclosed before joining. Future records and records outside the challenge dates are excluded. Progress is recomputed, not appended to a points ledger: editing or deleting a source changes the result. Creating challenges or adding proof never awards additional activity points.
+
+## Membership, privacy and proof
+
+Only accepted friends can be invited, up to 19 plus the creator. Each invitee explicitly accepts rules and aggregate sharing before their totals become visible. Other invited accounts cannot inspect a joined roster or its scores before joining. Joined participants agree to sharing limited weekly totals with the group, even if not every pair is directly connected. Blocking hides that participant and makes the viewer's team total unavailable rather than leaking hidden progress. Unfriending the creator or leaving removes eligibility; targets/rules cannot be reset by leaving and rejoining. The creator can cancel. Review opt-out, source deletion and membership changes are checked on every read.
+
+Optional proof attaches a reference to an actual recorded workout, not a new video copy. The author explicitly selects current accepted friends who have joined and opted in as reviewers. Only those reviewers and the author can read the workout's exercises, loads, reps and completion states. Turning off review, blocking, leaving or cancelling revokes reviewer access. The author can delete proof. Deleted or out-of-period source workouts are marked unavailable. Proof confers no points and uses no extra R2 media storage. Clip uploads are not added by this feature.
+
+Personal-profile exports include that account/profile's own challenge membership and authored proof references, not other participants' raw workouts. Published coaching workflows are also included for the selected authorised profile. This does not add a complete account export/restore or account erasure workflow.
+
+## Limits and verification
+
+Read limits are 30 recent challenge memberships, 20 joined members, 4,000 workout rows, 4,000 cardio rows, 2,000 task rows and 50 recent proofs per detail. If a source limit is exceeded, scores show No data rather than silently using partial totals. Proof authoring offers up to 30 recent completed workouts and 10 records per person per challenge. Creating is capped at 100 per account. Friendship checks are batched to keep database requests bounded. Existing themes, AI, authentication and logging remain in place; no paid service or third-party integration is added.
+
+`tests/consistency-challenges.mjs` exercises actual D1 state: fixed-rule/retry/concurrent creation, consent, dates, personal profile scope, score caps, accessible mixed targets, compatible teams, duplicates, ties, source editing/deletion, proof record IDs and access/revocation, blocking, withdrawal and cancellation. `tests/consistency-browser.mjs` covers the actual Social entry, create/review/join controls, fractional team display, repeated selection, rapid submit, proof sharing/opt-out, cancellation and 320/390/430/1280 layouts using controlled API fixtures. Relative challenge formulas and ties have pure tests. Physical iPhone Safari and live multi-account browsers are not certified by these fixtures; server isolation is separately tested against D1.
+
+The full 240-item roadmap remains incomplete; the in-app status list retains remaining work.

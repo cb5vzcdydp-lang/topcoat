@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import React from 'react';
+import {renderToString} from 'react-dom/server';
+const require=createRequire(import.meta.url),r=createRequire(require.resolve('wrangler/package.json'));
+await r('esbuild').build({entryPoints:['app/sleep-recovery.tsx'],outfile:'.test-output/sleep-recovery.mjs',bundle:true,platform:'node',format:'esm',packages:'external'});
+const {SleepRecovery}=await import('../.test-output/sleep-recovery.mjs');
+const today=new Date().toLocaleDateString('en-CA');
+const render=readings=>renderToString(React.createElement(SleepRecovery,{client:'a',readings,onConnect(){}}));
+const reading=(client,date,value,unit='hours')=>({client,date,value,unit,metric:'sleep_duration',source:'test'});
+const empty=render([]);assert.ok(empty.includes('NO SCORE SHARED'));assert.ok(empty.includes('Stage breakdown not shared'));assert.ok(!empty.includes('NaN'));
+const html=render([reading('a',today,450,'minutes'),reading('b',today,99),reading('a','2001-01-01',55)]);assert.ok(html.includes('7h 30m'));assert.ok(!html.includes('99h'));assert.ok(!html.includes('55h'));assert.ok(!html.includes('NaN'));
+console.log('Sleep view checks passed: empty states, client/date isolation and unit conversion. Browser visual QA not performed.');

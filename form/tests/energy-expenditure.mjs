@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const r=createRequire(createRequire(import.meta.url).resolve('wrangler/package.json'));const {build}=r('esbuild');
+await build({entryPoints:['lib/energy-expenditure.ts'],outfile:'.test-output/energy-expenditure.mjs',bundle:true,format:'esm',platform:'node'});
+const {calculateEnergyExpenditure,adaptiveCalorieTarget}=await import('../.test-output/energy-expenditure.mjs');
+const device=calculateEnergyExpenditure({calories:2000,protein:150,carbs:200,fat:60,activeCalories:550,totalCalories:2650,weightKg:80,bodyFatPercent:20,profileMaintenance:2400});
+assert.equal(device.tdee,2650);assert.equal(device.source,'device');assert.equal(device.bmr,1752);assert.equal(device.tef,224);assert.equal(device.dailyMovement,124);assert.equal(adaptiveCalorieTarget(2000,device,2400),2250);
+const observed=calculateEnergyExpenditure({calories:2000,protein:0,carbs:0,fat:0,activeCalories:400,observedMaintenance:2500,profileMaintenance:2400});
+assert.equal(observed.tdee,2500);assert.equal(observed.tef,200);assert.equal(observed.source,'observed');assert.equal(adaptiveCalorieTarget(2000,observed,2400),2000);
+console.log('energy expenditure tests passed');

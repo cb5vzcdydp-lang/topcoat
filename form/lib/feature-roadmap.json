@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "001",
+    "name": "One-tap repeat set",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Copy the previous set, then adjust only what changed; keep warm-up and working-set types distinct.",
+    "status": "pending"
+  },
+  {
+    "id": "002",
+    "name": "Undo recent actions",
+    "type": "N",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Restore a removed set, exercise or completion mark through a visible undo action and a short action history.",
+    "status": "pending"
+  },
+  {
+    "id": "003",
+    "name": "Supersets and circuits",
+    "type": "N",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Group exercises, alternate between them and start the appropriate rest timer after the whole round.",
+    "status": "pending"
+  },
+  {
+    "id": "004",
+    "name": "Mid-session exercise swaps",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Replace a lift through the searchable library, preserving the original prescription and recording the reason for the swap.",
+    "status": "pending"
+  },
+  {
+    "id": "005",
+    "name": "Per-exercise rest presets",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Save default rest times for each exercise and allow a quick change during a session.",
+    "status": "pending"
+  },
+  {
+    "id": "006",
+    "name": "Screen-stays-awake option",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Browser",
+    "description": "Request a screen wake lock during logging, show whether it is active and recover gracefully when the browser releases it.",
+    "status": "pending"
+  },
+  {
+    "id": "007",
+    "name": "Warm-up set builder",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Calculate editable warm-up ramps from the planned working load and round loads to equipment you actually have.",
+    "status": "pending"
+  },
+  {
+    "id": "008",
+    "name": "Session pause and resume",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Separate active training time from paused time and restore both after navigation or a reload.",
+    "status": "pending"
+  },
+  {
+    "id": "009",
+    "name": "Set-type labels",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Add drop-set, back-off, tempo and assisted-set labels without counting them as identical straight sets in every chart.",
+    "status": "pending"
+  },
+  {
+    "id": "010",
+    "name": "Unilateral side tracking",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Give left and right sides independent entries, plus a combined view when that suits the exercise.",
+    "status": "pending"
+  },
+  {
+    "id": "011",
+    "name": "Session completion recap",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Show duration, completed work, volume and new records, with a final edit screen before finishing.",
+    "status": "pending"
+  },
+  {
+    "id": "012",
+    "name": "Accidental-exit protection",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Warn before abandoning unsaved work, visibly confirm draft recovery and keep a clear route back to the session.",
+    "status": "pending"
+  },
+  {
+    "id": "013",
+    "name": "Rolling workout rotation",
+    "type": "N",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Run A/B/C or any repeating sequence independent of weekdays; suggest the next template when starting.",
+    "status": "pending"
+  },
+  {
+    "id": "014",
+    "name": "Training blocks",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Organise several weeks into blocks with start/end dates, optional goals and a simple archive.",
+    "status": "pending"
+  },
+  {
+    "id": "015",
+    "name": "Template folders and tags",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Group unlimited templates by gym, goal or training phase, with search and favourites.",
+    "status": "pending"
+  },
+  {
+    "id": "016",
+    "name": "Template duplication",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Copy a session, rename it and edit it without changing the original or its past workouts.",
+    "status": "pending"
+  },
+  {
+    "id": "017",
+    "name": "Version history for templates",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Compare previous template versions and restore one while keeping completed sessions unchanged.",
+    "status": "pending"
+  },
+  {
+    "id": "018",
+    "name": "Optional scheduling",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Offer scheduled, rolling and choose-on-the-day modes with no compulsory weekday assignment.",
+    "status": "pending"
+  },
+  {
+    "id": "019",
+    "name": "Exercise substitution rules",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Save preferred alternatives by equipment or movement, then let the lifter approve the actual swap.",
+    "status": "pending"
+  },
+  {
+    "id": "020",
+    "name": "Rep-range prescriptions",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Support different targets for each set instead of one range for the whole exercise.",
+    "status": "pending"
+  },
+  {
+    "id": "021",
+    "name": "Training-day target types",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Allow strength, technique, volume or recovery sessions to carry different defaults and check-in prompts.",
+    "status": "pending"
+  },
+  {
+    "id": "022",
+    "name": "Deload template copies",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Create an editable lighter copy from a chosen programme and keep it separate from the original plan.",
+    "status": "pending"
+  },
+  {
+    "id": "023",
+    "name": "Programme checkpoints",
+    "type": "N",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Attach review dates and notes to a block so adjustments happen deliberately rather than automatically.",
+    "status": "pending"
+  },
+  {
+    "id": "024",
+    "name": "Share a template privately",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Send a read-only template link or export that another authorised user can copy into their own library.",
+    "status": "pending"
+  },
+  {
+    "id": "025",
+    "name": "Equipment and muscle filters",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Combine equipment, movement, muscle and difficulty filters instead of searching only by name.",
+    "status": "pending"
+  },
+  {
+    "id": "026",
+    "name": "Favourite exercises",
+    "type": "N",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Pin frequently used lifts and show them first when adding exercises to a workout.",
+    "status": "pending"
+  },
+  {
+    "id": "027",
+    "name": "Personal exercise aliases",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Match familiar names, abbreviations and spelling variations to the same exercise history.",
+    "status": "pending"
+  },
+  {
+    "id": "028",
+    "name": "Custom exercise images",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Storage",
+    "description": "Attach a small self-made image to a custom exercise, respecting the shared media cap.",
+    "status": "pending"
+  },
+  {
+    "id": "029",
+    "name": "Beginner cue cards",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Show short setup, execution and common-error notes beside an exercise, with a link to the full guide.",
+    "status": "pending"
+  },
+  {
+    "id": "030",
+    "name": "Movement-pattern browsing",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Browse squats, hinges, horizontal pulls and other patterns when the user does not know an exercise name.",
+    "status": "pending"
+  },
+  {
+    "id": "031",
+    "name": "Gym-specific equipment lists",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Record which machines and implements exist at each gym and filter exercises accordingly.",
+    "status": "pending"
+  },
+  {
+    "id": "032",
+    "name": "Equipment setup notes",
+    "type": "N",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Remember seat position, cable height, grips and machine settings for a particular gym and exercise.",
+    "status": "pending"
+  },
+  {
+    "id": "033",
+    "name": "Range-of-motion notes",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Save an individual's chosen range and technique cue without presenting it as a universal prescription.",
+    "status": "pending"
+  },
+  {
+    "id": "034",
+    "name": "Manual video comparison",
+    "type": "U",
+    "priority": "P2",
+    "effort": "L",
+    "delivery": "Storage",
+    "description": "Play two short saved clips side by side, with pause and slow playback; provide no automated form judgement.",
+    "status": "pending"
+  },
+  {
+    "id": "035",
+    "name": "Reference-video bookmarks",
+    "type": "N",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Save an external instructional link and optional timestamp without downloading or analysing the video.",
+    "status": "pending"
+  },
+  {
+    "id": "036",
+    "name": "Library corrections workflow",
+    "type": "N",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Let users propose a duplicate, wrong muscle tag or inaccurate cue; let the owner review changes before publication.",
+    "status": "pending"
+  },
+  {
+    "id": "037",
+    "name": "Exercise-specific trend pages",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Combine load, reps and completed-set history with date filters and readable mobile charts.",
+    "status": "pending"
+  },
+  {
+    "id": "038",
+    "name": "Rep-range personal records",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Track separate records for singles, five-rep sets, ten-rep sets and other user-selected ranges.",
+    "status": "pending"
+  },
+  {
+    "id": "039",
+    "name": "Estimated max transparency",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Show the chosen estimated-max formula and the sets used, and distinguish estimates from tested records.",
+    "status": "pending"
+  },
+  {
+    "id": "040",
+    "name": "Rolling volume trends",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Compare completed sets and load-volume over rolling periods rather than calendar weeks alone.",
+    "status": "pending"
+  },
+  {
+    "id": "041",
+    "name": "Muscle-volume drill-down",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Tap a muscle on the diagram to see contributing exercises, set counts and date ranges.",
+    "status": "pending"
+  },
+  {
+    "id": "042",
+    "name": "Direct and indirect set views",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Show separate configurable models for direct and secondary work without calling either measured activation.",
+    "status": "pending"
+  },
+  {
+    "id": "043",
+    "name": "Progression rule editor",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Let users define rep ceilings, load jumps and repeat-session rules; coaches approve changes where relevant.",
+    "status": "pending"
+  },
+  {
+    "id": "044",
+    "name": "Plateau review prompts",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Flag a chosen number of comparable sessions without progress and show the underlying records for review.",
+    "status": "pending"
+  },
+  {
+    "id": "045",
+    "name": "Technique-change annotations",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Mark a new range, machine or execution style so graphs do not silently compare incompatible performances.",
+    "status": "pending"
+  },
+  {
+    "id": "046",
+    "name": "Left-right trend comparison",
+    "type": "N",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Compare unilateral sides over time and show the actual sets behind any difference.",
+    "status": "pending"
+  },
+  {
+    "id": "047",
+    "name": "Bodyweight-adjusted strength",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Offer load-to-bodyweight views using dated weigh-ins, with clear treatment of missing weigh-ins.",
+    "status": "pending"
+  },
+  {
+    "id": "048",
+    "name": "Data-quality controls",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Exclude warm-ups, assisted reps or invalid entries from a chart, while retaining the original records.",
+    "status": "pending"
+  },
+  {
+    "id": "049",
+    "name": "Interval session builder",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Build repeatable work/rest intervals for running, cycling, rowing or other cardio.",
+    "status": "pending"
+  },
+  {
+    "id": "050",
+    "name": "Manual lap splits",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Record lap or kilometre splits, then compare consistency across similar sessions.",
+    "status": "pending"
+  },
+  {
+    "id": "051",
+    "name": "Comparable-distance PBs",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Separate 5 km, 10 km and other benchmarks and show time and speed improvement correctly.",
+    "status": "pending"
+  },
+  {
+    "id": "052",
+    "name": "Speed versus pace display",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Toggle km/h, min/km and min/mile with consistent conversion throughout the cardio pages.",
+    "status": "pending"
+  },
+  {
+    "id": "053",
+    "name": "Perceived-effort logging",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Add a simple effort score and notes so casual cardio can be tracked without a heart-rate device.",
+    "status": "pending"
+  },
+  {
+    "id": "054",
+    "name": "Incline and elevation notes",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Record treadmill incline, stairs climbed or manually entered elevation as distinct fields.",
+    "status": "pending"
+  },
+  {
+    "id": "055",
+    "name": "Weekly cardio totals",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Summarise time, distance and session count by activity without combining unlike units into a fake score.",
+    "status": "pending"
+  },
+  {
+    "id": "056",
+    "name": "Personal heart-rate zones",
+    "type": "N",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Allow manually supplied zone boundaries and label them as user settings, not automatic medical thresholds.",
+    "status": "pending"
+  },
+  {
+    "id": "057",
+    "name": "Walk-run progression plans",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Provide editable interval templates and completion tracking without dynamically prescribing intensity.",
+    "status": "pending"
+  },
+  {
+    "id": "058",
+    "name": "Routes from GPX files",
+    "type": "N",
+    "priority": "P3",
+    "effort": "L",
+    "delivery": "Data",
+    "description": "Import a route with a preview and privacy controls; calculate distance using a documented method.",
+    "status": "pending"
+  },
+  {
+    "id": "059",
+    "name": "Foreground GPS recording",
+    "type": "N",
+    "priority": "P3",
+    "effort": "L",
+    "delivery": "Browser",
+    "description": "Optionally record while the page is active, show permission/status and warn when recording is interrupted.",
+    "status": "pending"
+  },
+  {
+    "id": "060",
+    "name": "Indoor benchmark history",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Track repeatable bike, rower or treadmill tests with equipment identifiers to improve comparability.",
+    "status": "pending"
+  },
+  {
+    "id": "061",
+    "name": "Copy a previous day",
+    "type": "N",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Choose which meals to copy into a new date, preview the result and prevent accidental duplicate imports.",
+    "status": "pending"
+  },
+  {
+    "id": "062",
+    "name": "Food favourites and recents",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Rank personal staples, hide unwanted recent items and search them alongside saved foods.",
+    "status": "pending"
+  },
+  {
+    "id": "063",
+    "name": "Flexible serving units",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Save grams, millilitres and household units with explicit conversion factors per food.",
+    "status": "pending"
+  },
+  {
+    "id": "064",
+    "name": "Per-100-gram entry mode",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Enter label nutrition once and calculate any weighed portion automatically.",
+    "status": "pending"
+  },
+  {
+    "id": "065",
+    "name": "Custom meal categories",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Rename, reorder or add meal groups without changing their historic dates or contents.",
+    "status": "pending"
+  },
+  {
+    "id": "066",
+    "name": "Saved-food portion matching",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Rank saved portions against remaining macros and calories, with no generated or invented food values.",
+    "status": "pending"
+  },
+  {
+    "id": "067",
+    "name": "Fibre tracking",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Add fibre as an optional field, source it from labels and show unknown values as unknown.",
+    "status": "pending"
+  },
+  {
+    "id": "068",
+    "name": "Optional micronutrient fields",
+    "type": "N",
+    "priority": "P3",
+    "effort": "L",
+    "delivery": "Data",
+    "description": "Track selected nutrients only when the product data or user actually supplies those values.",
+    "status": "pending"
+  },
+  {
+    "id": "069",
+    "name": "Recipe nutrition versioning",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Keep logged servings tied to the recipe version used on that date when ingredients later change.",
+    "status": "pending"
+  },
+  {
+    "id": "070",
+    "name": "Training and rest-day targets",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Apply chosen calorie/macro targets by day type while preserving historical targets for comparison.",
+    "status": "pending"
+  },
+  {
+    "id": "071",
+    "name": "Food-source labels",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Show whether nutrition came from a package, public database, recipe calculation or manual estimate.",
+    "status": "pending"
+  },
+  {
+    "id": "072",
+    "name": "Diary validation and undo",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Flag implausible portions, distinguish missing from zero and offer undo after food deletion.",
+    "status": "pending"
+  },
+  {
+    "id": "073",
+    "name": "Recipe folders and search",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Organise recipes by meal, preparation time or personal tag without imposing a template-count limit.",
+    "status": "pending"
+  },
+  {
+    "id": "074",
+    "name": "Cooked and raw weight modes",
+    "type": "N",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Record which weight basis each ingredient uses and avoid silently converting raw values to cooked values.",
+    "status": "pending"
+  },
+  {
+    "id": "075",
+    "name": "Batch-cooking portions",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Record final cooked batch weight and log a serving by grams or fraction of the batch.",
+    "status": "pending"
+  },
+  {
+    "id": "076",
+    "name": "Scaled recipes",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Scale ingredient amounts and servings together while retaining the original recipe.",
+    "status": "pending"
+  },
+  {
+    "id": "077",
+    "name": "Ingredient substitutions",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Save user-approved swaps with their own nutrition data and show the effect on calculated macros.",
+    "status": "pending"
+  },
+  {
+    "id": "078",
+    "name": "Pantry inventory",
+    "type": "N",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Mark ingredients already owned so grocery lists omit or reduce them appropriately.",
+    "status": "pending"
+  },
+  {
+    "id": "079",
+    "name": "Consolidated shopping lists",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Combine matching ingredients across planned recipes and keep units compatible before summing.",
+    "status": "pending"
+  },
+  {
+    "id": "080",
+    "name": "Manual recipe cost estimates",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Enter ingredient prices to calculate a batch cost and cost per serving, without live supermarket APIs.",
+    "status": "pending"
+  },
+  {
+    "id": "081",
+    "name": "Meal-prep calendar",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Arrange saved recipes across dates and log the actual meal separately from the plan.",
+    "status": "pending"
+  },
+  {
+    "id": "082",
+    "name": "Dietary preference tags",
+    "type": "N",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Filter user-tagged recipes by preferences; never imply unverified allergy safety.",
+    "status": "pending"
+  },
+  {
+    "id": "083",
+    "name": "Printable prep sheets",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Export a compact recipe, scaled ingredients and shopping list as a browser-generated printable sheet.",
+    "status": "pending"
+  },
+  {
+    "id": "084",
+    "name": "Recipe copy and private sharing",
+    "type": "N",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Share a recipe with an authorised friend who can copy and modify it independently.",
+    "status": "pending"
+  },
+  {
+    "id": "085",
+    "name": "Measurement reminders",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Browser",
+    "description": "Offer user-chosen weigh-in times and an easy skip, using supported reminder methods.",
+    "status": "pending"
+  },
+  {
+    "id": "086",
+    "name": "Measurement edit history",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Show corrections and their dates so an accidental weight entry can be traced and reversed.",
+    "status": "pending"
+  },
+  {
+    "id": "087",
+    "name": "Waist and circumference charts",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Track waist, arms, chest or other chosen measurements with custom units and notes.",
+    "status": "pending"
+  },
+  {
+    "id": "088",
+    "name": "Goal-direction choices",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Support maintain, gain or lose goals without treating a falling weight as automatically better.",
+    "status": "pending"
+  },
+  {
+    "id": "089",
+    "name": "Target-weight range",
+    "type": "N",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Allow a maintenance band instead of requiring one exact goal weight.",
+    "status": "pending"
+  },
+  {
+    "id": "090",
+    "name": "Projection versus reality",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Overlay scenario checkpoints against actual measurements and show the size of the difference.",
+    "status": "pending"
+  },
+  {
+    "id": "091",
+    "name": "Body-fat uncertainty range",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Accept a manually entered range and show how that changes checkpoint weights and FFMI.",
+    "status": "pending"
+  },
+  {
+    "id": "092",
+    "name": "Multiple weight-trend methods",
+    "type": "U",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Offer a clearly labelled moving average or smoothing method, with a stable default and consistent history.",
+    "status": "pending"
+  },
+  {
+    "id": "093",
+    "name": "Progress-photo alignment",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Storage",
+    "description": "Add a manual positioning guide and consistent view labels; keep small files under the media cap.",
+    "status": "pending"
+  },
+  {
+    "id": "094",
+    "name": "Observed maintenance diagnostics",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Show which intake and weight records support the estimate and why it may be unavailable.",
+    "status": "pending"
+  },
+  {
+    "id": "095",
+    "name": "Goal review dates",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Schedule manual reviews so targets can be revised instead of blindly following an old timeline.",
+    "status": "pending"
+  },
+  {
+    "id": "096",
+    "name": "Body-progress summary export",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Create a private printable summary of trends, measurements and milestones for a chosen period.",
+    "status": "pending"
+  },
+  {
+    "id": "097",
+    "name": "Manual sleep schedule log",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Record bedtime, wake time, naps and subjective sleep quality when no wearable export is available.",
+    "status": "pending"
+  },
+  {
+    "id": "098",
+    "name": "Sleep consistency view",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Show variability in bed and wake times across the user's chosen date range.",
+    "status": "pending"
+  },
+  {
+    "id": "099",
+    "name": "Personal baseline windows",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Compare HRV or resting heart rate with the person's own recent records, using consistent data sources.",
+    "status": "pending"
+  },
+  {
+    "id": "100",
+    "name": "Recovery journal tags",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Record travel, late training or other user-selected context and browse trends without claiming causation.",
+    "status": "pending"
+  },
+  {
+    "id": "101",
+    "name": "Rest-day notes",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Log rest and recovery activities without needing to invent an exercise session.",
+    "status": "pending"
+  },
+  {
+    "id": "102",
+    "name": "Source-specific sleep charts",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Separate wearable sources and manual entries rather than merging conflicting stage readings.",
+    "status": "pending"
+  },
+  {
+    "id": "103",
+    "name": "Naps and overnight attribution",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Handle naps separately and make the date assigned to an overnight sleep period explicit.",
+    "status": "pending"
+  },
+  {
+    "id": "104",
+    "name": "User-defined sleep goals",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Allow schedule-based targets and show actual versus chosen target without diagnosing sleep disorders.",
+    "status": "pending"
+  },
+  {
+    "id": "105",
+    "name": "Fatigue check-in trends",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Chart the user's energy, stress and soreness logs alongside training without prescribing a medical response.",
+    "status": "pending"
+  },
+  {
+    "id": "106",
+    "name": "Transparent readiness checklist",
+    "type": "U",
+    "priority": "P3",
+    "effort": "L",
+    "delivery": "Local",
+    "description": "Use an optional rule-based checklist with disclosed weights and missing-data handling, not a claimed clinical recovery score.",
+    "status": "pending"
+  },
+  {
+    "id": "107",
+    "name": "Recovery and performance comparison",
+    "type": "N",
+    "priority": "P3",
+    "effort": "L",
+    "delivery": "Local",
+    "description": "Compare sleep/fatigue logs with later sessions, label small samples and avoid cause-and-effect claims.",
+    "status": "pending"
+  },
+  {
+    "id": "108",
+    "name": "Recovery source diagnostics",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Show missing dates, source changes and stale records before displaying a confident-looking graph.",
+    "status": "pending"
+  },
+  {
+    "id": "109",
+    "name": "Custom daily habits",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Let users add a small checklist such as prepare gym bag, stretch or log food.",
+    "status": "pending"
+  },
+  {
+    "id": "110",
+    "name": "Weekly frequency goals",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Track three sessions per week or similar targets without requiring fixed weekdays.",
+    "status": "pending"
+  },
+  {
+    "id": "111",
+    "name": "Flexible streaks",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Offer weekly consistency streaks, planned rest days and optional grace days rather than daily all-or-nothing streaks.",
+    "status": "pending"
+  },
+  {
+    "id": "112",
+    "name": "Quiet hours",
+    "type": "N",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Respect user-selected sleep and work periods whenever reminders can be delivered.",
+    "status": "pending"
+  },
+  {
+    "id": "113",
+    "name": "Reminder delivery status",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Browser",
+    "description": "Show whether a reminder is calendar-only, foreground-only or supported push, and when it last succeeded.",
+    "status": "pending"
+  },
+  {
+    "id": "114",
+    "name": "Snooze and reschedule",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Let a user defer a workout or check-in without duplicating the scheduled task.",
+    "status": "pending"
+  },
+  {
+    "id": "115",
+    "name": "Habit templates",
+    "type": "N",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Provide editable checklists for training days, rest days and meal preparation.",
+    "status": "pending"
+  },
+  {
+    "id": "116",
+    "name": "Weekly reflection prompts",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Ask what went well, what got in the way and what should change next week.",
+    "status": "pending"
+  },
+  {
+    "id": "117",
+    "name": "Minimum-session option",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Save a shorter fallback workout for busy days and mark it separately from a full session.",
+    "status": "pending"
+  },
+  {
+    "id": "118",
+    "name": "Milestone reminders",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Offer an optional review reminder for a saved goal date instead of declaring the goal achieved automatically.",
+    "status": "pending"
+  },
+  {
+    "id": "119",
+    "name": "Closed-app web push",
+    "type": "U",
+    "priority": "P3",
+    "effort": "L",
+    "delivery": "Platform",
+    "description": "Add only after confirming Sites can run a sender, with opt-in permission, quiet hours and delivery testing.",
+    "status": "pending"
+  },
+  {
+    "id": "120",
+    "name": "Pause reminders temporarily",
+    "type": "N",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Disable reminders during illness, holidays or a chosen break without deleting the underlying plan.",
+    "status": "pending"
+  },
+  {
+    "id": "121",
+    "name": "Custom quick actions",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Choose the main Home buttons, such as Start workout, Add food, Log weight and Add cardio.",
+    "status": "pending"
+  },
+  {
+    "id": "122",
+    "name": "Unified selected date",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Keep one clearly visible selected date across Home, food and progress screens, with a return-to-today action.",
+    "status": "pending"
+  },
+  {
+    "id": "123",
+    "name": "Continue-last-task card",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Resume the unfinished workout, incomplete food entry or selected planning task from Home.",
+    "status": "pending"
+  },
+  {
+    "id": "124",
+    "name": "Global search",
+    "type": "N",
+    "priority": "P2",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Search templates, exercises, recipes, friends and settings with result types clearly separated.",
+    "status": "pending"
+  },
+  {
+    "id": "125",
+    "name": "Pinned pages",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Let users pin their most-used pages and keep advanced sections collapsed until needed.",
+    "status": "pending"
+  },
+  {
+    "id": "126",
+    "name": "First-week checklist",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Guide a new user through profile, first template, first log and first backup.",
+    "status": "pending"
+  },
+  {
+    "id": "127",
+    "name": "Meaningful empty states",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Explain why a chart has no data and give one direct action to start collecting it.",
+    "status": "pending"
+  },
+  {
+    "id": "128",
+    "name": "Consistent back navigation",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Preserve search, scroll and selected date when returning from a detail page.",
+    "status": "pending"
+  },
+  {
+    "id": "129",
+    "name": "Dashboard layout presets",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Offer compact, nutrition-focused and training-focused presets alongside manual card customisation.",
+    "status": "pending"
+  },
+  {
+    "id": "130",
+    "name": "Phone layout test matrix",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Verify narrow screens, large text, landscape mode and keyboard-open forms before each release.",
+    "status": "pending"
+  },
+  {
+    "id": "131",
+    "name": "Help beside complex numbers",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Explain trend rate, expenditure, FFMI and volume calculations at the point where each appears.",
+    "status": "pending"
+  },
+  {
+    "id": "132",
+    "name": "Home performance budget",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Verify",
+    "description": "Set limits for initial scripts, image sizes and unnecessary requests, then measure on a slower phone.",
+    "status": "pending"
+  },
+  {
+    "id": "133",
+    "name": "Post audience controls",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Choose private, selected friends or all accepted friends for each post, with a clear preview.",
+    "status": "pending"
+  },
+  {
+    "id": "134",
+    "name": "Block and mute",
+    "type": "N",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Hide unwanted content and stop contact through an explicit block or temporary mute.",
+    "status": "pending"
+  },
+  {
+    "id": "135",
+    "name": "Friend groups",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Create small groups such as gym mates or a training partner, without making profiles public.",
+    "status": "pending"
+  },
+  {
+    "id": "136",
+    "name": "Optional activity visibility",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Choose whether friends see workout completion, exercise detail or only a manually shared summary.",
+    "status": "pending"
+  },
+  {
+    "id": "137",
+    "name": "Post edit history",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Correct a caption or shared set summary while preserving enough history to explain the change.",
+    "status": "pending"
+  },
+  {
+    "id": "138",
+    "name": "Reactions beyond likes",
+    "type": "N",
+    "priority": "P3",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Offer a small set of reactions that users can disable, avoiding unnecessary social pressure.",
+    "status": "pending"
+  },
+  {
+    "id": "139",
+    "name": "Comment controls",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Edit/delete your own comment and let a post author close comments or remove abusive replies.",
+    "status": "pending"
+  },
+  {
+    "id": "140",
+    "name": "Mentions and notifications",
+    "type": "N",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Notify only authorised users and avoid exposing a private post through notification text.",
+    "status": "pending"
+  },
+  {
+    "id": "141",
+    "name": "Training-partner check-ins",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Send an in-app acknowledgement or optional plan to meet, without accessing an external messaging service.",
+    "status": "pending"
+  },
+  {
+    "id": "142",
+    "name": "Feed filters",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Filter friends' sessions, milestones or photos and hide categories the user does not want.",
+    "status": "pending"
+  },
+  {
+    "id": "143",
+    "name": "Shareable workout cards",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Generate an image or printable card locally with the exact fields the user approves.",
+    "status": "pending"
+  },
+  {
+    "id": "144",
+    "name": "Report and remove workflow",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Let a small-group owner review reported posts, with audit records and no automatic publication of reports.",
+    "status": "pending"
+  },
+  {
+    "id": "145",
+    "name": "Consistency challenges",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Compete on completing a personal weekly plan rather than absolute workout volume.",
+    "status": "pending"
+  },
+  {
+    "id": "146",
+    "name": "Personal improvement scoring",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Compare percentage improvement against each participant's baseline for an agreed metric.",
+    "status": "pending"
+  },
+  {
+    "id": "147",
+    "name": "Challenge rule preview",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Show eligibility, date range, scoring formula and tie rules before anyone joins.",
+    "status": "pending"
+  },
+  {
+    "id": "148",
+    "name": "Team goals",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Let a group combine completed sessions, active minutes or another compatible measure toward a shared target.",
+    "status": "pending"
+  },
+  {
+    "id": "149",
+    "name": "Baseline confirmation",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Require participants to review their own starting measurement and units before a challenge begins.",
+    "status": "pending"
+  },
+  {
+    "id": "150",
+    "name": "Private proof attachments",
+    "type": "N",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Storage",
+    "description": "Optionally attach a short clip or record visible only to agreed reviewers, respecting media limits.",
+    "status": "pending"
+  },
+  {
+    "id": "151",
+    "name": "Anti-duplicate scoring",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Prevent the same imported or edited activity from earning points multiple times.",
+    "status": "pending"
+  },
+  {
+    "id": "152",
+    "name": "Minimum-data rules",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Label insufficient records and exclude missing values instead of treating them as zero performance.",
+    "status": "pending"
+  },
+  {
+    "id": "153",
+    "name": "Achievement badges",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Award optional badges for personal milestones, with a way to hide celebrations.",
+    "status": "pending"
+  },
+  {
+    "id": "154",
+    "name": "Challenge pause or exit",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Let users leave or pause a challenge with clearly defined effects on the leaderboard.",
+    "status": "pending"
+  },
+  {
+    "id": "155",
+    "name": "Accessible alternatives",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Offer comparable completion-based targets when participants have different equipment or abilities.",
+    "status": "pending"
+  },
+  {
+    "id": "156",
+    "name": "Challenge recap",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Summarise each person's progress and consistency without declaring a universal fitness ranking.",
+    "status": "pending"
+  },
+  {
+    "id": "157",
+    "name": "Attention queue filters",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Separate missed logs, overdue check-ins and stalled trends, with configurable thresholds.",
+    "status": "pending"
+  },
+  {
+    "id": "158",
+    "name": "Coach task list",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Assign follow-up tasks to yourself with due dates and completion notes.",
+    "status": "pending"
+  },
+  {
+    "id": "159",
+    "name": "Scheduled programme reviews",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Attach review dates to clients or blocks and show them in the attention queue.",
+    "status": "pending"
+  },
+  {
+    "id": "160",
+    "name": "Bulk assignment preview",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Show exactly which clients and plans will change before a multi-client template assignment.",
+    "status": "pending"
+  },
+  {
+    "id": "161",
+    "name": "Client-specific overrides",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Assign a shared template but customise one client's sets, equipment or progression rules independently.",
+    "status": "pending"
+  },
+  {
+    "id": "162",
+    "name": "Check-in form builder",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Choose a small set of questions for each client instead of forcing every available metric.",
+    "status": "pending"
+  },
+  {
+    "id": "163",
+    "name": "Coach-only note labels",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Make private notes visibly distinct from messages that the client can see.",
+    "status": "pending"
+  },
+  {
+    "id": "164",
+    "name": "Reviewable change proposals",
+    "type": "U",
+    "priority": "P2",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Let coaches propose programme changes, show differences and request the client's acknowledgement.",
+    "status": "pending"
+  },
+  {
+    "id": "165",
+    "name": "Video feedback timestamps",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Storage",
+    "description": "Attach a written coaching note to a moment in an uploaded short clip without automated analysis.",
+    "status": "pending"
+  },
+  {
+    "id": "166",
+    "name": "Consent and access history",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Show who has access, when consent was given and how to disconnect.",
+    "status": "pending"
+  },
+  {
+    "id": "167",
+    "name": "Client progress brief",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Produce a chosen-date summary of adherence, training and trends for a check-in meeting.",
+    "status": "pending"
+  },
+  {
+    "id": "168",
+    "name": "Coach personal workspace",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Make switching between your own training and client review clear, fast and hard to confuse.",
+    "status": "pending"
+  },
+  {
+    "id": "169",
+    "name": "Import mapping wizard",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Data",
+    "description": "Preview columns and let users map unfamiliar exercise, meal and date fields before saving.",
+    "status": "pending"
+  },
+  {
+    "id": "170",
+    "name": "Dry-run import report",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Data",
+    "description": "Show accepted rows, rejected rows, duplicates and unit conversions before changing records.",
+    "status": "pending"
+  },
+  {
+    "id": "171",
+    "name": "Import rollback batches",
+    "type": "N",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Attach an import ID to new records so a mistaken import can be undone without deleting unrelated history.",
+    "status": "pending"
+  },
+  {
+    "id": "172",
+    "name": "Duplicate resolution",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Data",
+    "description": "Let users choose between skip, keep both or merge when imported records conflict.",
+    "status": "pending"
+  },
+  {
+    "id": "173",
+    "name": "Exercise-name matching",
+    "type": "U",
+    "priority": "P2",
+    "effort": "L",
+    "delivery": "Data",
+    "description": "Suggest catalogue matches with a review screen and remember the user's mappings for future imports.",
+    "status": "pending"
+  },
+  {
+    "id": "174",
+    "name": "Full personal export",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Export templates, sessions, foods, measurements and relevant metadata in a documented portable format.",
+    "status": "pending"
+  },
+  {
+    "id": "175",
+    "name": "Media export manifest",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Storage",
+    "description": "List saved media and filenames with authenticated download links, distinct from the smaller data export.",
+    "status": "pending"
+  },
+  {
+    "id": "176",
+    "name": "Import progress and resume",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Data",
+    "description": "Process large files in bounded batches, show progress and safely resume after interruptions.",
+    "status": "pending"
+  },
+  {
+    "id": "177",
+    "name": "Locale-aware parsing",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Data",
+    "description": "Detect date, decimal and unit conventions and ask the user to confirm ambiguous cases.",
+    "status": "pending"
+  },
+  {
+    "id": "178",
+    "name": "Source and correction metadata",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Retain the original source and record later corrections without silently rewriting provenance.",
+    "status": "pending"
+  },
+  {
+    "id": "179",
+    "name": "Versioned export schema",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Include format versions and migration rules so future app updates can still read old backups.",
+    "status": "pending"
+  },
+  {
+    "id": "180",
+    "name": "Backup reminder and test restore",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Data",
+    "description": "Remind users to export periodically and offer a harmless validation of a chosen backup file.",
+    "status": "pending"
+  },
+  {
+    "id": "181",
+    "name": "True offline app shell",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Browser",
+    "description": "Cache the minimum app shell and offline fallback, while keeping private content out of shared public caches.",
+    "status": "pending"
+  },
+  {
+    "id": "182",
+    "name": "IndexedDB workout drafts",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Browser",
+    "description": "Store active-session drafts with schema versions and recovery metadata rather than relying only on localStorage.",
+    "status": "pending"
+  },
+  {
+    "id": "183",
+    "name": "Visible sync queue",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Show pending saves, last successful sync and the action needed when a record fails.",
+    "status": "pending"
+  },
+  {
+    "id": "184",
+    "name": "Conflict-resolution screen",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Compare local and server changes when two devices edit the same record, instead of silently overwriting.",
+    "status": "pending"
+  },
+  {
+    "id": "185",
+    "name": "Idempotent saves everywhere",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Extend duplicate-safe retries beyond workouts to meals, measurements, comments and imports.",
+    "status": "pending"
+  },
+  {
+    "id": "186",
+    "name": "Reconnect recovery",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Browser",
+    "description": "Resume uploads or queued records on return to the foreground; background sync is an enhancement only where supported.",
+    "status": "pending"
+  },
+  {
+    "id": "187",
+    "name": "Storage-eviction warnings",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Browser",
+    "description": "Explain device storage risks and offer an export before clearing drafts or installing an update.",
+    "status": "pending"
+  },
+  {
+    "id": "188",
+    "name": "Interrupted-upload handling",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Storage",
+    "description": "Avoid orphaned media and make a failed upload clearly recoverable or removable.",
+    "status": "pending"
+  },
+  {
+    "id": "189",
+    "name": "Safe app updates",
+    "type": "N",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Browser",
+    "description": "Avoid replacing the app underneath an active workout; offer an update after the session is saved.",
+    "status": "pending"
+  },
+  {
+    "id": "190",
+    "name": "Single-active-session guard",
+    "type": "U",
+    "priority": "P2",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Detect multiple tabs or devices editing a session and ask how to proceed before conflicting saves.",
+    "status": "pending"
+  },
+  {
+    "id": "191",
+    "name": "Time-zone consistency tests",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Keep session dates, sleep dates, reminders and streak boundaries correct when travelling or crossing midnight.",
+    "status": "pending"
+  },
+  {
+    "id": "192",
+    "name": "Readable failure states",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Explain an expired login, quota limit, server error or offline state without pretending the save succeeded.",
+    "status": "pending"
+  },
+  {
+    "id": "193",
+    "name": "Large-text layout",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Support system text scaling and a larger in-app reading size without clipping forms or tables.",
+    "status": "pending"
+  },
+  {
+    "id": "194",
+    "name": "Screen-reader workflow",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Verify",
+    "description": "Label live-set inputs, announce save/error states and keep a sensible reading order.",
+    "status": "pending"
+  },
+  {
+    "id": "195",
+    "name": "Keyboard-only operation",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Make exercise search, logging, menus and dialogs fully usable without touch or a mouse.",
+    "status": "pending"
+  },
+  {
+    "id": "196",
+    "name": "High-contrast palette",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Offer a contrast-tested theme and never rely on colour alone for success, trends or selected controls.",
+    "status": "pending"
+  },
+  {
+    "id": "197",
+    "name": "Reduced-motion preference",
+    "type": "U",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Respect the system setting and provide an explicit control for celebrations or animated charts.",
+    "status": "pending"
+  },
+  {
+    "id": "198",
+    "name": "Left-handed quick controls",
+    "type": "N",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Allow important actions to sit within comfortable reach without changing data semantics.",
+    "status": "pending"
+  },
+  {
+    "id": "199",
+    "name": "Custom display units",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Set kg/lb, distance, pace, water and date conventions consistently across pages and exports.",
+    "status": "pending"
+  },
+  {
+    "id": "200",
+    "name": "Adaptive number entry",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Browser",
+    "description": "Use appropriate numeric keyboards, sensible increments and clear decimal handling for each measurement.",
+    "status": "pending"
+  },
+  {
+    "id": "201",
+    "name": "One-hand session mode",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Prioritise the active exercise and next action with large targets and fewer secondary controls.",
+    "status": "pending"
+  },
+  {
+    "id": "202",
+    "name": "Optional sound and vibration",
+    "type": "N",
+    "priority": "P3",
+    "effort": "M",
+    "delivery": "Browser",
+    "description": "Offer supported feedback without requiring it; keep visual confirmation when device APIs are unavailable.",
+    "status": "pending"
+  },
+  {
+    "id": "203",
+    "name": "Plain-language metric help",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Explain formulas and controls in short, readable text, with an advanced detail view when needed.",
+    "status": "pending"
+  },
+  {
+    "id": "204",
+    "name": "Translation-ready text",
+    "type": "N",
+    "priority": "P3",
+    "effort": "L",
+    "delivery": "Local",
+    "description": "Centralise labels, dates and units so additional languages can be added without rewriting every screen.",
+    "status": "pending"
+  },
+  {
+    "id": "205",
+    "name": "Privacy dashboard",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "List stored data types, coaches/friends with access and the controls for changing visibility.",
+    "status": "pending"
+  },
+  {
+    "id": "206",
+    "name": "Granular sharing consent",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Separate workout, nutrition, measurement and photo sharing instead of one unclear all-data toggle.",
+    "status": "pending"
+  },
+  {
+    "id": "207",
+    "name": "Delete-my-data workflow",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Explain scope, require confirmation and delete the user's records and media without affecting other accounts.",
+    "status": "pending"
+  },
+  {
+    "id": "208",
+    "name": "Session/device controls",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Platform",
+    "description": "Show available sign-in/device status and link to the platform controls for revocation where supported.",
+    "status": "pending"
+  },
+  {
+    "id": "209",
+    "name": "Private-by-default social",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Keep new posts, measurements and profiles private until the user deliberately chooses an audience.",
+    "status": "pending"
+  },
+  {
+    "id": "210",
+    "name": "Media retention choices",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Storage",
+    "description": "Offer expiry dates or cleanup suggestions for old clips/photos while excluding records the user wants to keep.",
+    "status": "pending"
+  },
+  {
+    "id": "211",
+    "name": "Privacy-safe diagnostic logs",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Record failures without storing passwords, tokens, health payloads or uploaded photos in operational logs.",
+    "status": "pending"
+  },
+  {
+    "id": "212",
+    "name": "Cross-account isolation tests",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Continuously test that a friend, former coach or stranger cannot read or modify another user's records.",
+    "status": "pending"
+  },
+  {
+    "id": "213",
+    "name": "Input and upload hardening",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Keep size/signature validation, schema checks and safe rendering consistent across every endpoint.",
+    "status": "pending"
+  },
+  {
+    "id": "214",
+    "name": "Opt-out from comparisons",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Sync",
+    "description": "Let users hide strength comparisons, body metrics and competitive features without losing basic logging.",
+    "status": "pending"
+  },
+  {
+    "id": "215",
+    "name": "Account-access recovery guide",
+    "type": "N",
+    "priority": "P2",
+    "effort": "S",
+    "delivery": "Platform",
+    "description": "Explain how to recover the underlying Sites sign-in and what app records remain available after recovery.",
+    "status": "pending"
+  },
+  {
+    "id": "216",
+    "name": "Data-use explanation",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Provide a concise policy stating what is stored, who can see it and that this edition does not send data to AI.",
+    "status": "pending"
+  },
+  {
+    "id": "217",
+    "name": "Health import centre",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Data",
+    "description": "Combine supported file formats, examples, date ranges and a preview in one place.",
+    "status": "pending"
+  },
+  {
+    "id": "218",
+    "name": "Source-priority rules",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Data",
+    "description": "Let users choose which source wins for steps, sleep or weight when several devices overlap.",
+    "status": "pending"
+  },
+  {
+    "id": "219",
+    "name": "Duplicate interval detection",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Data",
+    "description": "Detect overlapping sleep or activity intervals before summing totals.",
+    "status": "pending"
+  },
+  {
+    "id": "220",
+    "name": "Metric unit normalisation",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Data",
+    "description": "Convert only known unit pairs and reject ambiguous ones rather than guessing.",
+    "status": "pending"
+  },
+  {
+    "id": "221",
+    "name": "Missing-data calendar",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Local",
+    "description": "Show which dates have readings and distinguish an absent reading from a genuine zero.",
+    "status": "pending"
+  },
+  {
+    "id": "222",
+    "name": "Import presets per provider",
+    "type": "U",
+    "priority": "P2",
+    "effort": "L",
+    "delivery": "Data",
+    "description": "Provide reviewed mappings for specific export versions without claiming live connections to those services.",
+    "status": "pending"
+  },
+  {
+    "id": "223",
+    "name": "Total-versus-active energy rules",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Data",
+    "description": "Clearly identify totals, active calories and basal calories, and prevent expenditure double counting.",
+    "status": "pending"
+  },
+  {
+    "id": "224",
+    "name": "Optional manual metric entry",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Allow a dated reading with unit and source when a device export is unavailable.",
+    "status": "pending"
+  },
+  {
+    "id": "225",
+    "name": "Correct and undo health imports",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Sync",
+    "description": "Review an imported batch, fix its source/date mapping or remove it safely.",
+    "status": "pending"
+  },
+  {
+    "id": "226",
+    "name": "Metric reference sources",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Data",
+    "description": "Attach source/version/cohort information to any published reference bands and distinguish wearable estimates from tests.",
+    "status": "pending"
+  },
+  {
+    "id": "227",
+    "name": "Data freshness indicators",
+    "type": "U",
+    "priority": "P1",
+    "effort": "S",
+    "delivery": "Local",
+    "description": "Display when records were imported and how old the latest measurement is.",
+    "status": "pending"
+  },
+  {
+    "id": "228",
+    "name": "Connection permissions review",
+    "type": "U",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Platform",
+    "description": "List optional connections, explain their scope and offer a verified disconnect/revocation path.",
+    "status": "pending"
+  },
+  {
+    "id": "229",
+    "name": "Usage and quota dashboard",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Platform",
+    "description": "Show app-controlled media usage and available platform limits without claiming visibility into billing the app cannot read.",
+    "status": "pending"
+  },
+  {
+    "id": "230",
+    "name": "Media cleanup manager",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Storage",
+    "description": "List the user's largest/oldest files, support preview and offer safe deletion with clear size savings.",
+    "status": "pending"
+  },
+  {
+    "id": "231",
+    "name": "Release checklist",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Require checks for sign-in, logging, imports, isolation and mobile layout before publishing an update.",
+    "status": "pending"
+  },
+  {
+    "id": "232",
+    "name": "Restore rehearsal",
+    "type": "N",
+    "priority": "P2",
+    "effort": "L",
+    "delivery": "Verify",
+    "description": "Validate backup integrity and practise recovery in a separate test environment before an incident.",
+    "status": "pending"
+  },
+  {
+    "id": "233",
+    "name": "Stable import/export contracts",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Keep compatibility fixtures so a change cannot silently break old exports or saved templates.",
+    "status": "pending"
+  },
+  {
+    "id": "234",
+    "name": "Schema migration review",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Inspect bounded, additive migrations and document rollback or forward-fix steps before deployment.",
+    "status": "pending"
+  },
+  {
+    "id": "235",
+    "name": "Small-group access manager",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Platform",
+    "description": "Show the difference between Sites viewer access, Form friendship and coaching consent.",
+    "status": "pending"
+  },
+  {
+    "id": "236",
+    "name": "Feature flags",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Release larger features to a small test group first and keep a safe way to disable a broken enhancement.",
+    "status": "pending"
+  },
+  {
+    "id": "237",
+    "name": "Performance regression checks",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Verify",
+    "description": "Measure heavy diary/history pages with larger test datasets and avoid unnecessary repeated requests.",
+    "status": "pending"
+  },
+  {
+    "id": "238",
+    "name": "Storage and query budgets",
+    "type": "U",
+    "priority": "P1",
+    "effort": "L",
+    "delivery": "Verify",
+    "description": "Bound expensive lists/import batches and monitor indexed queries so small-group use stays efficient.",
+    "status": "pending"
+  },
+  {
+    "id": "239",
+    "name": "No-paid-service guard",
+    "type": "U",
+    "priority": "P1",
+    "effort": "M",
+    "delivery": "Verify",
+    "description": "Check code/configuration for reintroduced AI calls, R2 bindings or billable optional services before publishing.",
+    "status": "pending"
+  },
+  {
+    "id": "240",
+    "name": "In-app feedback and changelog",
+    "type": "N",
+    "priority": "P2",
+    "effort": "M",
+    "delivery": "Sync",
+    "description": "Let mates report a reproducible issue and read what changed, without adding paid analytics or an external ticketing service.",
+    "status": "pending"
+  }
+]

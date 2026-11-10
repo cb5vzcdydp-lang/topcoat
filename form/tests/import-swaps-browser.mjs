@@ -1,0 +1,54 @@
+import './browser-fixture.mjs';
+import assert from 'node:assert/strict';
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+const {samplePlan,defaultTargets,defaultPreferences}=await import('../.test-output/browser-fixture.mjs');
+const client='61c70339-898b-4999-9dc5-dcd6be139ff9',uid='import-swap-qa',template='81c70339-898b-4999-9dc5-dcd6be139ff9';
+const exercise={id:'custom-bench',name:'Barbell Bench Press',muscle:'Chest',equipment:'free-weight',sets:2,min:6,max:12,optional:false,gymPin:false,note:''};
+const data={uid,selectedClient:client,clients:[{id:client,owner:uid,personal:true,name:'Import and swap QA',version:1,targets:defaultTargets,plan:samplePlan}],workoutTemplates:[{id:template,client,name:'QA Swap',exercises:[exercise]}],workouts:[],logs:[],meals:[],workspaceRecords:[{id:'gym',client,kind:'gym',data:{name:'Home gym',equipment:'Dumbbell, Bench'},version:1}]};
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']}),page=await browser.newPage({viewport:{width:390,height:844}}),errors=[],posts=[];
+page.on('pageerror',error=>errors.push(error.message));page.on('dialog',dialog=>void dialog.accept());page.setDefaultTimeout(30000);
+try {
+  await page.route('**/api/**',async route=>{
+    const req=route.request(),path=new URL(req.url()).pathname;let json={records:[],items:[]};
+    if(path==='/api/data') {if(req.method()==='GET')json=data;else {const body=req.postDataJSON();posts.push(body);json={ok:true,saved:1,skipped:0};}}
+    if(path==='/api/import-batches')json={batches:[]};
+    if(path==='/api/preferences')json={preferences:defaultPreferences,version:0};
+    if(path==='/api/workout-lease')json={ok:true,version:1,expires:Date.now()+120000};
+    await route.fulfill({json});
+  });
+  await page.goto('http://127.0.0.1:5173',{waitUntil:'domcontentloaded',timeout:120000});
+  await page.getByRole('button',{name:'Menu',exact:true}).click();
+  const group=page.locator('.sidebar').getByRole('button',{name:'Training & nutrition',exact:true});
+  if(await group.getAttribute('aria-expanded')==='false')await group.click();
+  await page.locator('.sidebar').getByRole('button',{name:'Import',exact:true}).click();
+  await page.getByLabel('Export layout',{exact:true}).selectOption('hevy-sets-1');
+  const uploader=page.locator('.simple-import-upload input[type=file]');
+  await uploader.setInputFiles({name:'wrong.csv',mimeType:'text/csv',buffer:Buffer.from('Date,Exercise,Reps\n2026-10-20,Curl,8')});
+  await page.getByText(/This file does not match Hevy/).waitFor();
+  assert.equal(posts.length,0,'invalid preset data is never saved');
+  await uploader.setInputFiles({name:'hevy.csv',mimeType:'text/csv',buffer:Buffer.from('title,start_time,exercise_title,set_type,weight_kg,reps\nUpper,2026-10-20 07:30:00,Bench Press (Barbell),normal,60,8')});
+  await page.getByText(/1 workout session found/).waitFor();
+  assert.equal(posts.length,0,'a valid preview still needs confirmation');
+  const downloadPromise=page.waitForEvent('download');downloadPromise.catch(()=>{});
+  await page.getByRole('button',{name:'Download example layout',exact:true}).click({timeout:5000});
+  assert.equal((await downloadPromise).suggestedFilename(),'hevy-sets-1-example.csv');
+  await page.getByRole('button',{name:'Import 1 workout session',exact:true}).click();
+  await page.waitForFunction(()=>document.body.innerText.includes('1 workout session imported.'));
+  assert.equal(posts[0].action,'importWorkouts');
+  assert.equal(posts[0].value[0].sets[0].weight,60);
+  await page.getByRole('button',{name:'Train',exact:true}).click();
+  await page.locator('.workout-reference-card').filter({hasText:'QA Swap'}).getByRole('button',{name:/Start workout/}).click();
+  await page.getByRole('button',{name:'Workout options',exact:true}).click();
+  await page.getByRole('button',{name:'Swap this exercise',exact:true}).click();
+  await page.getByLabel('Gym equipment',{exact:true}).selectOption('gym');
+  const suggestions=page.getByRole('region',{name:'Suggested replacements',exact:true});
+  await suggestions.getByRole('button',{name:/Use replacement/}).first().waitFor();
+  const replacement=await suggestions.getByRole('button',{name:/Use replacement/}).first().getAttribute('aria-label');
+  await suggestions.getByRole('button',{name:/Use replacement/}).first().click();
+  await page.getByRole('heading',{name:replacement.replace('Use replacement ','')}).waitFor();
+  await page.getByRole('button',{name:/Undo/}).click();
+  await page.getByRole('heading',{name:'Barbell Bench Press',exact:true}).waitFor();
+  assert.equal(data.workoutTemplates[0].exercises[0].name,'Barbell Bench Press');
+  assert.deepEqual(errors,[]);
+  console.log('PASS mobile preset selection, invalid-layout errors, preview without auto-save, CSV sample download, confirmed import with correct kg load, gym-filtered live replacement selection, undo and unchanged saved template');
+} catch(error) {await page.screenshot({path:'/workspace/import-swap-debug.png',fullPage:true});console.log((await page.locator('body').innerText()).slice(-4500));throw error} finally {await browser.close()}

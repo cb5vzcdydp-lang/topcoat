@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import React from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+import {createRequire} from 'node:module';
+const r=createRequire(createRequire(import.meta.url).resolve('wrangler/package.json'));const {build}=r('esbuild');
+await build({entryPoints:['app/daily-nutrients.tsx'],outfile:'.test-output/daily-nutrients.mjs',bundle:true,format:'esm',platform:'node',packages:'external',alias:{'@':'./'}});
+const {DailyNutrients}=await import('../.test-output/daily-nutrients.mjs');
+const reference={servingSize:'100 g',servingGrams:100,calories:34,protein:3.4,carbs:5,fat:.1,nutrients:{calcium:120,b12:.4},nutrientEstimate:{sourceName:'Similar skim milk',source:'Open Food Facts',confidence:'high',score:.8,method:'serving weight',keys:['calcium','b12']},source:'Product label'};
+const html=renderToStaticMarkup(React.createElement(DailyNutrients,{date:'2026-10-21',targets:{calories:2000,protein:150,carbs:220,fat:60},meals:[{id:'milk',data:{name:'Skim milk',calories:34,protein:3.4,carbs:5,fat:.1,nutrition:{amount:100,unit:'g',reference}}}]}));
+assert.ok(html.includes('Daily nutrition'));assert.ok(html.includes('All micronutrients'));assert.ok(html.includes('Calcium'));assert.ok(html.includes('Similar skim milk'));assert.ok(html.includes('include estimates'));assert.ok(html.includes('No data'));
+console.log('daily nutrient dashboard render passed');

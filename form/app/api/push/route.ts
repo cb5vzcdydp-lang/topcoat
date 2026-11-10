@@ -1,0 +1,7 @@
+import {readJsonLimited} from '@/lib/server';
+import {env} from 'cloudflare:workers';
+import {z} from 'zod';
+import {database,identity,originCheck,json,fail,HttpError} from '@/lib/server';
+export const dynamic='force-dynamic';
+export async function GET(req:Request){try{await identity(req);return json({publicKey:env.PUSH_PUBLIC_KEY||null,ready:!!env.PUSH_PUBLIC_KEY});}catch(e){return fail(e)}}
+export async function POST(req:Request){try{originCheck(req);const {uid}=await identity(req),body=await readJsonLimited(req,1000000) as any;const db=database();if(body.action==='subscribe'){const v=z.object({subscription:z.object({endpoint:z.string().url().max(2048),keys:z.object({p256dh:z.string().min(20).max(200),auth:z.string().min(10).max(100)})})}).parse(body);const id=crypto.randomUUID();await db.prepare('INSERT INTO push_subscriptions(id,owner,endpoint,subscription,created) VALUES(?,?,?,?,?) ON CONFLICT(owner,endpoint) DO UPDATE SET subscription=excluded.subscription,created=excluded.created').bind(id,uid,v.subscription.endpoint,JSON.stringify(v.subscription),new Date().toISOString()).run();return json({ok:true})}if(body.action==='unsubscribe'){const endpoint=z.string().url().max(2048).parse(body.endpoint);await db.prepare('DELETE FROM push_subscriptions WHERE owner=? AND endpoint=?').bind(uid,endpoint).run();return json({ok:true})}throw new HttpError(400,'Unknown push action.');}catch(e){return fail(e)}}

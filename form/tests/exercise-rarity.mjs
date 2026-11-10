@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const r=createRequire(createRequire(import.meta.url).resolve('wrangler/package.json'));const {build}=r('esbuild');
+await build({entryPoints:['lib/exercise-rarity.ts'],outfile:'.test-output/exercise-rarity.mjs',bundle:true,platform:'node',format:'esm'});
+const {revisedPushupEstimate}=await import('../.test-output/exercise-rarity.mjs');
+assert.deepEqual(revisedPushupEstimate(4,'female'),{reps:4,percentile:25,capablePercent:75,sampleSize:216});
+assert.equal(revisedPushupEstimate(23,'male').percentile,50);
+assert.equal(revisedPushupEstimate(42,'male').capablePercent,5);
+assert.equal(revisedPushupEstimate(0,'female').capablePercent,100);
+console.log('exercise rarity tests passed');

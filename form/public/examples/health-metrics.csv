@@ -1,0 +1,10 @@
+date,metric,value,unit,source
+2026-10-16,steps,10500,steps,My tracker
+2026-10-16,sleep_duration,7.5,hours,My tracker
+2026-10-16,sleep_deep,1.5,hours,My tracker
+2026-10-16,sleep_rem,1.75,hours,My tracker
+2026-10-16,sleep_light,4.25,hours,My tracker
+2026-10-16,active_calories,450,kcal,My tracker
+2026-10-16,total_calories,2650,kcal,My tracker
+2026-10-16,hrv,52,ms,My tracker
+2026-10-16,rhr,57,bpm,My tracker

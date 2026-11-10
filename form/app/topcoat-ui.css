@@ -1,0 +1,354 @@
+/* Topcoat UI card/button adaptations; all colour roles map to Form's saved theme.
+   Upstream source and licence: docs/TOPCOAT_UI.md, components/topcoat/LICENSE. */
+:root {
+  --form-radius: 16px;
+  --form-control-radius: 11px;
+  --form-ease: cubic-bezier(.2,.8,.2,1);
+}
+.app { font-variant-numeric: tabular-nums; }
+.app :where(button,input,select,textarea) { font-family: inherit; }
+.app :where(button,a,input,select,textarea,summary):focus-visible {
+  outline: 2px solid var(--focus); outline-offset: 3px;
+}
+.app .btn {
+  min-height: 44px; border-radius: var(--form-control-radius);
+  font-size: 13px; font-weight: 650; line-height: 1.4;
+  box-shadow: none;
+}
+.app [data-slot=topcoat-button][data-variant=outline] { background: transparent; border: 1px solid var(--line); color: var(--text); }
+.app [data-slot=topcoat-button][data-variant=ghost] { background: transparent; border-color: transparent; color: var(--text); }
+.app [data-slot=topcoat-button][data-variant=primary] { background: var(--green); border-color: transparent; color: var(--ink); }
+.app [data-slot=topcoat-button][data-variant=secondary] { background: var(--panel2); color: var(--text); }
+.app .btn:disabled { transform: none; }
+.app .panel,.app [data-slot=topcoat-card] { border-color: var(--line); box-shadow: none; }
+.app .field :is(input:not([type=checkbox]):not([type=color]),select,textarea) {
+  background: var(--bg); color: var(--text); border-color: var(--control-line);
+}
+.app .field > span { color: var(--muted); line-height: 1.45; }
+.app .modal { border: 1px solid var(--line); border-radius: 20px; }
+.app .topbar { background: var(--bg); border-color: var(--line); }
+.app .topbar .crumb { font-size: 13px; }
+.app .sidebar .workspace { border-bottom: 1px solid var(--line); border-radius: 0; padding-bottom: 18px; }
+.app .workspace-nav button.active { color: var(--accent-text); background: var(--accent-soft); }
+.app .nav-folder-toggle { font-size: 12px; letter-spacing: .025em; }
+.app .app-footer { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 32px; gap: 10px; line-height: 1.5; }
+/* Overview: date selection forms one bounded control, not three floating rows. */
+.home-page .home-page-header { margin-bottom: 20px; align-items: center; }
+.home-page .home-page-header h1 { font-size: clamp(25px,3vw,32px); letter-spacing: -.04em; }
+.home-page-subtitle { color: var(--muted); font-size: 13px; line-height: 1.6; margin-top: 6px; }
+.home-page .home-customize { flex-shrink: 0; }
+.home-date-section { border: 1px solid var(--line); border-radius: var(--form-radius); padding: 16px 16px 0; margin-bottom: 16px; }
+.home-date-section .home-date-heading { margin: 0 0 8px; }
+.home-date-heading h2 { font-size: 14px; font-weight: 600; }
+.home-date-section .home-week-nav { margin: 0; gap: 4px; }
+.home-date-section .home-week button { min-height: 60px; padding: 6px 2px; }
+.home-date-section .home-week button small { font-size: 11px; }
+.home-date-section .home-week button b { font-size: 18px; }
+.home-date-section .home-week button.selected { background: var(--accent-soft); color: var(--accent-text); border-radius: 10px; }
+.home-date-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px; border-top: 1px solid var(--line); }
+.home-date-footer .home-target-link { margin: 0; min-height: 42px; font-size: 12px; color: var(--accent-text); }
+.home-date-footer > span { font-size: 11px; color: var(--muted); }
+.home-page .home-coach-entry { background: transparent; padding: 12px 14px; margin-bottom: 18px; }
+.home-page .home-coach-icon { width: 36px; height: 36px; background: var(--accent-soft); color: var(--accent-text); border-radius: 11px; }
+.home-page [data-slot=topcoat-card] { background: var(--panel); padding: 20px; border-radius: var(--form-radius); }
+.home-page .home-card-heading { margin-bottom: 14px; }
+.home-page .home-card-heading h2 { font-size: 16px; font-weight: 650; letter-spacing: -.025em; }
+.home-page .home-status { background: var(--accent-soft); color: var(--accent-text); font-size: 10px; line-height: 1.4; }
+.home-page .home-training-summary { margin-block: 14px; }
+.home-page .home-training-summary h3 { font-size: 22px; letter-spacing: -.03em; }
+.home-page .home-training-actions { display: flex; gap: 8px; margin-top: 18px; }
+.home-page .home-training-actions .btn { flex: 1; min-width: 0; justify-content: center; }
+.home-page .home-training-actions .btn:not(.primary) { background: transparent; }
+.home-page .home-training-actions .btn.primary { flex: 1; }
+.home-page .home-number { font-size: 36px; letter-spacing: -.04em; }
+.home-page .home-ring { width: 112px; height: 112px; margin: 10px auto 14px; }
+.home-page .home-ring b { font-size: 25px; }
+.home-page .home-macros { gap: 15px; }
+.home-page .home-macro-label { flex-wrap: wrap; gap: 4px; }
+.home-page .home-macro-label b { font-size: 13px; }
+.home-page .home-macro-label small { color: var(--muted); font-size: 11px; }
+.home-page .home-detail-row { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.home-page .home-detail-row small { font-size: 10px; line-height: 1.5; letter-spacing: .04em; }
+.home-page .home-detail-row b { font-size: 15px; line-height: 1.4; }
+/* Food: four compact target rows. Keep all values and remaining amounts visible. */
+.app .nutrition-dashboard { padding: 10px 18px 4px; }
+.nutrition-dashboard .nutrition-carousel-head { padding-bottom: 4px; }
+.nutrition-dashboard .nutrition-carousel-head b { font-size: 14px; }
+.nutrition-dashboard .carousel-targets { gap: 0; padding: 4px 0; }
+.nutrition-dashboard .carousel-target { display: grid; grid-template-columns: 1fr auto; gap: 5px 12px; padding: 8px 0; }
+.nutrition-dashboard .carousel-target > div:first-child { grid-column: 1/-1; font-size: 13px; margin-bottom: 0; }
+.nutrition-dashboard .carousel-target b { font-size: 14px; }
+.nutrition-dashboard .carousel-target b small { font-size: 11px; color: var(--muted); }
+.nutrition-dashboard .carousel-target > .macro-track { grid-column: 1; align-self: center; height: 5px; }
+.nutrition-dashboard .carousel-target > small { grid-column: 2; font-size: 11px; line-height: 1.2; margin: 0; color: var(--muted); }
+.nutrition-dashboard .nutrition-dashboard-footer { margin-top: 4px; }
+.app .diary-date-nav { background: transparent; }
+.app .diary-primary-actions > .btn { min-height: 48px; }
+.app .diary-primary-actions > .btn:not(.primary) { background: transparent; }
+.app .meal-section { border-radius: 14px; border-color: var(--line); }
+.app .meal-section-header { min-height: 60px; }
+.app .meal-section-title > b { font-size: 14px; }
+.app .meal-section-title > small { font-size: 11px; }
+.app .water-tracker { padding: 16px 18px; }
+.app .water-tracker-heading h3 { font-size: 16px; }
+.app .water-glass-controls { margin: 16px 0 12px; }
+.app .water-custom-form { margin-top: 14px; }
+.app .food-tools-disclosure { margin-bottom: 20px; }
+/* Library and coach share the same quiet surface and border hierarchy. */
+.app .workout-reference-card { border-color: var(--line); border-radius: 16px; background: var(--panel); }
+.app .workout-card-head h3 { font-size: 20px; letter-spacing: -.025em; }
+.app .workout-start-button { min-height: 48px; border-radius: 11px; }
+.app .workout-library-actions > button { border-color: var(--line); background: var(--panel); color: var(--text); }
+.app .henry-page .henry-suggestions button { border-color: var(--line); background: var(--panel); }
+.app .henry-page .henry-compose textarea { background: var(--panel); }
+.app .henry-page .henry-chips button { border-color: var(--line); background: transparent; }
+.app .henry-page .henry-welcome h2 { letter-spacing: -.035em; }
+@media (hover:hover) {
+ .app .btn:not(:disabled):hover { border-color: var(--control-line); }
+ .app [data-slot=topcoat-button]:not(:disabled):hover { background: var(--surface-hover); }
+ .app [data-slot=topcoat-button][data-variant=primary]:not(:disabled):hover { background: color-mix(in srgb,var(--green) 90%,var(--text)); }
+ .home-page .home-coach-entry:hover { background: var(--accent-soft); border-color: var(--control-line); }
+}
+@media (min-width:1001px) {
+ .app .topbar { padding-inline: 32px; }
+ .app main { padding: 28px 32px 48px; }
+ .home-page .home-date-section { max-width: 100%; }
+ .home-page .home-week { gap: 8px; }
+ .home-page .home-week button { min-height: 64px; }
+}
+@media (max-width:640px) {
+ .app main { padding-top: 20px; }
+ .home-page .home-page-header { align-items: flex-start; gap: 12px; }
+ .home-page-subtitle { font-size: 12px; max-width: 27ch; }
+ .home-page .home-customize { width: 44px; padding: 10px; }
+ .home-customize > span { display: none; }
+ .home-page .client-bar { margin-bottom: 16px; }
+ .home-date-section { padding: 12px 8px 0; }
+ .home-date-section .home-date-heading { padding-inline: 5px; }
+ .home-date-section .home-date-heading h2 { font-size: 13px; }
+ .home-date-section .home-week-nav > .icon { width: 26px; min-width: 26px; }
+ .home-date-section .home-week button { min-height: 54px; }
+ .home-date-section .home-week button span { font-size: 8px; }
+ .home-date-footer { margin-inline: 5px; gap: 6px; }
+ .home-date-footer > span { font-size: 10px; }
+ .home-page .home-widget-grid { gap: 12px; }
+ .home-page [data-slot=topcoat-card] { padding: 18px; }
+ .home-page [data-slot=topcoat-card].size-s { padding: 16px!important; }
+ .home-page .home-training-actions { flex-wrap: wrap; }
+ .home-page .home-training-actions .btn { font-size: 12px; padding-inline: 10px; }
+ .home-page .home-macro-label { font-size: 12px; }
+ .home-page .home-macro-label b { font-size: 12px; }
+ .app .phone-bottom-nav { box-shadow: 0 4px 16px color-mix(in srgb,var(--bg) 50%,transparent); border-radius: 20px; }
+ .app .phone-bottom-nav button.active { background: var(--accent-soft); color: var(--accent-text); }
+ .app .phone-bottom-nav button.active:before { display: none; }
+ .app .phone-bottom-nav .phone-nav-label { font-size: 11px; }
+ .app .nutrition-dashboard { padding-inline: 14px; }
+ .app .water-tracker { padding: 16px 14px; }
+}
+@media (max-width:360px) { .home-page .home-training-actions { flex-direction: column; } }
+@media (prefers-reduced-motion:no-preference) {
+ .app [data-slot=topcoat-button],.app .home-coach-entry { transition: background-color 140ms ease,border-color 140ms ease,transform 140ms ease; }
+ .app .btn:active:not(:disabled),.app .home-coach-entry:active { transform: translateY(1px); }
+ .app .phone-bottom-nav button,.app .workspace-nav button { transition: background-color 140ms ease,color 140ms ease; }
+}
+body[data-reduced-motion=true] .app :is(button,.home-coach-entry) { transition: none!important; transform: none!important; }
+body[data-large-text=true] .home-page-subtitle,body[data-large-text=true] .home-date-footer > span { font-size: 14px; }
+body[data-large-text=true] .home-date-footer { flex-wrap: wrap; padding-bottom: 8px; }
+@media (prefers-reduced-motion:reduce) { .app *,.app *:before,.app *:after { animation: none!important; transition: none!important; } }
+
+/* Daily app refinement: shared rhythm, restrained surfaces and useful contrast. */
+.app { --ui-gap: 16px; --ui-hairline: color-mix(in srgb,var(--text) 13%,var(--bg)); }
+.app :is(h1,h2,h3) { text-wrap: balance; }
+.app .topbar .app-wordmark { display:inline-flex;align-items:baseline;border:0;padding:4px 0;background:none;color:var(--text);font-family:'Manrope',system-ui,sans-serif;font-size:25px;font-weight:800;letter-spacing:-1.3px;min-height:44px; }
+.app-wordmark > span { color:var(--accent-text); }
+.app .topbar .crumb-separator { margin-inline:8px; }
+.app .topbar .crumb-title { font-size:12px;font-weight:550;color:var(--muted); }
+.app .sidebar { border-color:var(--ui-hairline); }
+.app .workspace-nav > button,.app .nav-folder-items button { border-radius:10px; }
+.app .workspace-nav .active { box-shadow:none; }
+.app .page-heading { margin-bottom:24px; }
+.app .page-heading h1 { letter-spacing:-.045em; }
+.app .panel { border-color:var(--ui-hairline); }
+.app .panel-head { align-items:flex-start; }
+.app .panel-head h2 { font-size:17px;letter-spacing:-.025em; }
+.app .icon { flex-shrink:0; }
+.app :is(.modal-head,.modal-header) { border-color:var(--ui-hairline); }
+.app .modal h2 { font-size:20px;letter-spacing:-.035em; }
+.app .field input::placeholder,.app .field textarea::placeholder { color:var(--muted);opacity:.8; }
+.app .footer-account-link { display:inline-flex;align-items:center;gap:7px;min-height:44px;border:0;background:none;color:var(--muted);font-size:11px;padding:0; }
+.app .app-footer { align-items:center;margin-top:24px;padding-top:10px; }
+.app .app-footer > span { font-size:12px; }
+.app .app-footer > span > .muted { display:none; }
+/* Home keeps the selected day and account controls in view without a tall intro. */
+.home-page .home-page-header { margin-bottom:16px; }
+.home-page .home-page-header h1 { font-size:clamp(26px,3vw,32px);font-weight:750; }
+.home-page .home-page-subtitle { margin-top:4px; }
+.home-page .client-bar { border-color:var(--ui-hairline); }
+.home-page .home-date-section { border:0;border-radius:0;padding:0 0 14px;border-bottom:1px solid var(--ui-hairline);margin-bottom:14px; }
+.home-page .home-date-heading { margin-bottom:6px;padding:0; }
+.home-date-tools { display:flex;align-items:center;gap:4px; }
+.home-date-tools .btn { min-height:36px;background:transparent;padding:6px 12px; }
+.home-page .home-week button { box-shadow:none; }
+.home-page .home-week button.selected { background:var(--accent-soft);border:1px solid var(--control-line);box-shadow:none; }
+.home-page .home-coach-entry { min-height:60px;padding:10px 12px;background:var(--panel);border-color:var(--ui-hairline);border-radius:14px; }
+.home-page .home-coach-icon { width:36px;height:36px;overflow:hidden;border-radius:50%;background:var(--panel2);border:1px solid var(--control-line); }
+.home-coach-icon img { width:100%;height:100%;object-fit:cover;object-position:50% 20%; }
+.home-page .home-coach-entry b { font-size:13px; }
+.home-page .home-coach-entry small { font-size:11px; }
+.home-page .home-widget-grid { align-items:stretch;gap:16px; }
+.home-page [data-slot=topcoat-card] { border-color:var(--ui-hairline); }
+.home-page .home-widget.size-s { display:flex;flex-direction:column; }
+.home-page .widget-training { border-top:2px solid var(--green); }
+.home-page .widget-training .home-card-heading { margin-bottom:12px; }
+.home-page .home-status { font-weight:550;border-radius:6px;padding:4px 7px; }
+.home-page .home-training-summary > svg { width:44px;height:44px;padding:11px;background:var(--accent-soft);color:var(--accent-text);border-radius:12px; }
+.home-page .home-training-summary h3 { font-size:23px; }
+.home-page .home-training-exercises { margin-block:12px 0; }
+.home-page .home-training-exercises > span { border-color:var(--ui-hairline); }
+.home-page .home-widget > .home-card-link { margin-top:auto;padding-top:12px;min-height:44px; }
+.home-page .home-widget .home-ring { width:100px;height:100px;margin:4px auto 12px; }
+.home-page .home-widget .home-ring b { font-size:24px; }
+.home-calorie-budget { display:grid;grid-template-columns:auto 1fr;column-gap:5px;align-items:baseline;margin-top:4px;line-height:1.5; }
+.home-calorie-budget b { font-size:16px;font-weight:650;letter-spacing:-.03em; }
+.home-calorie-budget span { font-size:11px;color:var(--muted); }
+.home-calorie-budget small { grid-column:1/-1;font-size:11px;color:var(--muted); }
+.home-page .home-macros:not(.rings) { flex:1;display:flex;flex-direction:column;justify-content:space-evenly;gap:18px;padding-block:8px; }
+.home-page .home-macro-label { display:grid;grid-template-columns:1fr;gap:4px;font-size:12px; }
+.home-page .home-macro-label b { font-size:16px;font-weight:650; }
+.home-page .home-macro-label small { font-weight:450;font-size:11px; }
+.home-page .home-meter { height:5px;margin-top:7px;background:var(--panel2); }
+.home-page [data-slot=topcoat-card].widget-grass { padding:18px!important;border:1px solid var(--ui-hairline);background:var(--panel); }
+.home-page .home-detail-row { gap:12px; }
+.home-page .home-more-insights { border-color:var(--ui-hairline); }
+/* Food search: neutral selection that follows the chosen accent, not a fixed orange. */
+.app .food-search-v2 { background:var(--bg); }
+.app .food-search-v2 .food-search-header { padding-bottom:4px;gap:4px; }
+.app .food-search-v2 .food-search-input { min-height:48px;border:1px solid var(--control-line);border-radius:14px;background:var(--panel); }
+.app .food-search-v2 .food-search-input:focus-within { outline:2px solid var(--focus);outline-offset:2px; }
+.app .food-search-v2 .food-search-input input:focus-visible { outline:0; }
+.app .food-search-v2 .food-search-tabs { background:transparent;border-radius:0;gap:6px;padding:3px 0 8px;border-bottom:1px solid var(--ui-hairline); }
+.app .food-search-v2 .food-search-tabs button { min-height:44px;border:1px solid var(--line);border-radius:24px;padding:8px 14px;white-space:nowrap;font-size:12px;background:var(--panel); }
+.app .food-search-v2 .food-search-tabs button.selected { background:var(--accent-soft);color:var(--accent-text);border-color:var(--control-line); }
+.app .food-search-v2 .food-search-sort { margin:0 0 12px;font-size:12px; }
+.app .food-search-v2 .food-search-results { border-color:var(--ui-hairline);border-radius:14px;overflow:hidden; }
+.app .food-search-v2 .food-search-result { min-height:80px;padding-block:9px;background:var(--panel);border-color:var(--ui-hairline); }
+.app .food-search-v2 .food-search-result.selected,.app .food-search-v2 .food-search-result:has(input:checked) { background:var(--accent-soft); }
+.app .food-search-v2 .food-result-copy b { font-size:14px;font-weight:600;line-height:1.4; }
+.app .food-search-v2 .food-result-copy small { font-size:12px;line-height:1.5; }
+.app .food-search-v2 .food-result-copy .food-result-source { font-size:10px;letter-spacing:.015em; }
+.app .food-search-v2 .food-search-checkbox { appearance:auto;accent-color:var(--green);border-color:var(--control-line);background-image:none; }
+.app .food-search-v2 .food-search-checkbox:checked { background-color:var(--green);border-color:var(--green); }
+.app .food-search-v2 .food-search-actions { background:var(--bg);border-color:var(--ui-hairline); }
+.app .food-search-v2 .food-search-actions .btn { min-height:48px;border-radius:12px;font-size:13px; }
+.app .food-review-list > article { background:var(--panel);border-color:var(--ui-hairline);border-radius:14px; }
+.app .food-review-fields :is(input,select) { background:var(--bg);color:var(--text);border-color:var(--control-line);border-radius:9px;min-height:44px; }
+.app .meal-section { border-color:var(--ui-hairline);background:var(--panel); }
+.app .meal-section-header { min-height:64px; }
+.app .nutrition-dashboard .macro-track { background:var(--panel2); }
+/* Train starts with saved workouts; schedule and programme controls follow the library. */
+.app .workout-library { margin-top:0;gap:12px; }
+.app .workout-library-title { align-items:center;padding-bottom:8px; }
+.app .workout-library-title h1 { font-size:clamp(27px,3vw,32px);line-height:1.15;letter-spacing:-.045em;font-weight:750; }
+.app .workout-library-title .eyebrow { display:none; }
+.app .workout-library-filters > summary { padding-block:8px; }
+.app .workout-reference-card { border-color:var(--ui-hairline);padding:18px;border-radius:16px; }
+.app .workout-card-head h3 { font-weight:650;line-height:1.3; }
+.app .workout-card-stats { gap:6px; }
+.app .workout-card-stats > span { background:transparent;padding:0;color:var(--muted);font-size:12px; }
+.app .workout-focus-tag { background:var(--accent-soft);color:var(--accent-text);font-size:10px; }
+.app .workout-start-button { font-weight:650;font-size:14px; }
+.app .schedule-mode-panel.compact-settings:not([open]) { padding:0 18px; }
+.app .schedule-mode-panel.compact-settings > summary { min-height:68px; }
+/* Henry has a compact introduction and responsive prompt cards. No chat logic changes. */
+.app .henry-intro { display:flex;align-items:center;gap:18px;text-align:left;margin:12px 0 30px; }
+.app .henry-intro .henry-portrait { width:76px;height:76px;flex:none;margin:0;border:1px solid var(--control-line); }
+.app .henry-eyebrow { display:block;color:var(--accent-text);font-size:10px;font-weight:600;letter-spacing:.09em;margin-bottom:7px; }
+.app .henry-intro h2 { margin:0 0 6px;font-size:30px;font-weight:750; }
+.app .henry-intro p { color:var(--muted);font-size:14px;line-height:1.6;max-width:36ch; }
+.app .henry-welcome h3 { font-size:12px;font-weight:550;letter-spacing:0;text-transform:none;margin-bottom:12px; }
+.app .henry-page .henry-chips { flex-wrap:wrap;gap:8px;overflow:visible;margin-bottom:20px; }
+.app .henry-page .henry-chips button { border-radius:11px;font-size:13px;padding-inline:12px; }
+.app .henry-page .henry-suggestions button { background:var(--panel);border-color:var(--ui-hairline);border-radius:14px;font-size:14px;min-height:70px; }
+.app .henry-page .henry-suggestions button > span { border-radius:10px;width:32px;height:32px; }
+.app .henry-page .henry-compose textarea { border-radius:14px;font-size:16px; }
+.app .henry-page .henry-send { border-radius:14px; }
+.app .henry-page .henry-compose-tools > button { border-radius:14px; }
+@media (hover:hover) {
+ .app .home-coach-entry:hover,.app .henry-page .henry-suggestions button:hover { border-color:var(--control-line);background:var(--surface-hover); }
+ .app .footer-account-link:hover { color:var(--accent-text); }
+}
+@media (min-width:900px) {
+ .app .nutrition-dashboard .carousel-targets { grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px; }
+ .app .water-tracker { display:grid;grid-template-columns:1fr 1fr;column-gap:32px;align-items:center; }
+ .app .water-tracker-heading { grid-column:1/-1; }
+ .app .water-glass-controls { grid-column:1;grid-row:2; }
+ .app .water-progress-caption { grid-column:1;grid-row:3; }
+ .app .water-progress-track { grid-column:1;grid-row:4; }
+ .app .water-custom-form { grid-column:2;grid-row:2/5;margin-top:0; }
+ .app .water-tracker > :is(.water-settings,.water-history,p) { grid-column:1/-1; }
+ .app .meal-sections { grid-template-columns:repeat(2,minmax(0,1fr));align-items:start; }
+ .app .henry-suggestions { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .app .henry-suggestions button { height:100%; }
+}
+@media (max-width:640px) {
+ .app .topbar { height:60px;padding-inline:12px; }
+ .app .topbar .crumb { gap:6px; }
+ .app .topbar .crumb-separator,.app .topbar .crumb-title { display:none; }
+ .app .topbar .app-wordmark { font-size:24px; }
+ .app .topbar .top-actions { gap:0; }
+ .app main { padding-top:18px; }
+ .home-page .home-page-header { align-items:center; }
+ .home-page .home-page-subtitle { font-size:12px; }
+ .home-page .home-date-tools .icon { min-width:36px;min-height:36px; }
+ .home-page .home-week-nav { gap:2px; }
+ .home-page .home-week-nav > .icon { width:24px;min-width:24px; }
+ .home-page .home-week button { min-height:54px;padding:6px 2px; }
+ .home-page .home-week button span:not(.workout-done) { display:none; }
+ .home-page .home-week button.selected { border-radius:12px; }
+ .home-page .home-widget-grid { gap:12px; }
+ .home-page .home-card-heading { gap:7px; }
+ .home-page .home-card-heading h2 { font-size:15px; }
+ .home-page .widget-training .home-card-heading h2 { font-size:17px; }
+ .home-page .home-widget .home-ring { width:90px;height:90px; }
+ .home-page .home-widget .home-ring b { font-size:23px; }
+ .home-page .home-widget.size-s { padding:16px!important; }
+ .home-page .home-macros:not(.rings) { padding-block:4px;gap:16px; }
+ .home-page .home-macro-label { gap:2px; }
+ .home-page .home-macro-label b { font-size:15px; }
+ .home-page .home-widget > .home-card-link { font-size:11px; }
+ .home-calorie-budget { grid-template-columns:1fr;gap:1px; }
+ .home-calorie-budget b { font-size:19px; }
+ .home-calorie-budget small { margin-top:3px; }
+ .app .workout-library-title h1 { font-size:28px; }
+ .app .workout-reference-card { padding:16px; }
+ .app .workout-focus-tag { font-size:9px; }
+ .app .henry-intro { gap:14px;margin:4px 0 26px; }
+ .app .henry-intro .henry-portrait { width:64px;height:64px; }
+ .app .henry-intro h2 { font-size:27px; }
+ .app .henry-intro p { font-size:13px; }
+ .app .henry-eyebrow { font-size:9px; }
+ .app .henry-page .henry-suggestions button { font-size:14px;padding:12px; }
+}
+body[data-large-text=true] .app :is(.home-calorie-budget span,.home-calorie-budget small,.home-coach-entry small,.henry-intro p) { font-size:14px; }
+body[data-large-text=true] .app .home-calorie-budget { grid-template-columns:1fr; }
+@media (prefers-reduced-motion:no-preference) {
+ .app .home-coach-entry,.app .henry-suggestions button { transition:background-color 140ms ease,border-color 140ms ease,transform 140ms ease; }
+ .app .home-coach-entry:active,.app .henry-suggestions button:active { transform:translateY(1px); }
+}
+.app .food-search-v2 .food-search-sort { color:var(--muted); }
+.app .food-search-v2 .food-search-sort select { color:var(--accent-text); }
+.app .food-search-v2 .food-search-input svg:last-child { color:var(--muted); }
+.app .food-search-v2 .food-search-input > button { min-width:32px;min-height:36px; }
+.app .food-search-v2 .food-search-actions .btn:not(.primary) { background:var(--panel2);color:var(--text);border-color:var(--line); }
+.app .food-search-v2 .food-result-open > svg { color:var(--muted); }
+/* Fill incomplete desktop card rows while retaining saved order and size weights. */
+@media (min-width:1001px) {
+ .home-page .home-widget-grid { display:flex;flex-wrap:wrap;align-items:stretch; }
+ .home-page .home-widget.size-s { flex:1 1 calc(25% - 12px);min-width:0; }
+ .home-page .home-widget.size-m { flex:1 1 calc(50% - 8px);min-width:0; }
+ .home-page .home-widget.size-l,.home-page .home-more-insights { flex:1 1 100%;min-width:0; }
+ .home-page .home-macro-label { grid-template-columns:1fr auto;align-items:baseline;gap:12px; }
+}
+/* Hover tones also follow the light/custom theme; avoid legacy dark fills. */
+.app .phone-bottom-nav button:not(.active):hover,.app .workspace-nav button:not(.active):hover { background:var(--surface-hover);color:var(--text); }
+.app .phone-bottom-nav button.active:hover { background:var(--accent-soft);color:var(--accent-text); }
